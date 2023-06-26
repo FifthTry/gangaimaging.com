@@ -1,4 +1,5 @@
 -- import: fastn
+-- import: fastn-community.github.io/blue-heal-cs
 -- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/roboto-typography as typo
 -- import: fastn-community.github.io/doc-site/common
@@ -22,7 +23,7 @@ boolean github-icon: false
 optional string github-url: 
 boolean full-width: false
 ftd.type-data types: $typo.types
-ftd.color-scheme colors: $ftd.default-colors
+ftd.color-scheme colors: $blue-heal-cs.main
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 boolean show-footer: true
