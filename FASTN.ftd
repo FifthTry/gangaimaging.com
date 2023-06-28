@@ -5,15 +5,19 @@ favicon: /-/fifthtry.github.io/gangaimaging.com/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/roboto-typography
--- fastn.dependency: fastn-community.github.io/blue-heal-cs
+-- fastn.dependency: fastn-community.github.io/lato-typography as typo
+-- fastn.dependency: fastn-community.github.io/blue-heal-cs as cs
 
--- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds
 -- fastn.auto-import: fifthtry.github.io/gangaimaging.com/assets
--- fastn.auto-import: doc-site
+-- fastn.auto-import: cs
+-- fastn.auto-import: typo
 
 -- fastn.sitemap:
 
 # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+# Services: /services/
+
+# About: /about/
+
+# Contact: index.html

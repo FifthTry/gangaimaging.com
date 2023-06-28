@@ -1,0 +1,259 @@
+-- import: fastn/processors as pr
+-- import: fifthtry.github.io/gangaimaging.com/assets
+-- import: fifthtry.github.io/gangaimaging.com/lib as lib
+
+-- boolean show-footer: true
+
+-- ftd.image-src site-logo: $assets.files.assets.logo.png
+
+-- integer logo-width: 62
+
+-- integer logo-height: 48
+
+-- string site-url: index.html
+
+-- integer max-width: 1320
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+-- pr.sitemap-data footer-toc:
+$processor$: pr.full-sitemap
+
+-- fastn.app-ui apps:
+$processor$: pr.fastn-apps
+
+-- record social-media:
+ftd.image-src src:
+string link: /
+
+-- social-media list share:
+
+-- social-media list social-links:
+
+-- social-media:
+link: /
+src: $assets.files.assets.facebook.svg
+
+-- social-media: 
+link: /
+src: $assets.files.assets.discord.svg
+
+-- social-media:
+link: /
+src: $assets.files.assets.telegram.svg
+
+-- social-media: 
+link: /
+src: $assets.files.assets.instagram.svg
+
+-- social-media: 
+link: /
+src: $assets.files.assets.twitter.svg
+
+-- end: social-links
+
+-- pr.toc-item list footer-links:
+$processor$: pr.toc
+
+- Useful Links: /
+  - Digital radiography: /
+  - Ultrasonography: /
+  - Laboratory: /
+  - Services: /
+  - Facility available: /
+  - About us: /
+  - Contact us: /
+- Newsletter:
+  - Subscribe to gate Latest News, Offer and connect With Us.
+- Contact Us: /
+  - C 31, Ground Floor, Rajan Babu Road, Adarsh Nagar, New Delhi, Delhi 110033
+  - +91 9833408356
+  - gunjangmail.com
+
+
+
+
+-- tags-list list topic:
+
+-- tags-list: Design Inspiration
+tag-link: blog/
+
+-- end: topic
+
+
+
+
+
+-- record tags-list:
+caption title:
+string tag-link:
+
+-- tags-list list tags:
+
+-- tags-list: Programming
+tag-link: blog/
+
+-- tags-list: Data Science
+tag-link: blog/
+
+-- tags-list: Technology
+tag-link: blog/
+
+-- tags-list: Writing
+tag-link: blog/
+
+-- tags-list: AI/ML
+tag-link: blog/
+
+-- tags-list: UI/UX
+tag-link: blog/
+
+-- end: tags
+
+
+
+
+
+-- record service:
+caption title:
+body body:
+string cta-text:
+ftd.image-src src:
+
+-- service list services:
+
+-- service: DIGITAL RADIOLOGY
+src: $assets.files.assets.digital-radiologo.png
+cta-text: Read More
+
+Our radiography (X-Ray) Department is equipped with latest D.R System 
+by GE Healthcare. Digital high frequency…
+
+-- service: ULTRASONOGRAPHY (USG)
+src: $assets.files.assets.ultrasonography-usg.png
+cta-text: Read More
+
+We provide state of the art professional versatile ultrasound scanning 
+services with real time and complete…
+
+-- service: COMPUTERIZED TOMOGRAPHY (CT) SCAN
+src: $assets.files.assets.computerised-themeography.png
+cta-text: Read More
+
+We perform CT Scans on most advanced multi slice scanner (CT Brivo385 
+by GE Healthcare). It is a 32 slice…
+
+-- service: CARDIOLOGY DEPARTMENT
+src: $assets.files.assets.cardiology.png
+cta-text: Read More
+
+Headed by Dr. Anunai Srivastava (MD, DM Cardiology), Our cardiology 
+department is equipped with laser…
+
+-- service: LABORATORY SERVICES
+cta-text: Read More
+src: $assets.files.assets.laboratory-services.png
+
+Our laboratory services are supervised by Senior Experienced Doctor (Dr. 
+SK Gupta MD. Pathology)…
+
+-- service: OTHER SERVICES
+src: $assets.files.assets.other-services.png
+cta-text: Read More
+
+We have CT Scan, Ultrasound, Color Doppler, Digital X-Ray, Special X-Ray, 
+Echo, TMT, ECG, USG/CT-Guided Fnac
+
+-- end: services
+
+
+
+
+
+
+
+
+
+
+
+-- record facility:
+caption title:
+ftd.image-src icon:
+
+-- facility list facility-list:
+
+-- facility: Digital Radiography
+icon: $assets.files.assets.first.svg
+
+-- facility: Ultrasonopgraphy (USG)
+icon: $assets.files.assets.first.svg
+
+-- facility: Cardiology Department
+icon: $assets.files.assets.first.svg
+
+-- facility: Laboratory Services
+icon: $assets.files.assets.first.svg
+
+-- end: facility-list
+
+
+
+
+
+-- record hallmark:
+caption title:
+string count:
+ftd.image-src icon:
+
+-- hallmark list hallmarks:
+
+-- hallmark: COMPLETED TEST
+count: 1000+
+icon: $assets.files.assets.laptop-icon.png
+
+-- hallmark: HAPPY CLIENTS
+count: 1200+
+icon: $assets.files.assets.smiley-icon.png
+
+-- hallmark: TEST
+count: 120+
+icon: $assets.files.assets.test-tube-icon.png
+
+-- hallmark: POSITIVE REVIEWS
+count: 450+
+icon: $assets.files.assets.like-icon.png
+
+-- end: hallmarks
+
+
+
+
+-- record testimonial:
+caption title:
+string user: 
+string location:
+ftd.image-src icon:
+
+-- testimonial list list-of-testimonials:
+
+-- testimonial: I really think that this is the best lab in North Delhi
+user: Preeti Ahuja
+location: New Delhi
+icon: $assets.files.assets.testimonial.png
+
+A design approach is a general philosophy that may or may not include a guide
+for specific methods that work.It is a long established fact that a reader will
+be distracted by the readable content of a page when looking at its layout.
+
+-- testimonial: I really think that this is the best lab in North Delhi
+user: Preeti Ahuja
+location: New Delhi
+icon: $assets.files.assets.testimonial.png
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
+ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
+aliquet faucibus.
+
+-- end: list-of-testimonials

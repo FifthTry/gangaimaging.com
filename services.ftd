@@ -1,0 +1,29 @@
+-- import: fifthtry.github.io/gangaimaging.com/lib as lib
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+
+-- lib.page:
+full-width: true
+sidebar: false
+
+-- lib.page.footer:
+
+-- lib.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url 
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+social-links: $common.social-links
+
+-- end: lib.page.footer
+
+-- lib.hero: 
+
+Our Services
+
+-- lib.image:
+src: $assets.files.assets.digital-radiologo.png
+width.fixed.px: 650
+
+-- end: lib.page
