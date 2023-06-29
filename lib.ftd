@@ -655,7 +655,7 @@ background.solid: $base
 width: fill-container
 align-content: center
 background.solid: $base
-padding-horizontal.px: 64
+max-width.fixed.px: 1240
 
 -- ftd.row:
 width: fill-container
@@ -1280,7 +1280,6 @@ max-width.fixed.px: $common.max-width
 
 -- ftd.column:
 spacing.fixed.px: 48
-padding-horizontal.px: 84
 padding-vertical.px: 32
 
 -- ftd.text: $our-work.tag
@@ -1929,3 +1928,232 @@ y-offset.px: 0
 blur.px: 16
 inset-body: false
 spread.px: 4
+
+
+
+
+
+
+
+
+
+
+-- facilities:
+hallmarks: $hallmarks
+
+
+
+
+-- component facilities:
+$hallmark list hallmarks:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+align-content: center
+wrap: true
+spacing: space-between
+
+-- facility: $obj.title
+$loop$: $facilities.hallmarks as $obj
+count: $obj.count
+icon: $obj.icon
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: facilities
+
+
+
+
+
+
+
+
+
+
+-- component facility:
+caption title:
+string count:
+ftd.image-src icon:
+
+-- ftd.column:
+width.fixed.px: 200
+align-content: center
+padding-vertical.px: 20
+spacing.fixed.px: 10
+shadow: $shadow
+border-radius.px: 8
+
+-- ftd.image: 
+src: $facility.icon
+width.fixed.px: 25
+height.fixed.px: 25
+
+-- ftd.text: $facility.count
+color: $text-strong
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $facility.title
+color: $text-strong
+role: $inherited.types.label-small
+
+-- end: ftd.column
+
+-- end: facility
+
+
+
+
+
+
+
+
+-- record hallmark:
+caption title:
+string count:
+ftd.image-src icon:
+
+
+
+-- hallmark list hallmarks:
+
+-- hallmark: COMPLETED TEST
+count: 1000+
+icon: $assets.files.assets.laptop-icon.png
+
+-- hallmark: HAPPY CLIENTS
+count: 1200+
+icon: $assets.files.assets.smiley-icon.png
+
+-- hallmark: TEST
+count: 120+
+icon: $assets.files.assets.test-tube-icon.png
+
+-- hallmark: POSITIVE REVIEWS
+count: 450+
+icon: $assets.files.assets.like-icon.png
+
+-- end: hallmarks
+
+
+
+
+
+
+
+
+
+
+-- component newsletter:
+caption title:
+string tag:
+string cta-text:
+string cta-link:
+
+-- ftd.column:
+width: fill-container
+background.solid: $step-2
+padding.px: 50
+
+-- ftd.text: $newsletter.tag
+color: $step-1
+role: $inherited.types.heading-small
+
+-- ftd.text: $newsletter.title
+color: $base
+role: $inherited.types.heading-medium
+margin-top.px: 28
+max-width.fixed.percent: 85
+
+-- ftd.row: 
+width.fixed.px: 180
+height.fixed.px: 6
+margin-top.px: 28
+background.solid: $step-1
+
+-- ftd.text-input:
+padding-vertical.px: 6
+padding-horizontal.px: 12
+width: fill-container
+border-width.px: 0
+border-color: $text
+border-radius.px: 2
+color: $text
+height.fixed.px: 40
+margin-vertical.px: 36
+
+-- button: $newsletter.cta-text
+cta-link: $newsletter.cta-link
+
+-- end: ftd.column
+
+-- end: newsletter
+
+
+
+
+
+
+
+
+
+
+-- component category:
+caption title:
+string link:
+boolean active: false
+
+-- ftd.column:
+width: fill-container
+border-bottom-width.px: 1
+padding-vertical.px: 12
+
+-- ftd.text: $category.title
+link: $category.link
+color: $text
+color if { category.active }: $step-1
+role: $inherited.types.heading-tiny
+
+-- end: ftd.column
+
+-- end: category
+
+
+
+
+
+
+
+
+
+
+-- component categories:
+caption title:
+$common.procedure list procedures:
+
+-- ftd.column:
+padding.px: 50
+width: fill-container
+background.solid: #eee
+
+-- ftd.text: $categories.title
+color: $text-strong
+role: $inherited.types.heading-tiny
+margin-bottom.px: 10
+style: bold
+
+-- category: $obj.title
+$loop$: $categories.procedures as $obj
+link: $obj.link
+active: $obj.active
+
+-- end: ftd.column
+
+-- end: categories

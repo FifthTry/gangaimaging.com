@@ -257,3 +257,41 @@ ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
 aliquet faucibus.
 
 -- end: list-of-testimonials
+
+
+
+
+
+
+
+
+
+
+-- record procedure:
+caption title:
+string link:
+boolean active: false
+
+
+-- procedure list procedures:
+
+-- procedure: Digital Category
+link: /
+active: true
+
+-- procedure: Ultrasonography (USG)
+link: /
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: /
+
+-- procedure: Cardiology Department
+link: /
+
+-- procedure: Laboratory Services
+link: /
+
+-- procedure: Other Services
+link: /
+
+-- end: procedures
