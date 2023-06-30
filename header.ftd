@@ -166,7 +166,7 @@ common.social-media list social-links:
 -- ftd.column:
 width: fill-container
 background.solid: $base
-shadow: $shadow
+shadow: $lib.shadow-light
 align-content: center
 z-index: 10
 
@@ -251,6 +251,8 @@ spacing.fixed.px: 32
 $loop$: $header-desktop.sections as $obj
 link: $obj.url
 is-active: $obj.is-active
+
+-- lib.dark-mode-switcher-float:
 
 -- end: ftd.row
 

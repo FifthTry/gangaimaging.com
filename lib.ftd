@@ -7,11 +7,11 @@
 
 -- ftd.color base:
 light: #ffffff
-dark: #ffffff
+dark: #00062b
 
 -- ftd.color step-1:
 light: #09c0e8
-dark: #09c0e8
+dark: #01242b
 
 -- ftd.color step-2:
 light: #1458bb
@@ -31,21 +31,23 @@ dark: #51cae9
 
 -- ftd.color text-strong:
 light: #003242
-dark: #003242
+dark: #ffffff
 
 -- ftd.color text:
-light: #232023
-dark: #232023
+light: #67747d
+dark: #ffffff
 
 -- ftd.color scrim:
-light: #efefef
-dark: #efefef
+light: #d3daeb
+dark: #d3daeb 
 
--- ftd.color bg:
-light: #ebf2fa
-dark: #ebf2fa
+-- ftd.color cta-primary-text:
+light: #003242
+dark: #003242
 
-
+-- ftd.color cta-secondary-text:
+light: #67747d
+dark: #67747d
 
 -- component page:
 optional caption title:
@@ -1060,13 +1062,13 @@ align-content if { hero.src == NULL }: center
 
 -- ftd.text: $hero.title
 if: { hero.title != NULL }
-color: $text-strong
+color: $cta-secondary-text
 role: $inherited.types.heading-small
 style: bold
 
 -- ftd.text:
 if: { hero.body != NULL } 
-color: $text
+color: $cta-primary-text
 role: $inherited.types.heading-hero
 
 $hero.body
@@ -1751,7 +1753,6 @@ ftd.image-src img1:
 ftd.image-src img2:
 ftd.image-src img3:
 ftd.image-src img4:
-optional ftd.background-image image:
 
 -- ftd.column:
 width: fill-container
@@ -1761,10 +1762,6 @@ align-self: center
 spacing.fixed.px: 24
 z-index: 4
 
--- ftd.column:
-background.image: $about.image
-width: fill-container
-z-index: 1
 
 -- ftd.column:
 width.fixed.px: 1250
@@ -1856,8 +1853,6 @@ shadow: $shadow-light
 
 -- end: ftd.column
 
--- end: ftd.column
-
 -- end: about
 
 
@@ -1881,11 +1876,11 @@ ftd.image-src avatar:
 width: fill-container
 z-index: 1
 background.image: $assets.files.assets.bg.svg
+align-content: center
 
 -- ftd.row:
-max-width.fixed.px: $common.max-width
-padding-horizontal.px: 16
-padding-vertical.px: 16
+max-width.fixed.px: 1140
+padding-vertical.px: 48
 width: fill-container
 z-index: 1
 align-content: center
@@ -1893,19 +1888,21 @@ spacing.fixed.px: 88
 
 -- ftd.image:
 src: $about-card.avatar
-width.fixed.px: 250
-height.fixed.px: 250
-border-radius.percent: 100
+width.fixed.px: 380
+height.fixed.px: 380
+border-radius.px: 20
 
 -- ftd.column:
-width.fixed.percent: 70
-padding-left.px: 62
-spacing.fixed.px: 16
+spacing.fixed.px: 12
 
 -- ftd.text: $about-card.title
 role: $inherited.types.heading-small
 color: $text-strong
 style: bold
+
+-- ftd.column:
+margin-left.px: 16
+spacing.fixed.px: 12
 
 -- ftd.text: $about-card.location1
 role: $inherited.types.label-large
@@ -1928,6 +1925,8 @@ color: $text-strong
 style: semi-bold
 
 $about-card.body
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -2420,3 +2419,60 @@ width: $iframe.width
 margin-bottom.px: 24
 
 -- end: iframe
+
+
+
+
+
+
+
+
+
+
+-- component dark-mode-switcher-float:
+
+-- ftd.row:
+padding.px: 10
+background.solid: $inherited.colors.background.base
+border-radius.px: 100
+z-index: 99999999999999
+
+-- ftd.row:
+if: { ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-light-mode()
+
+-- ftd.image:
+src: $assets.files.assets.system-mode-active.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+
+-- end: ftd.row
+
+-- ftd.row:
+if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-dark-mode()
+
+-- ftd.image:
+src: $assets.files.assets.light-mode-active.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+
+-- end: ftd.row
+
+-- ftd.row:
+if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-system-mode()
+
+-- ftd.image:
+src: $assets.files.assets.dark-mode-active-dark.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: dark-mode-switcher-float
