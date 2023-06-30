@@ -171,7 +171,7 @@ align-content: center
 z-index: 10
 
 -- ftd.row:
-width.fixed.px: 1250
+width.fixed.px: 1220
 align-self: end
 max-width.fixed.px: $common.max-width
 ;;background.solid: $btn
@@ -251,6 +251,8 @@ spacing.fixed.px: 32
 $loop$: $header-desktop.sections as $obj
 link: $obj.url
 is-active: $obj.is-active
+
+-- lib.dark-mode-switcher-float:
 
 -- end: ftd.row
 

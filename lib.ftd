@@ -184,7 +184,7 @@ site-name: $doc-page-desktop.site-name
 menu-icon: $assets.files.assets.hamburger.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
-email: gangaimaging@gmailcom
+email: gangaimaging@gmail.com
 phone: +91983345672
 
 -- ftd.column:
@@ -578,7 +578,6 @@ toc: $obj
 
 -- component footer:
 string info: We known for Pathology Labs, Sonography Centres, Diagnostic Centres, Blood Testing Centres, CT Scan Centres, X Ray Centres, Echo, TMT, ECG and USG/CT-Guided Fnac
-string copyright: Copyright ©2022. Fastn Inc.
 optional ftd.image-src site-logo: 
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
@@ -595,7 +594,6 @@ width: fill-container
 
 -- footer-desktop:
 info: $footer.info
-copyright: $footer.copyright
 site-logo: $footer.site-logo
 logo-width: $footer.logo-width
 logo-height: $footer.logo-height
@@ -610,7 +608,6 @@ social-links: $footer.social-links
 
 -- footer-mobile:
 info: $footer.info
-copyright: $footer.copyright
 site-logo: $footer.site-logo
 logo-width: $footer.logo-width
 logo-height: $footer.logo-height
@@ -636,7 +633,6 @@ social-links: $footer.social-links
 
 -- component footer-desktop:
 string info: 
-string copyright:
 optional ftd.image-src site-logo: 
 integer logo-width: 
 integer logo-height: 
@@ -732,20 +728,6 @@ $loop$: $footer-desktop.footer-links as $obj
 
 -- end: ftd.row
 
--- ftd.column:
-width: fill-container
-background.solid: $scrim
-padding-vertical.px: 24
-align-content: center
-align-self: center
-
--- ftd.text: $footer-desktop.copyright
-role: $inherited.types.fine-print
-width: fill-container
-text-align: center
-
--- end: ftd.column
-
 -- end: ftd.column
 
 -- end: footer-desktop
@@ -830,8 +812,7 @@ $loop$: $footer-list-child.children as $obj
 
 
 -- component footer-mobile:
-string info: 
-string copyright: 
+string info:  
 optional ftd.image-src site-logo: 
 integer logo-width: 
 integer logo-height:
@@ -893,10 +874,6 @@ cursor: pointer
 link: $obj.link
 
 -- end: ftd.row
-
--- ftd.text: $footer-mobile.copyright
-role: $inherited.types.fine-print
-width: fill-container
 
 -- end: ftd.column
 
@@ -1904,10 +1881,10 @@ ftd.image-src avatar:
 width: fill-container
 z-index: 1
 background.image: $assets.files.assets.bg.svg
+align-content: center
 
 -- ftd.row:
-max-width.fixed.px: $common.max-width
-padding-horizontal.px: 16
+padding-horizontal.px: 48
 padding-vertical.px: 16
 width: fill-container
 z-index: 1
@@ -2186,3 +2163,296 @@ active: $obj.active
 -- end: ftd.column
 
 -- end: categories
+
+
+
+
+
+
+
+
+
+<<<<<<< Updated upstream
+-- component contact-form:
+caption title:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+
+-- ftd.row:
+width: fill-container
+height.fixed.px: 564
+background.solid: $base
+spacing.fixed.px: 8
+padding-horizontal.px: 42
+padding-vertical.px: 82
+z-index: 2
+
+-- ftd.column:
+width.fixed.px: 280
+height.fixed.px: 400
+padding-horizontal.px: 18
+padding-vertical.px: 18
+background.solid: $inherited.colors.success.text
+z-index: 10
+shadow: $shadow
+spacing: space-between
+
+-- ftd.column:
+spacing.fixed.px: 16
+
+-- ftd.text: Contact Info
+role: $inherited.types.heading-small
+color: $inherited.colors.cta-primary.text
+style: bold
+
+-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.address.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-form.address
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+=======
+
+-- component dark-mode-switcher-float:
+
+-- ftd.row:
+padding.px: 10
+background.solid: $inherited.colors.background.base
+z-index: 99999999999999
+
+-- ftd.row:
+if: { ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-light-mode()
+
+-- ftd.image:
+src: $assets.files.static.system-mode-active.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+>>>>>>> Stashed changes
+
+-- end: ftd.row
+
+-- ftd.row:
+<<<<<<< Updated upstream
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.email.svg
+width: auto
+
+-- ftd.text: $contact-form.email
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+link: disable
+=======
+if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-dark-mode()
+
+-- ftd.image:
+src: $assets.files.static.light-mode-active.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+>>>>>>> Stashed changes
+
+-- end: ftd.row
+
+-- ftd.row:
+<<<<<<< Updated upstream
+spacing.fixed.px: 10
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.phone.svg
+width: auto
+
+-- ftd.text: $contact-form.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $contact-form.facebook
+width.fixed.px: 18
+
+-- ftd.image:
+src: $contact-form.twitter
+width.fixed.px: 18
+
+-- ftd.image:
+src: $contact-form.instagram
+width.fixed.px: 18
+
+-- ftd.image:
+src: $contact-form.linkedin
+width.fixed.px: 18
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+padding-left.px: 250
+padding-right.px: 36
+padding-vertical.px: 64
+spacing.fixed.px: 24
+background.solid: $inherited.colors.cta-secondary.text
+z-index: 8
+anchor: parent
+left.px: 115
+top.px: 52
+shadow: $shadow
+
+-- ftd.text: $contact-form.title
+role: $inherited.types.heading-small
+color: $inherited.colors.background.overlay
+
+-- ftd.row:
+spacing.fixed.px: 32
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: First Name
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: Last Name
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 32
+
+-- ftd.text-input:
+placeholder: Email Address
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Mobile Number
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.row
+
+-- ftd.column:
+spacing.fixed.px: 32
+width: fill-container
+
+-- ftd.text: Write your message here...
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+type: text
+role: $inherited.types.copy-small
+border-color: $inherited.colors.cta-tertiary.focused
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- ftd.text: $contact-form.cta-button
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: $inherited.colors.success.text
+background.solid if {contact-form.is-active}: $inherited.colors.success.border
+$on-mouse-enter$: $ftd.set-bool($a = $contact-form.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-form.is-active, v = false)
+color: $inherited.colors.border
+link: $contact-form.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: contact-form
+=======
+if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-system-mode()
+
+-- ftd.image:
+src: $assets.files.static.dark-mode-active-dark.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: dark-mode-switcher-float
+>>>>>>> Stashed changes
