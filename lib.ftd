@@ -1753,7 +1753,6 @@ ftd.image-src img1:
 ftd.image-src img2:
 ftd.image-src img3:
 ftd.image-src img4:
-optional ftd.background-image image:
 
 -- ftd.column:
 width: fill-container
@@ -1763,10 +1762,6 @@ align-self: center
 spacing.fixed.px: 24
 z-index: 4
 
--- ftd.column:
-background.image: $about.image
-width: fill-container
-z-index: 1
 
 -- ftd.column:
 width.fixed.px: 1250
@@ -1858,8 +1853,6 @@ shadow: $shadow-light
 
 -- end: ftd.column
 
--- end: ftd.column
-
 -- end: about
 
 
@@ -1886,9 +1879,8 @@ background.image: $assets.files.assets.bg.svg
 align-content: center
 
 -- ftd.row:
-max-width.fixed.px: $common.max-width
-padding-horizontal.px: 48
-padding-vertical.px: 16
+max-width.fixed.px: 1140
+padding-vertical.px: 48
 width: fill-container
 z-index: 1
 align-content: center
@@ -1901,14 +1893,16 @@ height.fixed.px: 380
 border-radius.px: 20
 
 -- ftd.column:
-width.fixed.percent: 70
-padding-left.px: 62
-spacing.fixed.px: 16
+spacing.fixed.px: 12
 
 -- ftd.text: $about-card.title
 role: $inherited.types.heading-small
 color: $text-strong
 style: bold
+
+-- ftd.column:
+margin-left.px: 16
+spacing.fixed.px: 12
 
 -- ftd.text: $about-card.location1
 role: $inherited.types.label-large
@@ -1931,6 +1925,8 @@ color: $text-strong
 style: semi-bold
 
 $about-card.body
+
+-- end: ftd.column
 
 -- end: ftd.column
 
