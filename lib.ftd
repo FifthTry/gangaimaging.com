@@ -184,7 +184,7 @@ site-name: $doc-page-desktop.site-name
 menu-icon: $assets.files.assets.hamburger.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
-email: gangaimaging@gmailcom
+email: gangaimaging@gmail.com
 phone: +91983345672
 
 -- ftd.column:
@@ -578,7 +578,6 @@ toc: $obj
 
 -- component footer:
 string info: We known for Pathology Labs, Sonography Centres, Diagnostic Centres, Blood Testing Centres, CT Scan Centres, X Ray Centres, Echo, TMT, ECG and USG/CT-Guided Fnac
-string copyright: Copyright ©2022. Fastn Inc.
 optional ftd.image-src site-logo: 
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
@@ -595,7 +594,6 @@ width: fill-container
 
 -- footer-desktop:
 info: $footer.info
-copyright: $footer.copyright
 site-logo: $footer.site-logo
 logo-width: $footer.logo-width
 logo-height: $footer.logo-height
@@ -610,7 +608,6 @@ social-links: $footer.social-links
 
 -- footer-mobile:
 info: $footer.info
-copyright: $footer.copyright
 site-logo: $footer.site-logo
 logo-width: $footer.logo-width
 logo-height: $footer.logo-height
@@ -636,7 +633,6 @@ social-links: $footer.social-links
 
 -- component footer-desktop:
 string info: 
-string copyright:
 optional ftd.image-src site-logo: 
 integer logo-width: 
 integer logo-height: 
@@ -732,20 +728,6 @@ $loop$: $footer-desktop.footer-links as $obj
 
 -- end: ftd.row
 
--- ftd.column:
-width: fill-container
-background.solid: $scrim
-padding-vertical.px: 24
-align-content: center
-align-self: center
-
--- ftd.text: $footer-desktop.copyright
-role: $inherited.types.fine-print
-width: fill-container
-text-align: center
-
--- end: ftd.column
-
 -- end: ftd.column
 
 -- end: footer-desktop
@@ -830,8 +812,7 @@ $loop$: $footer-list-child.children as $obj
 
 
 -- component footer-mobile:
-string info: 
-string copyright: 
+string info:  
 optional ftd.image-src site-logo: 
 integer logo-width: 
 integer logo-height:
@@ -893,10 +874,6 @@ cursor: pointer
 link: $obj.link
 
 -- end: ftd.row
-
--- ftd.text: $footer-mobile.copyright
-role: $inherited.types.fine-print
-width: fill-container
 
 -- end: ftd.column
 
@@ -2195,8 +2172,7 @@ active: $obj.active
 
 
 
-
--- component contact-3:
+-- component contact-form:
 caption title:
 optional string address:
 optional string email:
@@ -2212,7 +2188,7 @@ optional ftd.image-src linkedin:
 -- ftd.row:
 width: fill-container
 height.fixed.px: 564
-background.linear-gradient: $lg
+background.solid: $base
 spacing.fixed.px: 8
 padding-horizontal.px: 42
 padding-vertical.px: 82
@@ -2246,7 +2222,7 @@ src: $assets.files.images.address.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
--- ftd.text: $contact-3.address
+-- ftd.text: $contact-form.address
 role: $inherited.types.fine-print
 color: $inherited.colors.cta-primary.text
 
@@ -2260,7 +2236,7 @@ align-content: center
 src: $assets.files.images.email.svg
 width: auto
 
--- ftd.text: $contact-3.email
+-- ftd.text: $contact-form.email
 role: $inherited.types.fine-print
 color: $inherited.colors.cta-primary.text
 link: disable
@@ -2275,7 +2251,7 @@ align-content: center
 src: $assets.files.images.phone.svg
 width: auto
 
--- ftd.text: $contact-3.phone
+-- ftd.text: $contact-form.phone
 role: $inherited.types.fine-print
 color: $inherited.colors.cta-primary.text
 
@@ -2287,19 +2263,19 @@ color: $inherited.colors.cta-primary.text
 spacing.fixed.px: 12
 
 -- ftd.image:
-src: $contact-3.facebook
+src: $contact-form.facebook
 width.fixed.px: 18
 
 -- ftd.image:
-src: $contact-3.twitter
+src: $contact-form.twitter
 width.fixed.px: 18
 
 -- ftd.image:
-src: $contact-3.instagram
+src: $contact-form.instagram
 width.fixed.px: 18
 
 -- ftd.image:
-src: $contact-3.linkedin
+src: $contact-form.linkedin
 width.fixed.px: 18
 
 -- end: ftd.row
@@ -2320,7 +2296,7 @@ left.px: 115
 top.px: 52
 shadow: $shadow
 
--- ftd.text: $contact-3.title
+-- ftd.text: $contact-form.title
 role: $inherited.types.heading-small
 color: $inherited.colors.background.overlay
 
@@ -2415,52 +2391,20 @@ color: $inherited.colors.border
 
 -- end: ftd.column
 
--- ftd.text: $contact-3.cta-button
+-- ftd.text: $contact-form.cta-button
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 background.solid: $inherited.colors.success.text
-background.solid if {contact-3.is-active}: $inherited.colors.success.border
-$on-mouse-enter$: $ftd.set-bool($a = $contact-3.is-active, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $contact-3.is-active, v = false)
+background.solid if {contact-form.is-active}: $inherited.colors.success.border
+$on-mouse-enter$: $ftd.set-bool($a = $contact-form.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-form.is-active, v = false)
 color: $inherited.colors.border
-link: $contact-3.cta-link
+link: $contact-form.cta-link
 
 -- end: ftd.column
 
 -- end: ftd.row
 
--- end: contact-3
-
-
-
-
-
-
-
-
-
--- ftd.linear-gradient lg:
-direction: bottom-left
-colors: $color-values-2
-
--- ftd.linear-gradient-color list color-values-2:
-
--- ftd.linear-gradient-color: #3E8D61
-
--- ftd.linear-gradient-color: #F3DB5F
-
--- end: color-values-2
-
-
-
-
-
--- ftd.shadow shadow:
-color: #a9a7a5ba
-x-offset.px: 0
-y-offset.px: 0
-blur.px: 24
-inset-body: false
-spread.px: 0
+-- end: contact-form
