@@ -940,14 +940,14 @@ link: $footer-mobile-list.url
 
 -- ftd.image:
 if: { footer-mobile-list.shows-data }
-src: $assets.files.assets.drop-up.svg
+src: $assets.files.assets.down.svg
 width.fixed.px: 16
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
 
 -- ftd.image:
 if: { !footer-mobile-list.shows-data }
-src: $assets.files.assets.drop-down.svg
+src: $assets.files.assets.up-arrow.svg
 width.fixed.px: 16
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
