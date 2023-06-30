@@ -6,15 +6,15 @@
 
 -- ftd.color base:
 light: #ffffff
-dark: #ffffff
+dark: #0A1929
 
 -- ftd.color step-1:
 light: #09c0e8
-dark: #09c0e8
+dark: #132F4C
 
 -- ftd.color step-2:
 light: #1458bb
-dark: #1458bb
+dark: #1F3B58
 
 -- ftd.color overlay:
 light: #1e0c9c
@@ -32,13 +32,29 @@ dark: #51cae9
 light: #003242
 dark: #003242
 
+-- ftd.color secondary-text:
+light: #003242
+dark: #ffffff
+
 -- ftd.color text:
 light: #67747d
 dark: #67747d
 
+-- ftd.color primary-text:
+light: #67747d
+dark: #ffffff99
+
 -- ftd.color scrim:
 light: #d3daeb
 dark: #d3daeb 
+
+-- ftd.color cta-primary-text:
+light: #003242
+dark: #003242
+
+-- ftd.color cta-secondary-text:
+light: #67747d
+dark: #67747d
 
 
 
@@ -165,7 +181,7 @@ common.social-media list social-links:
 
 -- ftd.column:
 width: fill-container
-background.solid: $base
+background.solid: $lib.base
 shadow: $lib.shadow-light
 align-content: center
 z-index: 10
@@ -186,10 +202,6 @@ align-content: center
 spacing.fixed.px: 18
 
 -- ftd.text: $header-desktop.email
-role: $inherited.types.copy-small
-color: $base
-
--- ftd.text: $header-desktop.phone
 role: $inherited.types.copy-small
 color: $base
 
@@ -426,14 +438,14 @@ if: { !header-item.is-active }
 role: $inherited.types.copy-regular
 link if { header-item.link != NULL }: $header-item.link
 white-space: nowrap
-color: $text
+color: $primary-text
 
 -- ftd.text: $header-item.title
 if: { header-item.is-active }
 role: $inherited.types.copy-regular
 white-space: nowrap
 link if { header-item.link != NULL }: $header-item.link
-color: $text-strong
+color: $secondary-text
 style: bold
 
 -- end: ftd.row
@@ -498,8 +510,8 @@ pr.toc-item list toc:
 optional pr.toc-item current-subsection: 
 optional pr.toc-item current-section: 
 optional pr.toc-item current-page:
-integer logo-width: 120
-integer logo-height: 38
+integer logo-width: 80
+integer logo-height: 48
 boolean github-icon: false
 optional string github-url:
 boolean blog: false
@@ -507,11 +519,11 @@ optional string phone:
 optional string email:
 common.social-media list social-links:
 
-
 -- ftd.column: 
 width: fill-container
-background.solid: $inherited.colors.background.step-1
+background.solid: $base
 $on-click-outside$: $ftd.set-bool($a = $header-mobile.show-section, v = false)
+shadow: $lib.shadow-light
 
 -- ftd.row:
 padding-horizontal.px: 16
@@ -533,10 +545,11 @@ $on-click$: $ftd.toggle($a = $header-mobile.sidebar-open)
 
 -- ftd.column:
 if: { header-mobile.site-logo != NULL } 
-height.fixed.px: 38
+height.fixed.px: 44
 
 -- ftd.image:
 src: $header-mobile.site-logo
+width.fixed.px: 54
 height.fixed.px: 44
 
 -- end: ftd.column
@@ -553,6 +566,8 @@ if: { header-mobile.site-logo == NULL }
 site-name: $header-mobile.site-name
 
 -- end: ftd.row
+
+-- lib.dark-mode-switcher-float:
 
 -- end: ftd.row
 
