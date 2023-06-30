@@ -19,6 +19,7 @@ social-links: $common.social-links
 -- end: lib.page.footer
 
 -- lib.hero: 
+image: $assets.files.assets.bg.svg
 
 Digital Radiology
 
