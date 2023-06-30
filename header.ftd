@@ -171,7 +171,7 @@ align-content: center
 z-index: 10
 
 -- ftd.row:
-width.fixed.px: 1250
+width.fixed.px: 1220
 align-self: end
 max-width.fixed.px: $common.max-width
 ;;background.solid: $btn
