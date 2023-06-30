@@ -1073,13 +1073,13 @@ align-content if { hero-desktop.src == NULL }: center
 
 -- ftd.text: $hero-desktop.title
 if: { hero-desktop.title != NULL }
-color: $cta-secondary-text
+color: $secondary-text
 role: $inherited.types.heading-small
 style: bold
 
 -- ftd.text:
 if: { hero-desktop.body != NULL } 
-color: $cta-primary-text
+color: $primary-text
 role: $inherited.types.heading-hero
 
 $hero-desktop.body
@@ -1162,13 +1162,13 @@ padding-vertical.px: 32
 
 -- ftd.text: $hero-mobile.title
 if: { hero-mobile.title != NULL }
-color: $cta-secondary-text
+color: $secondary-text
 role: $inherited.types.heading-small
 style: bold
 
 -- ftd.text:
 if: { hero-mobile.body != NULL } 
-color: $cta-primary-text
+color: $primary-text
 role: $inherited.types.heading-hero
 text-align: center
 
@@ -1241,7 +1241,7 @@ link: $button.cta-link
 
 -- ftd.text: $button.title
 role: $inherited.types.button-small
-color: $secondary-text
+color: $cta-primary
 
 -- ftd.image:
 src: $assets.files.assets.tick.svg
@@ -1311,12 +1311,13 @@ boolean $mouse-in: false
 -- ftd.column:
 width.fixed.px: 240
 height.fixed.px: 180
-background.solid: $step-1
+background.solid: $base
+shadow: $shadow
 align-content: left
 border-radius.px: 12
 padding-horizontal.px: 24
 spacing.fixed.px: 24
-shadow if { facility-details.mouse-in }: $shadow-light
+shadow if { facility-details.mouse-in }: $light
 $on-mouse-enter$: $ftd.set-bool($a = $facility-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $facility-details.mouse-in, v = false)
 
@@ -1544,7 +1545,8 @@ width.fixed.px: 200
 align-content: center
 padding-vertical.px: 20
 spacing.fixed.px: 10
-background.solid: $step-1
+background.solid: $base
+shadow: $shadow
 border-radius.px: 8
 
 -- ftd.image: 
@@ -1713,17 +1715,17 @@ padding-bottom.px: 88
 
 -- ftd.image:
 src: $testimonials-card-details.icon
-shadow: $shadow-light
+shadow: $light
 padding.px: 20
-background.solid: $step-2
+background.solid: $base
 border-radius.percent: 50
 width.fixed.px: 112
 height.fixed.px: 112
 z-index: 1
 
 -- ftd.column:
-background.solid: $step-1
-;;shadow: $shadow-light
+background.solid: $base
+shadow: $shadow
 anchor: parent
 top.px: 64
 padding-top.px: 72
@@ -1747,7 +1749,7 @@ style: bold
 
 -- ftd.text: $testimonials-card-details.user
 role: $inherited.types.label-large
-color: $secondary-text
+color: $step-1
 style: bold
 
 -- ftd.text: $testimonials-card-details.location
@@ -2263,25 +2265,25 @@ align-content: center
 src: $about-desktop.img1
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $shadow-light
+shadow: $light
 
 -- ftd.image:
 src: $about-desktop.img2
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $shadow-light
+shadow: $light
 
 -- ftd.image:
 src: $about-desktop.img3
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $shadow-light
+shadow: $light
 
 -- ftd.image:
 src: $about-desktop.img4
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $shadow-light
+shadow: $light
 
 -- end: ftd.row
 
@@ -2713,6 +2715,14 @@ blur.px: 8
 inset-body: false
 spread.px: 4
 
+-- ftd.shadow light:
+color: #eee
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 8
+inset-body: false
+spread.px: 4
+
 -- ftd.shadow shadow-dark:
 color: #63c5da
 x-offset.px: 0
@@ -2742,11 +2752,11 @@ background.solid: $step-2
 padding.px: 50
 
 -- ftd.text: $newsletter.tag
-color: $secondary-text
+color: $step-1
 role: $inherited.types.heading-small
 
 -- ftd.text: $newsletter.title
-color: $secondary-text
+color: $cta-primary
 role: $inherited.types.heading-medium
 margin-top.px: 28
 max-width.fixed.percent: 85
@@ -2873,7 +2883,7 @@ padding-horizontal.px: 18
 padding-vertical.px: 18
 background.linear-gradient: $lg3
 z-index: 10
-shadow: $shadow-light
+shadow: $light
 spacing: space-between
 
 -- ftd.column:
@@ -3063,7 +3073,7 @@ padding-horizontal.px: 24
 background.linear-gradient: $lg
 $on-mouse-enter$: $ftd.set-bool($a = $contact-form.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-form.is-active, v = false)
-color: $inherited.colors.border
+color: $cta-primary
 link: $contact-form.cta-link
 
 -- end: ftd.column
@@ -3204,10 +3214,6 @@ dark: #ffffff99
 light: #d3daeb
 dark: #d3daeb 
 
--- ftd.color cta-primary-text:
-light: #003242
-dark: #003242
-
--- ftd.color cta-secondary-text:
-light: #67747d
-dark: #67747d
+-- ftd.color cta-primary:
+light: #ffffff
+dark: #ffffff
