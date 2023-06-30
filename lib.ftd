@@ -3217,3 +3217,137 @@ dark: #d3daeb
 -- ftd.color cta-primary:
 light: #ffffff
 dark: #ffffff
+
+
+
+
+
+
+
+
+
+
+-- component features:
+caption title:
+string tag:
+$common.service list services:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 60
+max-width.fixed.px: 1140
+align-content: center
+
+-- ftd.text: $features.tag
+color: $text
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $features.title
+color: $text-strong
+role: $inherited.types.heading-medium
+margin-top.px: 40
+
+-- ftd.row:
+spacing.fixed.px: 20
+width: fill-container
+margin-top.px: 40
+wrap: true
+
+-- feature: $obj.title
+$loop$: $features.services as $obj
+src: $obj.src
+cta-text: $obj.cta-text
+
+$obj.body
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: features
+
+
+
+
+
+
+
+
+
+
+-- component feature:
+caption title:
+body body:
+string cta-text:
+ftd.image-src src:
+boolean $hover: false
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 260
+spacing.fixed.px: 6
+$on-mouse-enter$: $ftd.set-bool($a = $feature.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $feature.hover, v = false)
+
+-- ftd.column:
+width: fill-container
+border-radius.px: 10
+height.fixed.px: 150
+
+-- ftd.image:
+src: $feature.src
+width: fill-container
+height: fill-container
+border-radius.px: 10
+shadow: $light
+
+-- ftd.column:
+if: { feature.hover }
+anchor: parent
+top.px: 0
+left.px: 0
+width: fill-container
+height: fill-container
+opacity: 0.3
+background.solid: $step-1
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+border-radius.px: 10
+padding.px: 18
+shadow: $light
+spacing.fixed.px: 18
+align-content: center
+
+-- ftd.text: $feature.title
+color: $overlay
+role: $inherited.types.label-large
+text-align: center
+
+-- ftd.text: 
+color: $text-strong
+role: $inherited.types.label-small
+text-align: center
+
+$feature.body
+
+-- ftd.text: $feature.cta-text
+color: $step-2
+role: $inherited.types.label-large
+style: bold
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: feature

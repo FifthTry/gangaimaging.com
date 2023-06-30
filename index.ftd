@@ -35,6 +35,10 @@ img: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
 cta-link: /
 
+-- lib.features: We always work with patience
+tag: Our Facility/Services
+services: $common.services
+
 -- lib.facilities: Achievements
 hallmark-list: $common.hallmarks
 
