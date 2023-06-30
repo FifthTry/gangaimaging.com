@@ -240,7 +240,7 @@ ftd.image-src icon:
 -- testimonial: I really think that this is the best lab in North Delhi
 user: Preeti Ahuja
 location: New Delhi
-icon: $assets.files.assets.testimonial.png
+icon: $assets.files.assets.privacy.svg
 
 A design approach is a general philosophy that may or may not include a guide
 for specific methods that work.It is a long established fact that a reader will
@@ -249,7 +249,7 @@ be distracted by the readable content of a page when looking at its layout.
 -- testimonial: I really think that this is the best lab in North Delhi
 user: Preeti Ahuja
 location: New Delhi
-icon: $assets.files.assets.testimonial.png
+icon: $assets.files.assets.privacy.svg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
 in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
@@ -257,3 +257,41 @@ ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
 aliquet faucibus.
 
 -- end: list-of-testimonials
+
+
+
+
+
+
+
+
+
+
+-- record procedure:
+caption title:
+string link:
+boolean active: false
+
+
+-- procedure list procedures:
+
+-- procedure: Digital Category
+link: /
+active: true
+
+-- procedure: Ultrasonography (USG)
+link: /
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: /
+
+-- procedure: Cardiology Department
+link: /
+
+-- procedure: Laboratory Services
+link: /
+
+-- procedure: Other Services
+link: /
+
+-- end: procedures
