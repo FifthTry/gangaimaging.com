@@ -1,0 +1,80 @@
+-- import: fifthtry.github.io/gangaimaging.com/lib as lib
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+
+-- lib.page:
+full-width: true
+sidebar: false
+
+-- lib.page.footer:
+
+-- lib.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url 
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+social-links: $common.social-links
+
+-- end: lib.page.footer
+
+-- lib.hero: 
+image: $assets.files.assets.bg.svg
+
+Digital Radiology
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 50
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 1240
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 50
+wrap: true
+padding-horizontal.px if { ftd.device == "mobile"}: 25
+
+-- ftd.column:
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop"}: 50
+
+-- ftd.image:
+width: fill-container
+src: $assets.files.assets.hero-image.jpeg
+
+-- ftd.text:
+color: $lib.text
+role: $inherited.types.copy-regular
+margin-top.px: 50
+
+OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE.
+DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop"}: 45
+spacing.fixed.px: 50
+
+-- lib.categories: Categories
+procedures: $common.procedures
+
+-- lib.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: /
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: lib.page
