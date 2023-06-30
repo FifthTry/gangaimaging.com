@@ -33,13 +33,31 @@ width: fill-container
 align-content: center
 padding-vertical.px: 50
 
--- ftd.column:
+-- ftd.row:
 width: fill-container
 max-width.fixed.px: 1240
+spacing: space-between
+padding-vertical.px: 82
+align-content: center
+wrap: true
 
+-- lib.contact-form: Contact Us
+address: Hola
+email: gunjan@gmail.com
+phone: +91 9833408356
+cta-button: Contact Us
+cta-link: /
+facebook: $assets.files.assets.facebook.svg
+twitter: $assets.files.assets.twitter.svg
+linkedin: $assets.files.assets.instagram.svg
+instagram: $assets.files.assets.li.svg
 
+-- lib.iframe:
+src: https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu
+width.fixed.px: 280
+height.fixed.px: 420
 
--- end: ftd.column
+-- end: ftd.row
 
 -- end: ftd.column
 

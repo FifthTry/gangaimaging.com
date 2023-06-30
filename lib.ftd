@@ -2860,21 +2860,20 @@ optional ftd.image-src linkedin:
 
 -- ftd.row:
 width: fill-container
-height.fixed.px: 564
 background.solid: $base
 spacing.fixed.px: 8
 padding-horizontal.px: 42
-padding-vertical.px: 82
 z-index: 2
+max-width.fixed.percent: 70
 
 -- ftd.column:
 width.fixed.px: 280
 height.fixed.px: 400
 padding-horizontal.px: 18
 padding-vertical.px: 18
-background.solid: $inherited.colors.success.text
+background.linear-gradient: $lg3
 z-index: 10
-shadow: $shadow
+shadow: $shadow-light
 spacing: space-between
 
 -- ftd.column:
@@ -2882,7 +2881,7 @@ spacing.fixed.px: 16
 
 -- ftd.text: Contact Info
 role: $inherited.types.heading-small
-color: $inherited.colors.cta-primary.text
+color: $step-2
 style: bold
 
 -- ftd.row:
@@ -2891,13 +2890,13 @@ spacing.fixed.px: 8
 align-content: center
 
 -- ftd.image:
-src: $assets.files.images.address.svg
+src: $assets.files.assets.location.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
 -- ftd.text: $contact-form.address
 role: $inherited.types.fine-print
-color: $inherited.colors.cta-primary.text
+color: $step-2
 
 -- end: ftd.row
 
@@ -2906,13 +2905,13 @@ spacing.fixed.px: 8
 align-content: center
 
 -- ftd.image:
-src: $assets.files.images.email.svg
+src: $assets.files.assets.email.svg
 width: auto
 
 -- ftd.text: $contact-form.email
 role: $inherited.types.fine-print
-color: $inherited.colors.cta-primary.text
-link: disable
+color: $step-2
+link: /
 
 -- end: ftd.row
 
@@ -2921,35 +2920,41 @@ spacing.fixed.px: 10
 align-content: center
 
 -- ftd.image:
-src: $assets.files.images.phone.svg
-width: auto
+src: $assets.files.assets.phone.svg
+width.fixed.px: 18 
 
 -- ftd.text: $contact-form.phone
 role: $inherited.types.fine-print
-color: $inherited.colors.cta-primary.text
+color: $step-2
 
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- ftd.row:
-spacing.fixed.px: 12
+spacing.fixed.px: 16
+align-content: center
 
 -- ftd.image:
 src: $contact-form.facebook
 width.fixed.px: 18
+height.fixed.px: 18
 
 -- ftd.image:
 src: $contact-form.twitter
 width.fixed.px: 18
+height.fixed.px: 18
 
 -- ftd.image:
 src: $contact-form.instagram
 width.fixed.px: 18
+height.fixed.px: 18
 
 -- ftd.image:
 src: $contact-form.linkedin
 width.fixed.px: 18
+height.fixed.px: 18
+
 
 -- end: ftd.row
 
@@ -2966,7 +2971,7 @@ background.solid: $inherited.colors.cta-secondary.text
 z-index: 8
 anchor: parent
 left.px: 115
-top.px: 52
+top.px: -30
 shadow: $shadow
 
 -- ftd.text: $contact-form.title
@@ -2975,44 +2980,29 @@ color: $inherited.colors.background.overlay
 
 -- ftd.row:
 spacing.fixed.px: 32
-
--- ftd.column:
-spacing.fixed.px: 8
-
--- ftd.text: First Name
-role: $inherited.types.copy-small
-color: $inherited.colors.background.overlay
+wrap: true
 
 -- ftd.text-input:
+placeholder: First Name
 padding-vertical.px: 4
 padding-horizontal.px: 8
-width.fixed.px: 332
+width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
 color: $inherited.colors.border
 
--- end: ftd.column
-
--- ftd.column:
-spacing.fixed.px: 8
-
--- ftd.text: Last Name
-role: $inherited.types.copy-small
-color: $inherited.colors.background.overlay
-
 -- ftd.text-input:
+placeholder: Last Name
 padding-vertical.px: 4
 padding-horizontal.px: 8
-width.fixed.px: 332
+width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
 color: $inherited.colors.border
-
--- end: ftd.column
 
 -- end: ftd.row
 
@@ -3023,7 +3013,7 @@ spacing.fixed.px: 32
 placeholder: Email Address
 padding-vertical.px: 4
 padding-horizontal.px: 8
-width.fixed.px: 332
+width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
@@ -3034,7 +3024,7 @@ color: $inherited.colors.border
 placeholder: Mobile Number
 padding-vertical.px: 4
 padding-horizontal.px: 8
-width.fixed.px: 332
+width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
@@ -3046,6 +3036,7 @@ color: $inherited.colors.border
 -- ftd.column:
 spacing.fixed.px: 32
 width: fill-container
+margin-top.px: 16
 
 -- ftd.text: Write your message here...
 role: $inherited.types.copy-small
@@ -3069,8 +3060,7 @@ role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
-background.solid: $inherited.colors.success.text
-background.solid if {contact-form.is-active}: $inherited.colors.success.border
+background.linear-gradient: $lg
 $on-mouse-enter$: $ftd.set-bool($a = $contact-form.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-form.is-active, v = false)
 color: $inherited.colors.border
@@ -3081,6 +3071,28 @@ link: $contact-form.cta-link
 -- end: ftd.row
 
 -- end: contact-form
+
+
+
+
+
+
+
+
+
+
+-- component iframe:
+string src:
+optional ftd.resizing width:
+optional ftd.resizing height:
+
+-- ftd.iframe:
+src: $iframe.src
+height: $iframe.height
+width: $iframe.width
+margin-bottom.px: 24
+
+-- end: iframe
 
 
 
