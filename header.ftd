@@ -182,7 +182,7 @@ common.social-media list social-links:
 -- ftd.column:
 width: fill-container
 background.solid: $lib.base
-shadow: $lib.shadow-light
+shadow: $lib.light
 align-content: center
 z-index: 10
 
@@ -523,7 +523,6 @@ common.social-media list social-links:
 width: fill-container
 background.solid: $base
 $on-click-outside$: $ftd.set-bool($a = $header-mobile.show-section, v = false)
-shadow: $lib.shadow-light
 
 -- ftd.row:
 padding-horizontal.px: 16
