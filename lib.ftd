@@ -655,7 +655,7 @@ background.solid: $base
 width: fill-container
 align-content: center
 background.solid: $base
-max-width.fixed.px: 1240
+max-width.fixed.px: 1140
 
 -- ftd.row:
 width: fill-container
@@ -769,7 +769,7 @@ pr.toc-item list children:
 spacing.fixed.px: 6
 
 -- ftd.text: $footer-list.title
-role: $inherited.types.copy-regular
+role: $inherited.types.label-large
 color: $text-strong
 link: $footer-list.url
 width: fill-container
@@ -804,7 +804,7 @@ pr.toc-item list children:
 -- ftd.column:
 
 -- ftd.text: $footer-list-child.title
-role: $inherited.types.copy-regular
+role: $inherited.types.label-small
 color: $text
 link: $footer-list-child.url
 width: fill-container
@@ -1272,11 +1272,10 @@ background.linear-gradient: $lg3
 -- ftd.row:
 spacing: space-between
 background.linear-gradient: $lg3
-padding-left.px: 88
 width: fill-container
 border-top-right-radius.px: 50
 border-bottom-right-radius.px: 50
-max-width.fixed.px: $common.max-width
+max-width.fixed.px: 1140
 
 -- ftd.column:
 spacing.fixed.px: 48
@@ -1537,22 +1536,26 @@ padding-bottom.px: 88
 
 -- ftd.image:
 src: $testimonials-card-details.icon
-width.fixed.px: 124
-height.fixed.px: 124
+shadow: $shadow-light
+padding.px: 20
+background.solid: $base
+border-radius.percent: 50
+width.fixed.px: 112
+height.fixed.px: 112
 z-index: 1
 
 -- ftd.column:
 background.solid: $base
-shadow: $shadow
+shadow: $shadow-light
 anchor: parent
 top.px: 64
 padding-top.px: 72
-padding-bottom.px: 24
-padding-horizontal.px: 24
+padding-bottom.px: 32
+padding-horizontal.px: 32
 spacing.fixed.px: 18
 
 -- ftd.text: $testimonials-card-details.title
-role: $inherited.types.heading-small
+role: $inherited.types.heading-tiny
 color: $text-strong
 
 -- ftd.row:
@@ -1566,12 +1569,12 @@ color: $text
 style: bold
 
 -- ftd.text: $testimonials-card-details.user
-role: $inherited.types.copy-large
+role: $inherited.types.label-large
 color: $step-1
 style: bold
 
 -- ftd.text: $testimonials-card-details.location
-role: $inherited.types.copy-regular
+role: $inherited.types.label-small
 color: $text
 
 -- end: ftd.row
@@ -1596,18 +1599,15 @@ string cta-link:
 
 -- ftd.row:
 width: fill-container
-background.solid: $btn
-;;background.linear-gradient: $lg3
-padding-vertical.px: 52
-padding-horizontal.px: 88
-spacing: space-between
-margin-top.px: 64
 align-content: center
+background.linear-gradient: $lg3
+padding-vertical.px: 52
+margin-top.px: 64
 
 -- ftd.row:
 width: fill-container
-align-content: center
-spacing.fixed.px: 88
+spacing: space-between
+max-width.fixed.px: 1140
 
 -- ftd.text: $contact.title
 role: $inherited.types.heading-medium
@@ -1617,6 +1617,7 @@ color: $base
 cta-link: $contact.cta-link
 
 -- end: ftd.row
+
 -- end: ftd.row
 
 -- end: contact
@@ -1988,7 +1989,7 @@ width.fixed.px: 200
 align-content: center
 padding-vertical.px: 20
 spacing.fixed.px: 10
-shadow: $shadow
+shadow: $shadow-light
 border-radius.px: 8
 
 -- ftd.image: 
