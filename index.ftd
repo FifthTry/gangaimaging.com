@@ -1,40 +1,48 @@
--- ds.page: Welcome to doc-site
+-- import: fifthtry.github.io/gangaimaging.com/lib as lib
+-- import: fifthtry.github.io/gangaimaging.com/common
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- lib.page:
+full-width: true
+sidebar: false
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- lib.page.footer:
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- lib.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url 
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+social-links: $common.social-links
 
--- ds.h3: 🚀 Fast Track 
+-- end: lib.page.footer
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- lib.hero: Give your hearts the love it deserves
+cta-text: Learn More
+cta-link: /
+src: $assets.files.assets.hero-image.jpeg
+image: $assets.files.assets.bg.svg
 
--- ds.h3: 🌟 Whats next?
+Does decoding your health test reports leave you confused?
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
+-- lib.services: Our Services
+facilities: $common.facility-list
 
--- ds.h3: 👀 Want to learn more?
+-- lib.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+img: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: /
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- lib.facilities: Achievements
+hallmark-list: $common.hallmarks
 
+-- lib.testimonials-card: What people say about us
+testimonials: $common.list-of-testimonials
 
--- ds.h3: 🎯 Used by?
+-- lib.contact: Contact us for help or to know more about us
+cta-text: CONTACT US
+cta-link: /
 
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: lib.page
