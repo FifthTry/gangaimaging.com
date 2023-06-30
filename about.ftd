@@ -42,7 +42,6 @@ img1: $assets.files.assets.about-dr-sameer.png
 img2: $assets.files.assets.dr-samee-about-us-image-3.png
 img3: $assets.files.assets.dr-samee-about-us-image-4.png
 img4: $assets.files.assets.dr-samee-image-2.png
-image: $assets.files.assets.bg-img3.svg
 sub-title1: `Vision`
 sub-title2: `Mission`
 sub-title3: `Speciality`

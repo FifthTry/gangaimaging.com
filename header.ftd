@@ -166,7 +166,7 @@ common.social-media list social-links:
 -- ftd.column:
 width: fill-container
 background.solid: $base
-shadow: $shadow
+shadow: $lib.shadow-light
 align-content: center
 z-index: 10
 
