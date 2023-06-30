@@ -252,6 +252,8 @@ $loop$: $header-desktop.sections as $obj
 link: $obj.url
 is-active: $obj.is-active
 
+-- lib.dark-mode-switcher-float:
+
 -- end: ftd.row
 
 -- ftd.row:

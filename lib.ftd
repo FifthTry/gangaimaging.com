@@ -1881,10 +1881,10 @@ ftd.image-src avatar:
 width: fill-container
 z-index: 1
 background.image: $assets.files.assets.bg.svg
+align-content: center
 
 -- ftd.row:
-max-width.fixed.px: $common.max-width
-padding-horizontal.px: 16
+padding-horizontal.px: 48
 padding-vertical.px: 16
 width: fill-container
 z-index: 1
@@ -2181,6 +2181,7 @@ active: $obj.active
 
 
 
+<<<<<<< Updated upstream
 -- component contact-form:
 caption title:
 optional string address:
@@ -2234,10 +2235,30 @@ height.fixed.px: 26
 -- ftd.text: $contact-form.address
 role: $inherited.types.fine-print
 color: $inherited.colors.cta-primary.text
+=======
+
+-- component dark-mode-switcher-float:
+
+-- ftd.row:
+padding.px: 10
+background.solid: $inherited.colors.background.base
+z-index: 99999999999999
+
+-- ftd.row:
+if: { ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-light-mode()
+
+-- ftd.image:
+src: $assets.files.static.system-mode-active.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+>>>>>>> Stashed changes
 
 -- end: ftd.row
 
 -- ftd.row:
+<<<<<<< Updated upstream
 spacing.fixed.px: 8
 align-content: center
 
@@ -2249,10 +2270,21 @@ width: auto
 role: $inherited.types.fine-print
 color: $inherited.colors.cta-primary.text
 link: disable
+=======
+if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-dark-mode()
+
+-- ftd.image:
+src: $assets.files.static.light-mode-active.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+>>>>>>> Stashed changes
 
 -- end: ftd.row
 
 -- ftd.row:
+<<<<<<< Updated upstream
 spacing.fixed.px: 10
 align-content: center
 
@@ -2417,3 +2449,19 @@ link: $contact-form.cta-link
 -- end: ftd.row
 
 -- end: contact-form
+=======
+if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
+$on-click$: $ftd.enable-system-mode()
+
+-- ftd.image:
+src: $assets.files.static.dark-mode-active-dark.png
+height.fixed.px: 19
+align-self: center
+width.fixed.px: 19
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: dark-mode-switcher-float
+>>>>>>> Stashed changes
