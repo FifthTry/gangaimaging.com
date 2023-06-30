@@ -173,12 +173,14 @@ z-index: 10
 -- ftd.row:
 width.fixed.px: 1250
 align-self: end
+max-width.fixed.px: $common.max-width
 ;;background.solid: $btn
 background.linear-gradient: $lib.lg4
 padding-vertical.px: 16
 padding-left.px: 32
 padding-right.px: 14
 spacing: space-between
+align-content: center
 
 -- ftd.row:
 spacing.fixed.px: 18

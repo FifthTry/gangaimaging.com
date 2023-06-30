@@ -1053,7 +1053,7 @@ optional body body:
 optional string cta-text:
 optional string cta-link:
 optional ftd.image-src src:
-optional ftd.background-image image: $assets.files.assets.bg.svg
+optional ftd.background-image image:
 
 -- ftd.column:
 width: fill-container
@@ -1705,6 +1705,7 @@ ftd.image-src image:
 -- ftd.row:
 width: fill-container
 padding-vertical.px: 64
+align-content: center
 
 -- ftd.row:
 width: fill-container
@@ -1763,60 +1764,200 @@ cta-link: $scope.cta-link
 -- component about:
 caption title:
 body body:
+string sub-title1:
+string sub-title2:
+string sub-title3:
+string info1:
+string info2:
+string info3:
 ftd.image-src img1:
 ftd.image-src img2:
 ftd.image-src img3:
 ftd.image-src img4:
+optional ftd.background-image image:
 
 -- ftd.column:
 width: fill-container
-max-width.fixed.px: $common.max-width
-padding-vertical.px: 88
+padding-bottom.px: 64
+align-content: center
+align-self: center
 spacing.fixed.px: 24
-background.linear-gradient: $lg4
+z-index: 4
+
+-- ftd.column:
+background.image: $about.image
+width: fill-container
+z-index: 1
+
+-- ftd.column:
+width.fixed.px: 1250
+spacing.fixed.px: 48
+align-content: center
+align-self: center
+max-width.fixed.px: $common.max-width
+padding-bottom.px: 64
+padding-horizontal.px: 40
 
 -- ftd.text: $about.title
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 color: $text-strong
 text-align: center
 
 -- ftd.text:
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 color: $text-strong
 
 $about.body
+
+-- ftd.column:
+width: fill-container
+align-content: left
+spacing.fixed.px: 32
+
+-- ftd.text: $about.sub-title1
+role: $inherited.types.heading-small
+color: $text-strong
+style: extra-bold
+
+-- ftd.text: $about.info1
+role: $inherited.types.copy-large
+color: $text-strong
+
+-- ftd.text: $about.sub-title2
+role: $inherited.types.heading-small
+color: $text-strong
+style: extra-bold
+
+-- ftd.text: $about.info2
+role: $inherited.types.copy-large
+color: $text-strong
+
+-- ftd.text: $about.sub-title3
+role: $inherited.types.heading-small
+color: $text-strong
+style: extra-bold
+
+-- ftd.text: $about.info3
+role: $inherited.types.copy-large
+color: $text-strong
+
+-- end: ftd.column
 
 -- ftd.row:
 spacing.fixed.px: 32
 width: fill-container
 wrap: true
+align-content: center
 
 -- ftd.image:
 src: $about.img1
-width: auto
+width.fixed.px: 480
+height.fixed.px: 480
 shadow: $shadow-light
 
 -- ftd.image:
-src: $about.img1
-width: auto
+src: $about.img2
+width.fixed.px: 480
+height.fixed.px: 480
 shadow: $shadow-light
 
 -- ftd.image:
-src: $about.img1
-width: auto
+src: $about.img3
+width.fixed.px: 480
+height.fixed.px: 480
 shadow: $shadow-light
 
 -- ftd.image:
-src: $about.img1
-width: auto
+src: $about.img4
+width.fixed.px: 480
+height.fixed.px: 480
 shadow: $shadow-light
 
 -- end: ftd.row
 
 -- end: ftd.column
 
+-- end: ftd.column
+
+-- end: ftd.column
+
 -- end: about
 
+
+
+
+
+
+
+
+
+
+-- component about-card:
+caption title:
+string location1:
+string location2:
+string profile:
+body body:
+ftd.image-src avatar:
+
+-- ftd.row:
+width: fill-container
+z-index: 1
+background.image: $assets.files.assets.bg.svg
+
+-- ftd.row:
+max-width.fixed.px: $common.max-width
+padding-horizontal.px: 16
+padding-vertical.px: 16
+width: fill-container
+z-index: 1
+align-content: center
+spacing.fixed.px: 88
+
+-- ftd.image:
+src: $about-card.avatar
+width.fixed.px: 250
+height.fixed.px: 250
+border-radius.percent: 100
+
+-- ftd.column:
+width.fixed.percent: 70
+padding-left.px: 62
+spacing.fixed.px: 16
+
+-- ftd.text: $about-card.title
+role: $inherited.types.heading-small
+color: $text-strong
+style: bold
+
+-- ftd.text: $about-card.location1
+role: $inherited.types.label-large
+color: $text-strong
+style: semi-bold
+
+-- ftd.text: $about-card.location2
+role: $inherited.types.label-large
+color: $text-strong
+style: semi-bold
+
+-- ftd.text: $about-card.profile
+role: $inherited.types.label-large
+color: $text-strong
+style: semi-bold
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $text-strong
+style: semi-bold
+
+$about-card.body
+
+-- end: ftd.column
+
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: about-card
 
 
 -- ftd.linear-gradient lg:

@@ -22,6 +22,7 @@ social-links: $common.social-links
 cta-text: Learn More
 cta-link: /
 src: $assets.files.assets.hero-image.jpeg
+image: $assets.files.assets.bg.svg
 
 Does decoding your health test reports leave you confused?
 
