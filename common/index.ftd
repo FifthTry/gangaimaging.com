@@ -295,3 +295,67 @@ link: /
 link: /
 
 -- end: procedures
+
+
+
+
+
+
+
+
+
+
+-- record service:
+caption title:
+body body:
+string cta-text:
+ftd.image-src src:
+
+
+
+
+-- service list services:
+
+-- service: DIGITAL RADIOLOGY
+src: $assets.files.assets.digital-radiologo.png
+cta-text: Read More
+
+Our radiography (X-Ray) Department is equipped with latest D.R System 
+by GE Healthcare. Digital high frequency…
+
+-- service: ULTRASONOGRAPHY (USG)
+src: $assets.files.assets.ultrasonography-usg.png
+cta-text: Read More
+
+We provide state of the art professional versatile ultrasound scanning 
+services with real time and complete…
+
+-- service: COMPUTERIZED TOMOGRAPHY (CT) SCAN
+src: $assets.files.assets.computerised-themeography.png
+cta-text: Read More
+
+We perform CT Scans on most advanced multi slice scanner (CT Brivo385 
+by GE Healthcare). It is a 32 slice…
+
+-- service: CARDIOLOGY DEPARTMENT
+src: $assets.files.assets.cardiology.png
+cta-text: Read More
+
+Headed by Dr. Anunai Srivastava (MD, DM Cardiology), Our cardiology 
+department is equipped with laser…
+
+-- service: LABORATORY SERVICES
+cta-text: Read More
+src: $assets.files.assets.laboratory-services.png
+
+Our laboratory services are supervised by Senior Experienced Doctor (Dr. 
+SK Gupta MD. Pathology)…
+
+-- service: OTHER SERVICES
+src: $assets.files.assets.other-services.png
+cta-text: Read More
+
+We have CT Scan, Ultrasound, Color Doppler, Digital X-Ray, Special X-Ray, 
+Echo, TMT, ECG, USG/CT-Guided Fnac
+
+-- end: services
