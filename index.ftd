@@ -1,7 +1,6 @@
 -- import: fifthtry.github.io/gangaimaging.com/lib as lib
 -- import: fifthtry.github.io/gangaimaging.com/common
 
-
 -- lib.page:
 full-width: true
 sidebar: false

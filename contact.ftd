@@ -28,18 +28,7 @@ image: $assets.files.assets.bg.svg
 
 Need Information? Contact Us
 
--- ftd.column:
-width: fill-container
-align-content: center
-padding-vertical.px: 50
-
--- ftd.row:
-width: fill-container
-max-width.fixed.px: 1240
-spacing: space-between
-padding-vertical.px: 82
-align-content: center
-wrap: true
+-- lib.row-container:
 
 -- lib.contact-form: Contact Us
 address: Adarsh Nagar, New Delhi
@@ -57,8 +46,6 @@ src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/pl
 width.fixed.px: 280
 height.fixed.px: 420
 
--- end: ftd.row
-
--- end: ftd.column
+-- end: lib.row-container
 
 -- end: lib.page
