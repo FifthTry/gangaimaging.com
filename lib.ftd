@@ -3415,3 +3415,35 @@ children: $services-container.child
 -- end: ftd.column
 
 -- end: services-container
+
+
+
+
+
+
+
+
+
+
+-- component row-container:
+children wrapper:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 50
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: 1240
+spacing: space-between
+padding-vertical.px: 82
+align-content: center
+wrap: true
+children: $row-container.wrapper
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: row-container

@@ -187,14 +187,13 @@ align-content: center
 z-index: 10
 
 -- ftd.row:
-width.fixed.px: 1220
+width: fill-container
 align-self: end
 max-width.fixed.px: $common.max-width
-;;background.solid: $btn
 background.linear-gradient: $lib.lg4
 padding-vertical.px: 16
 padding-left.px: 32
-padding-right.px: 14
+padding-right.px: 40
 spacing: space-between
 align-content: center
 
@@ -209,7 +208,7 @@ color: $base
 
 -- ftd.row:
 spacing.fixed.px: 24
-padding-right.px: 146
+width.fixed.px: 360
 
 -- ftd.image:
 $loop$: $header-desktop.social-links as $obj
@@ -225,7 +224,6 @@ link: $obj.link
 width: fill-container
 spacing: space-between
 padding-vertical.px: 18
-padding-horizontal.px: 40
 max-width.fixed.px: $common.max-width
 
 -- ftd.row:
