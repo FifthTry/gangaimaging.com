@@ -14,6 +14,8 @@
 
 
 
+
+
 -- component page:
 optional caption title:
 optional string document-title:
@@ -760,7 +762,7 @@ $loop$: $footer-list-child.children as $obj
 
 
 -- component footer-mobile:
-string info:
+string info:  
 optional ftd.image-src site-logo: 
 integer logo-width: 
 integer logo-height:
@@ -1025,7 +1027,7 @@ width: fill-container
 z-index: 1
 
 -- ftd.row:
-width: fill-container
+width.fixed.px: 1250
 spacing: space-between
 align-content: center
 align-self: center
@@ -3508,7 +3510,7 @@ role: $inherited.types.heading-medium
 text-align: center
 
 -- ftd.row:
-spacing.fixed.px: 20
+spacing.fixed.px: 30
 width: fill-container
 wrap: true
 align-content: center
@@ -3559,11 +3561,22 @@ background.solid if { feature.hover }: $step-1
 
 -- ftd.image:
 src: $feature.src
-opacity if { feature.hover }: 0.3
 width: fill-container
 height: fill-container
 border-radius.px: 10
 shadow: $light
+
+-- ftd.column:
+if: { feature.hover }
+anchor: parent
+top.px: 0
+left.px: 0
+width: fill-container
+height: fill-container
+opacity: 0.3
+background.solid: $step-1
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -3599,6 +3612,68 @@ style: bold
 -- end: ftd.column
 
 -- end: feature
+
+
+
+
+
+
+
+
+
+
+-- component services-container:
+ftd.image-src src:
+body body:
+children child:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 50
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 1240
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 50
+wrap: true
+padding-horizontal.px if { ftd.device == "mobile"}: 25
+
+-- ftd.column:
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop"}: 50
+
+-- ftd.image:
+width: fill-container
+src: $services-container.src
+
+-- ftd.text:
+color: $text
+role: $inherited.types.copy-regular
+margin-top.px: 50
+
+$services-container.body
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop"}: 45
+spacing.fixed.px: 50
+children: $services-container.child
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: services-container
 
 
 
