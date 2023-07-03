@@ -550,7 +550,6 @@ integer logo-height: $common.logo-height
 optional string site-url: $common.site-url
 optional string site-name: 
 pr.toc-item list footer-links: $common.footer-toc.sections
-common.social-media list social-links: $common.social-links
 pr.toc-item list footer-list: $common.sitemap.sections
 
 -- ftd.column:
@@ -566,7 +565,6 @@ logo-height: $footer.logo-height
 site-url: $footer.site-url
 site-name: $footer.site-name
 footer-links: $footer.footer-links
-social-links: $footer.social-links
 
 -- end: ftd.desktop
 
@@ -580,7 +578,6 @@ logo-height: $footer.logo-height
 site-url: $footer.site-url
 site-name: $footer.site-name
 footer-links: $footer.footer-links
-social-links: $footer.social-links
 
 -- end: ftd.mobile
 
@@ -604,14 +601,14 @@ integer logo-width:
 integer logo-height: 
 optional string site-url: 
 optional string site-name:
-pr.toc-item list footer-links: 
-common.social-media list social-links: 
+pr.toc-item list footer-links:
 
 -- ftd.column:
 width: fill-container
 align-content: center
 align-self: center
 background.solid: $base
+padding-bottom.px: 44
 
 -- ftd.row:
 width: fill-container
@@ -623,7 +620,6 @@ max-width.fixed.px: 1140
 width: fill-container
 align-self: center
 padding-top.px: 42
-padding-bottom.px: 62
 color: $primary-text
 spacing.fixed.px: 62
 max-width.fixed.px: $common.max-width
@@ -661,18 +657,6 @@ width.fixed.px: 350
 -- ftd.text: $footer-desktop.info
 role: $inherited.types.copy-small
 width: fill-container
-
--- ftd.row:
-margin-vertical.px: 40
-spacing.fixed.px: 24
-
--- ftd.image:
-$loop$: $footer-desktop.social-links as $obj
-src: $obj.src
-cursor: pointer
-link: $obj.link
-
--- end: ftd.row
 
 -- end: ftd.column
 
@@ -784,8 +768,7 @@ integer logo-width:
 integer logo-height:
 optional string site-url: 
 optional string site-name: 
-pr.toc-item list footer-links: 
-common.social-media list social-links:
+pr.toc-item list footer-links:
 
 -- ftd.column:
 width: fill-container
@@ -829,18 +812,6 @@ site-name: $footer-mobile.site-name
 role: $inherited.types.copy-small
 color: $primary-text
 width: fill-container
-
--- ftd.row:
-margin-vertical.px: 40
-spacing.fixed.px: 24
-
--- ftd.image:
-$loop$: $footer-mobile.social-links as $obj
-src: $obj.src
-cursor: pointer
-link: $obj.link
-
--- end: ftd.row
 
 -- end: ftd.column
 
@@ -1062,7 +1033,6 @@ align-content: center
 align-self: center
 max-width.fixed.px: $common.max-width
 padding-vertical.px: 64
-padding-horizontal.px: 40
 
 -- ftd.column:
 spacing.fixed.px: 28
@@ -1165,6 +1135,7 @@ if: { hero-mobile.title != NULL }
 color: $secondary-text
 role: $inherited.types.heading-small
 style: bold
+text-align: center
 
 -- ftd.text:
 if: { hero-mobile.body != NULL } 
@@ -1187,8 +1158,8 @@ align-self: center
 
 -- ftd.column:
 anchor: parent
-top.px: 0
-right.px: -45
+top.px: -15
+right.px: -20
 background.linear-gradient: $lg
 border-radius.percent: 100
 height.fixed.px: 350
@@ -1244,7 +1215,7 @@ role: $inherited.types.button-small
 color: $cta-primary
 
 -- ftd.image:
-src: $assets.files.assets.tick.svg
+src: $assets.files.assets.arrow-to-right.svg
 
 -- end: ftd.row
 
@@ -1475,8 +1446,8 @@ cta-link: $our-work-mobile.cta-link
 -- ftd.image:
 src: $our-work-mobile.img
 border-radius.px: 30
-width.fixed.px: 380
-height.fixed.px: 380
+width.fixed.px: 320
+height.fixed.px: 320
 shadow: $shadow-dark
 align-self: center
 
@@ -1664,11 +1635,14 @@ $common.testimonial list testimonials:
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 32
+padding-top.px: 64
+padding-horizontal.px: 24
 align-content: center
 
 -- ftd.text: $testimonials-card-mobile.title
 if: { testimonials-card-mobile.title != NULL }
-role: $inherited.types.heading-small
+role: $inherited.types.heading-medium
+style: bold
 color: $inherited.colors.text-strong
 
 -- ftd.row:
@@ -2074,7 +2048,7 @@ max-width.fixed.px: $common.max-width
 
 -- ftd.image:
 src: $scope-mobile.image
-width.fixed.px: 620
+width: fill-container
 
 -- ftd.column:
 width: fill-container
@@ -2208,7 +2182,6 @@ align-content: center
 align-self: center
 max-width.fixed.px: $common.max-width
 padding-bottom.px: 64
-padding-horizontal.px: 40
 
 -- ftd.text: $about-desktop.title
 role: $inherited.types.heading-large
@@ -2868,6 +2841,65 @@ optional ftd.image-src twitter:
 optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
 
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- contact-form-desktop: $contact-form.title
+address: $contact-form.address
+email: $contact-form.email
+phone: $contact-form.phone
+cta-button: $contact-form.cta-button
+cta-link: $contact-form.cta-link
+facebook: $contact-form.facebook
+twitter: $contact-form.twitter
+instagram: $contact-form.instagram
+linkedin: $contact-form.linkedin
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- contact-form-mobile: $contact-form.title
+address: $contact-form.address
+email: $contact-form.email
+phone: $contact-form.phone
+cta-button: $contact-form.cta-button
+cta-link: $contact-form.cta-link
+facebook: $contact-form.facebook
+twitter: $contact-form.twitter
+instagram: $contact-form.instagram
+linkedin: $contact-form.linkedin
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: contact-form
+
+
+
+
+
+
+
+
+
+
+-- component contact-form-desktop:
+caption title:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+
 -- ftd.row:
 width: fill-container
 background.solid: $base
@@ -2904,7 +2936,7 @@ src: $assets.files.assets.location.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
--- ftd.text: $contact-form.address
+-- ftd.text: $contact-form-desktop.address
 role: $inherited.types.fine-print
 color: $step-2
 
@@ -2918,7 +2950,7 @@ align-content: center
 src: $assets.files.assets.email.svg
 width: auto
 
--- ftd.text: $contact-form.email
+-- ftd.text: $contact-form-desktop.email
 role: $inherited.types.fine-print
 color: $step-2
 link: /
@@ -2933,7 +2965,7 @@ align-content: center
 src: $assets.files.assets.phone.svg
 width.fixed.px: 18 
 
--- ftd.text: $contact-form.phone
+-- ftd.text: $contact-form-desktop.phone
 role: $inherited.types.fine-print
 color: $step-2
 
@@ -2946,22 +2978,22 @@ spacing.fixed.px: 16
 align-content: center
 
 -- ftd.image:
-src: $contact-form.facebook
+src: $contact-form-desktop.facebook
 width.fixed.px: 18
 height.fixed.px: 18
 
 -- ftd.image:
-src: $contact-form.twitter
+src: $contact-form-desktop.twitter
 width.fixed.px: 18
 height.fixed.px: 18
 
 -- ftd.image:
-src: $contact-form.instagram
+src: $contact-form-desktop.instagram
 width.fixed.px: 18
 height.fixed.px: 18
 
 -- ftd.image:
-src: $contact-form.linkedin
+src: $contact-form-desktop.linkedin
 width.fixed.px: 18
 height.fixed.px: 18
 
@@ -2984,7 +3016,7 @@ left.px: 115
 top.px: -30
 shadow: $shadow
 
--- ftd.text: $contact-form.title
+-- ftd.text: $contact-form-desktop.title
 role: $inherited.types.heading-small
 color: $inherited.colors.background.overlay
 
@@ -3065,23 +3097,247 @@ color: $inherited.colors.border
 
 -- end: ftd.column
 
--- ftd.text: $contact-form.cta-button
+-- ftd.text: $contact-form-desktop.cta-button
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 background.linear-gradient: $lg
-$on-mouse-enter$: $ftd.set-bool($a = $contact-form.is-active, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $contact-form.is-active, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $contact-form-desktop.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-form-desktop.is-active, v = false)
 color: $cta-primary
-link: $contact-form.cta-link
+link: $contact-form-desktop.cta-link
 
 -- end: ftd.column
 
 -- end: ftd.row
 
--- end: contact-form
+-- end: contact-form-desktop
 
+
+
+
+
+
+
+
+
+
+-- component contact-form-mobile:
+caption title:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+
+-- ftd.column:
+width: fill-container
+background.solid: $base
+spacing.fixed.px: 8
+padding-horizontal.px: 24
+z-index: 2
+
+-- ftd.column:
+width.fixed.px: 280
+height.fixed.px: 280
+padding-horizontal.px: 18
+padding-top.px: 18
+padding-bottom.px: 32
+background.linear-gradient: $lg3
+z-index: 10
+shadow: $light
+spacing: space-between
+align-self: center
+
+-- ftd.column:
+spacing.fixed.px: 16
+
+-- ftd.text: Contact Info
+role: $inherited.types.heading-small
+color: $step-2
+style: bold
+
+-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.location.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-form-mobile.address
+role: $inherited.types.fine-print
+color: $step-2
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.email.svg
+width: auto
+
+-- ftd.text: $contact-form-mobile.email
+role: $inherited.types.fine-print
+color: $step-2
+link: /
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.phone.svg
+width.fixed.px: 18 
+
+-- ftd.text: $contact-form-mobile.phone
+role: $inherited.types.fine-print
+color: $step-2
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $contact-form-mobile.facebook
+width.fixed.px: 18
+height.fixed.px: 18
+
+-- ftd.image:
+src: $contact-form-mobile.twitter
+width.fixed.px: 18
+height.fixed.px: 18
+
+-- ftd.image:
+src: $contact-form-mobile.instagram
+width.fixed.px: 18
+height.fixed.px: 18
+
+-- ftd.image:
+src: $contact-form-mobile.linkedin
+width.fixed.px: 18
+height.fixed.px: 18
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 24
+padding-right.px: 36
+padding-vertical.px: 64
+spacing.fixed.px: 24
+background.solid: $inherited.colors.cta-secondary.text
+z-index: 8
+shadow: $shadow
+margin-top.px: -24
+align-content: center
+
+-- ftd.text: $contact-form-mobile.title
+role: $inherited.types.heading-small
+color: $inherited.colors.background.overlay
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 32
+align-content: center
+
+-- ftd.text-input:
+placeholder: First Name
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Last Name
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Email Address
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Mobile Number
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Write your message here...
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+margin-bottom.px: 4
+margin-top.px: 24
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+type: text
+role: $inherited.types.copy-small
+border-color: $inherited.colors.cta-tertiary.focused
+color: $inherited.colors.border
+
+-- ftd.text: $contact-form-mobile.cta-button
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.linear-gradient: $lg
+$on-mouse-enter$: $ftd.set-bool($a = $contact-form-mobile.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-form-mobile.is-active, v = false)
+color: $cta-primary
+link: $contact-form-mobile.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact-form-mobile
 
 
 
@@ -3239,8 +3495,10 @@ align-content: center
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 60
+padding-horizontal.px if { ftd.device == "mobile" }: 24
 max-width.fixed.px: 1140
 align-content: center
+spacing.fixed.px: 40
 
 -- ftd.text: $features.tag
 color: $text
@@ -3249,13 +3507,11 @@ role: $inherited.types.heading-tiny
 -- ftd.text: $features.title
 color: $text-strong
 role: $inherited.types.heading-medium
-margin-top.px: 40
 text-align: center
 
 -- ftd.row:
 spacing.fixed.px: 30
 width: fill-container
-margin-top.px: 40
 wrap: true
 align-content: center
 
@@ -3292,7 +3548,7 @@ boolean $hover: false
 
 -- ftd.column:
 width: fill-container
-max-width.fixed.px: 260
+max-width.fixed.px: 320
 spacing.fixed.px: 6
 $on-mouse-enter$: $ftd.set-bool($a = $feature.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $feature.hover, v = false)
@@ -3300,7 +3556,8 @@ $on-mouse-leave$: $ftd.set-bool($a = $feature.hover, v = false)
 -- ftd.column:
 width: fill-container
 border-radius.px: 10
-height.fixed.px: 150
+height.fixed.px: 220
+background.solid if { feature.hover }: $step-1
 
 -- ftd.image:
 src: $feature.src
@@ -3326,6 +3583,8 @@ background.solid: $step-1
 -- ftd.column:
 width: fill-container
 border-radius.px: 10
+min-height.fixed.px: 200
+min-height.fixed.px if { ftd.device == "mobile" }: 150
 padding.px: 18
 shadow: $light
 spacing.fixed.px: 18
@@ -3437,7 +3696,9 @@ padding-vertical.px: 50
 width: fill-container
 max-width.fixed.px: 1240
 spacing: space-between
-padding-vertical.px: 82
+spacing.fixed.px if { ftd.device == "mobile" }: 32
+padding-vertical.px if { ftd.device != "mobile" }: 82
+padding-horizontal.px if { ftd.device != "mobile" }: 82
 align-content: center
 wrap: true
 children: $row-container.wrapper
