@@ -18,7 +18,7 @@ footer-links: $common.footer-links
 
 -- lib.hero: Give your hearts the love it deserves
 cta-text: Learn More
-cta-link: /about/
+cta-link: about/
 src: $assets.files.assets.hero-image.jpeg
 image: $assets.files.assets.bg.svg
 
@@ -31,7 +31,7 @@ facilities: $common.facility-list
 tag: Diagnostic & Imaging
 img: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
-cta-link: /services/
+cta-link: services/
 
 -- lib.features: We always work with patience
 tag: Our Facility/Services
@@ -45,6 +45,6 @@ testimonials: $common.list-of-testimonials
 
 -- lib.contact: Contact us for help or to know more about us
 cta-text: CONTACT US
-cta-link: /contact/
+cta-link: contact/
 
 -- end: lib.page

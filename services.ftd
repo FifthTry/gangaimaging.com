@@ -33,7 +33,7 @@ procedures: $common.procedures
 -- lib.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe
 cta-text: SUBSCRIBE
-cta-link: /
+cta-link: services/
 
 -- end: lib.services-container
 
