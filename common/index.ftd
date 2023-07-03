@@ -41,7 +41,7 @@ src: $assets.files.assets.discord.svg
 
 -- social-media:
 link: /
-src: $assets.files.assets.telegram.svg
+src: $assets.files.assets.linkedin.svg
 
 -- social-media: 
 link: /
