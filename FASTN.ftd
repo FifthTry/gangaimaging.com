@@ -3,14 +3,15 @@
 -- fastn.package: fifthtry.github.io/gangaimaging.com
 favicon: /-/fifthtry.github.io/gangaimaging.com/favicon.ico
 
--- fastn.dependency: fastn-community.github.io/doc-site as doc-site
--- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/lato-typography as typo
 -- fastn.dependency: fastn-community.github.io/blue-heal-cs as cs
 
 -- fastn.auto-import: fifthtry.github.io/gangaimaging.com/assets
 -- fastn.auto-import: cs
 -- fastn.auto-import: typo
+-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib
+-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/common
+-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds
 
 -- fastn.sitemap:
 
