@@ -3250,12 +3250,14 @@ role: $inherited.types.heading-tiny
 color: $text-strong
 role: $inherited.types.heading-medium
 margin-top.px: 40
+text-align: center
 
 -- ftd.row:
-spacing.fixed.px: 20
+spacing.fixed.px: 30
 width: fill-container
 margin-top.px: 40
 wrap: true
+align-content: center
 
 -- feature: $obj.title
 $loop$: $features.services as $obj
@@ -3351,3 +3353,65 @@ style: bold
 -- end: ftd.column
 
 -- end: feature
+
+
+
+
+
+
+
+
+
+
+-- component services-container:
+ftd.image-src src:
+body body:
+children child:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 50
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 1240
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 50
+wrap: true
+padding-horizontal.px if { ftd.device == "mobile"}: 25
+
+-- ftd.column:
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop"}: 50
+
+-- ftd.image:
+width: fill-container
+src: $services-container.src
+
+-- ftd.text:
+color: $text
+role: $inherited.types.copy-regular
+margin-top.px: 50
+
+$services-container.body
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+width.fixed.percent if { ftd.device == "desktop"}: 45
+spacing.fixed.px: 50
+children: $services-container.child
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: services-container
