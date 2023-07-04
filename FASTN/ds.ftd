@@ -47,7 +47,6 @@ powered-by-link: https://fastn.com/
 -- doc-site.page: $page.title
 site-logo: $page.site-logo
 body: $page.body
-colors: $page.colors
 sidebar: $page.sidebar
 full-width: $page.full-width
 types: $page.types
