@@ -1460,11 +1460,11 @@ src: $our-work-mobile.img
 border-radius.px: 30
 width.fixed.px: 320
 height.fixed.px: 320
-shadow: $shadow-dark
 align-self: center
 z-index: 5
 
 -- end: ftd.column
+
 -- end: ftd.column
 
 -- end: our-work-mobile
@@ -2078,7 +2078,7 @@ style: extra-bold
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $inherited.colors.text
+color: $inherited.colors.cta-primary.text
 
 $scope-mobile.body
 
@@ -2361,25 +2361,21 @@ align-content: center
 src: $about-mobile.img1
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow
 
 -- ftd.image:
 src: $about-mobile.img2
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow
 
 -- ftd.image:
 src: $about-mobile.img3
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow
 
 -- ftd.image:
 src: $about-mobile.img4
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow
 
 -- end: ftd.row
 
@@ -3004,7 +3000,6 @@ height.fixed.px: 18
 src: $contact-form-desktop.linkedin
 width.fixed.px: 18
 height.fixed.px: 18
-
 
 -- end: ftd.row
 
@@ -3642,24 +3637,18 @@ children: $services-container.child
 -- component row-container:
 children wrapper:
 
--- ftd.column:
-width: fill-container
-align-content: center
-padding-vertical.px: 50
-
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: 1240
+max-width.fixed.px: $common.max-width
 spacing: space-between
 spacing.fixed.px if { ftd.device == "mobile" }: 32
 padding-vertical.px if { ftd.device != "mobile" }: 82
 padding-horizontal.px if { ftd.device != "mobile" }: 82
 align-content: center
+align-self: center
 wrap: true
 children: $row-container.wrapper
 
 -- end: ftd.row
-
--- end: ftd.column
 
 -- end: row-container
