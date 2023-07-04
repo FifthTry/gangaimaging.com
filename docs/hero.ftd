@@ -1,0 +1,86 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/pretty-ws
+color-scheme: fastn-community.github.io/winter-cs
+typography: fifthtry.github.io/doc-site-typography
+current-package: fastn-community.github.io/pretty-ws
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.hero: Give your hearts the love it deserves
+cta-text: Learn More
+cta-link: about/
+src: $assets.files.assets.back-img2.svg
+image: $assets.files.assets.bg.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `hero`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/pretty-ws
+package-name: fastn-community.github.io/pretty-ws
+info: `-- hero` can be used as homepage banner on your fastn projects.
+
+`hero` is a new conversation experience via using FTD lang. To use
+`hero` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.hero:  Give your hearts the love it deserves
+cta-text: Learn More
+cta-link: about/
+src: $assets.files.assets.back-img2.svg
+image: $assets.files.assets.bg.svg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `title`
+
+This is a default property of the `hero` component. It’s used to add a
+title to `hero` component.
+
+-- site-doc.component-property: `cta-text`
+
+This is a default property of the `hero` component. It’s used to add a
+click to action button title.
+
+-- site-doc.component-property: `cta-link`
+
+This is a default property of the `hero` component. It’s used to add a
+link to click to action button.
+
+-- site-doc.component-property: `src`
+
+This is a default property of the `hero` component. Using `src`
+attribute image can be added.
+
+-- site-doc.component-property: `image`
+
+This is a default property of the `hero` component. Using `image`
+attribute image can be added.
+
+-- end: site-doc.doc-home
