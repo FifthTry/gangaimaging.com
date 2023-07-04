@@ -49,7 +49,7 @@ og-image: $page.document-image
 
 -- ftd.column:
 width: fill-container
-background.solid: $base
+background.solid: $inherited.colors.background.base
 
 -- ftd.desktop:
 
@@ -249,7 +249,7 @@ ftd.ui list hero:
 
 -- ftd.column:
 width: fill-container
-background.solid: $base
+background.solid: $inherited.colors.background.base
 
 -- h.header:
 sections: $doc-page-mobile.sections
@@ -604,20 +604,20 @@ pr.toc-item list footer-links:
 width: fill-container
 align-content: center
 align-self: center
-background.solid: $base
+background.solid: $inherited.colors.background.base
 padding-bottom.px: 44
 
 -- ftd.row:
 width: fill-container
 align-content: center
-background.solid: $base
+background.solid: $inherited.colors.background.base
 max-width.fixed.px: 1140
 
 -- ftd.row:
 width: fill-container
 align-self: center
 padding-top.px: 42
-color: $primary-text
+color: $inherited.colors.cta-secondary.text
 spacing.fixed.px: 62
 max-width.fixed.px: $common.max-width
 
@@ -698,7 +698,7 @@ pr.toc-item list children:
 spacing.fixed.px: 6
 
 -- ftd.text: $footer-list.title
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 role: $inherited.types.label-large
 link: $footer-list.url
 width: fill-container
@@ -731,10 +731,11 @@ boolean is-active:
 pr.toc-item list children:
 
 -- ftd.column:
+width: fill-container
 
 -- ftd.text: $footer-list-child.title
 role: $inherited.types.label-small
-color: $primary-text
+color: $inherited.colors.text
 link: $footer-list-child.url
 width: fill-container
 
@@ -807,7 +808,7 @@ site-name: $footer-mobile.site-name
 
 -- ftd.text: $footer-mobile.info
 role: $inherited.types.copy-small
-color: $primary-text
+color: $inherited.colors.cta-secondary.text
 width: fill-container
 
 -- end: ftd.column
@@ -847,7 +848,7 @@ width: fill-container
 -- ftd.text: $footer-mobile-list.title
 role: $inherited.types.heading-tiny
 width: fill-container
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-secondary.text
 link: $footer-mobile-list.url
 
 -- ftd.image:
@@ -870,6 +871,8 @@ align-self: center
 if: { footer-mobile-list.shows-data }
 spacing.fixed.px: 14
 margin-top.px: 24
+width: fill-container
+wrap: true
 
 -- footer-list-toc: 
 title: $obj.title
@@ -904,24 +907,20 @@ pr.toc-item list children:
 boolean show-subsections: false
 
 -- ftd.column:
+width: fill-container
+spacing.fixed.px: 12
 
 -- ftd.text: $footer-list-toc.title
 if: { footer-list-toc.show-subsections }
-color: $inherited.colors.text
+color: $inherited.colors.cta-primary.text
 role: $inherited.types.copy-regular
 link: $footer-list-toc.url
-width: fill-container
-white-space: nowrap
-margin-bottom.px: 12
 
 -- ftd.text: $footer-list-toc.title
 if: { !footer-list-toc.show-subsections }
-color: $inherited.colors.text
+color: $inherited.colors.cta-primary.text
 role: $inherited.types.copy-regular
 link: $footer-list-toc.url
-width: fill-container
-white-space: nowrap
-margin-bottom.px: 12
 
 -- end: ftd.column
 
@@ -1040,13 +1039,13 @@ align-content if { hero-desktop.src == NULL }: center
 
 -- ftd.text: $hero-desktop.title
 if: { hero-desktop.title != NULL }
-color: $secondary-text
+color: $inherited.colors.text
 role: $inherited.types.heading-small
 style: bold
 
 -- ftd.text:
 if: { hero-desktop.body != NULL } 
-color: $primary-text
+color: $inherited.colors.text-strong
 role: $inherited.types.heading-hero
 
 $hero-desktop.body
@@ -1061,17 +1060,14 @@ cta-link: $hero-desktop.cta-link
 if: { hero-desktop.src != NULL }
 padding-vertical.px: 24
 
--- ftd.column:
+-- ftd.image:
+src: $assets.files.assets.back-img1.svg
 anchor: parent
-top.px: 12
-right.px: -45
-background.linear-gradient: $lg
-border-radius.percent: 100
+top.px: 45
+right.px: -21
 height.fixed.px: 350
 width.fixed.px: 350
 z-index: 1
-
--- end: ftd.column
 
 -- ftd.image:
 if: { hero-desktop.src != NULL }
@@ -1129,14 +1125,14 @@ padding-vertical.px: 32
 
 -- ftd.text: $hero-mobile.title
 if: { hero-mobile.title != NULL }
-color: $secondary-text
+color: $inherited.colors.text
 role: $inherited.types.heading-small
 style: bold
 text-align: center
 
 -- ftd.text:
 if: { hero-mobile.body != NULL } 
-color: $primary-text
+color: $inherited.colors.text-strong
 role: $inherited.types.heading-hero
 text-align: center
 
@@ -1209,7 +1205,7 @@ link: $button.cta-link
 
 -- ftd.text: $button.title
 role: $inherited.types.button-small
-color: $cta-primary
+color: $inherited.colors.cta-tertiary.text
 
 -- ftd.image:
 src: $assets.files.assets.arrow-to-right.svg
@@ -1233,17 +1229,15 @@ $common.facility list facilities:
 
 -- ftd.column:
 width: fill-container
-background.solid: $base
+background.solid: $inherited.colors.background.base
 padding-vertical.px: 24
 margin-vertical.px: 64
 align-content: center
 
 -- ftd.text: $services.title
 role: $inherited.types.heading-medium
-color: $secondary-text
+color: $inherited.colors.cta-primary.text
 style: bold
-border-bottom-width.px: 1
-border-bottom-color: $primary-text
 
 -- ftd.row:
 padding-top.px: 74
@@ -1279,13 +1273,13 @@ boolean $mouse-in: false
 -- ftd.column:
 width.fixed.px: 240
 height.fixed.px: 180
-background.solid: $base
+background.solid: $inherited.colors.background.step-1
 shadow: $shadow
 align-content: left
 border-radius.px: 12
 padding-horizontal.px: 24
 spacing.fixed.px: 24
-shadow if { facility-details.mouse-in }: $light
+shadow if { facility-details.mouse-in }: $shadow
 $on-mouse-enter$: $ftd.set-bool($a = $facility-details.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $facility-details.mouse-in, v = false)
 
@@ -1296,7 +1290,7 @@ height.fixed.px: 64
 
 -- ftd.text: $facility-details.title
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 width.fixed.px: 150
 
 -- end: ftd.column
@@ -1381,23 +1375,36 @@ padding-vertical.px: 32
 
 -- ftd.text: $our-work-desktop.tag
 role: $inherited.types.label-large
-color: $base
+color: $inherited.colors.info.text
 
 -- ftd.text: $our-work-desktop.title
 role: $inherited.types.heading-large
-color: $base
+color: $inherited.colors.cta-tertiary.text
 
 -- button: $our-work-desktop.cta-text
 cta-link: $our-work-desktop.cta-link
 
 -- end: ftd.column
 
+-- ftd.column:
+
+-- ftd.image:
+src: $assets.files.assets.rect.svg
+anchor: parent
+top.px: 12
+right.px: -12
+height.fixed.px: 380
+width.fixed.px: 380
+z-index: 1
+
 -- ftd.image:
 src: $our-work-desktop.img
 border-radius.px: 30
 width.fixed.px: 380
 height.fixed.px: 380
-shadow: $shadow-dark
+z-index: 5
+
+-- end: ftd.column
 
 -- end: ftd.row
 
@@ -1431,11 +1438,11 @@ spacing.fixed.px: 32
 
 -- ftd.text: $our-work-mobile.tag
 role: $inherited.types.heading-small
-color: $base
+color: $inherited.colors.info.text
 
 -- ftd.text: $our-work-mobile.title
 role: $inherited.types.heading-large
-color: $base
+color: $inherited.colors.cta-tertiary.text
 
 -- button: $our-work-mobile.cta-text
 cta-link: $our-work-mobile.cta-link
@@ -1470,10 +1477,8 @@ padding-vertical.px: 64
 
 -- ftd.text: $facilities.title
 role: $inherited.types.heading-medium
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: bold
-border-bottom-width.px: 1
-border-bottom-color: $text
 
 -- ftd.row:
 width: fill-container
@@ -1513,7 +1518,7 @@ width.fixed.px: 200
 align-content: center
 padding-vertical.px: 20
 spacing.fixed.px: 10
-background.solid: $base
+background.solid: $inherited.colors.background.step-1
 shadow: $shadow
 border-radius.px: 8
 
@@ -1523,12 +1528,12 @@ width.fixed.px: 25
 height.fixed.px: 25
 
 -- ftd.text: $facility.count
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 role: $inherited.types.heading-medium
 style: bold
 
 -- ftd.text: $facility.title
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 role: $inherited.types.label-small
 style: semi-bold
 
@@ -1588,12 +1593,12 @@ padding-vertical.px: 48
 width: fill-container
 spacing.fixed.px: 32
 align-content: center
-background.solid: $base
+background.solid: $inherited.colors.background.base
 
 -- ftd.text: $testimonials-card-desktop.title
 if: { testimonials-card-desktop.title != NULL }
 role: $inherited.types.heading-medium
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 
 -- ftd.row:
 spacing.fixed.px: 32
@@ -1640,7 +1645,7 @@ align-content: center
 if: { testimonials-card-mobile.title != NULL }
 role: $inherited.types.heading-medium
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-secondary.text
 
 -- ftd.row:
 spacing.fixed.px: 68
@@ -1686,16 +1691,16 @@ padding-bottom.px: 88
 
 -- ftd.image:
 src: $testimonials-card-details.icon
-shadow: $light
+shadow: $shadow
 padding.px: 20
-background.solid: $base
+background.solid: $inherited.colors.background.step-2
 border-radius.percent: 50
 width.fixed.px: 112
 height.fixed.px: 112
 z-index: 1
 
 -- ftd.column:
-background.solid: $base
+background.solid: $inherited.colors.background.step-1
 shadow: $shadow
 anchor: parent
 top.px: 64
@@ -1706,7 +1711,7 @@ spacing.fixed.px: 18
 
 -- ftd.text: $testimonials-card-details.title
 role: $inherited.types.heading-tiny
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 
 -- ftd.row:
 spacing.fixed.px: 12
@@ -1715,17 +1720,17 @@ align-self: center
 
 -- ftd.text: --
 role: $inherited.types.copy-regular
-color: $primary-text
+color: $inherited.colors.cta-secondary.text
 style: bold
 
 -- ftd.text: $testimonials-card-details.user
 role: $inherited.types.label-large
-color: $step-1
+color: $inherited.colors.success.text
 style: bold
 
 -- ftd.text: $testimonials-card-details.location
 role: $inherited.types.label-small
-color: $primary-text
+color: $inherited.colors.cta-secondary.text
 
 -- end: ftd.row
 
@@ -1798,7 +1803,7 @@ max-width.fixed.px: 1140
 
 -- ftd.text: $contact-desktop.title
 role: $inherited.types.heading-medium
-color: $base
+color: $inherited.colors.cta-secondary.text
 
 -- button: $contact-desktop.cta-text
 cta-link: $contact-desktop.cta-link
@@ -1835,7 +1840,7 @@ max-width.fixed.px: 1140
 
 -- ftd.text: $contact-mobile.title
 role: $inherited.types.heading-medium
-color: $base
+color: $inherited.colors.cta-secondary.text
 text-align: center
 
 -- button: $contact-mobile.cta-text
@@ -1974,11 +1979,9 @@ ftd.image-src image:
 -- ftd.row:
 width: fill-container
 padding-vertical.px: 64
-align-content: center
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
 spacing.fixed.px: 100
 align-content: center
 align-self: center
@@ -1990,22 +1993,23 @@ padding-vertical.px: 32
 
 -- ftd.column:
 width: fill-container
+max-width.fixed.px: $common.max-width	
 spacing.fixed.px: 24
 padding-left.px: 88
 
 -- ftd.text: $scope-desktop.tag
 role: $inherited.types.copy-regular
-color: $cta-text
+color: $inherited.colors.success.text
 style: semi-bold
 
 -- ftd.text: $scope-desktop.title
 role: $inherited.types.heading-large
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $text
+color: $inherited.colors.text
 
 $scope-desktop.body
 
@@ -2054,17 +2058,17 @@ spacing.fixed.px: 24
 
 -- ftd.text: $scope-mobile.tag
 role: $inherited.types.copy-large
-color: $cta-text
+color: $inherited.colors.cta-secondary.text
 style: semi-bold
 
 -- ftd.text: $scope-mobile.title
 role: $inherited.types.heading-large
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.text
 
 $scope-mobile.body
 
@@ -2182,12 +2186,12 @@ padding-bottom.px: 64
 
 -- ftd.text: $about-desktop.title
 role: $inherited.types.heading-large
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 text-align: center
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.text
 
 $about-desktop.body
 
@@ -2198,30 +2202,30 @@ spacing.fixed.px: 32
 
 -- ftd.text: $about-desktop.sub-title1
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-desktop.info1
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.text
 
 -- ftd.text: $about-desktop.sub-title2
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-desktop.info2
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.text
 
 -- ftd.text: $about-desktop.sub-title3
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-desktop.info3
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.text
 
 -- end: ftd.column
 
@@ -2235,25 +2239,21 @@ align-content: center
 src: $about-desktop.img1
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $light
 
 -- ftd.image:
 src: $about-desktop.img2
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $light
 
 -- ftd.image:
 src: $about-desktop.img3
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $light
 
 -- ftd.image:
 src: $about-desktop.img4
 width.fixed.px: 480
 height.fixed.px: 480
-shadow: $light
 
 -- end: ftd.row
 
@@ -2298,12 +2298,12 @@ padding-horizontal.px: 24
 
 -- ftd.text: $about-mobile.title
 role: $inherited.types.heading-large
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 text-align: center
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.cta-primary.text
 
 $about-mobile.body
 
@@ -2314,30 +2314,30 @@ spacing.fixed.px: 32
 
 -- ftd.text: $about-mobile.sub-title1
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-mobile.info1
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.cta-primary.text
 
 -- ftd.text: $about-mobile.sub-title2
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-mobile.info2
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.cta-primary.text
 
 -- ftd.text: $about-mobile.sub-title3
 role: $inherited.types.heading-small
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-mobile.info3
 role: $inherited.types.copy-large
-color: $primary-text
+color: $inherited.colors.cta-primary.text
 
 -- end: ftd.column
 
@@ -2351,25 +2351,25 @@ align-content: center
 src: $about-mobile.img1
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow-light
+shadow: $shadow
 
 -- ftd.image:
 src: $about-mobile.img2
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow-light
+shadow: $shadow
 
 -- ftd.image:
 src: $about-mobile.img3
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow-light
+shadow: $shadow
 
 -- ftd.image:
 src: $about-mobile.img4
 width.fixed.px: 250
 height.fixed.px: 250
-shadow: $shadow-light
+shadow: $shadow
 
 -- end: ftd.row
 
@@ -2464,7 +2464,7 @@ spacing.fixed.px: 12
 
 -- ftd.text: $about-card-desktop.title
 role: $inherited.types.heading-small
-color: $text-strong
+color: $inherited.colors.text-strong
 style: bold
 
 -- ftd.column:
@@ -2473,22 +2473,22 @@ spacing.fixed.px: 12
 
 -- ftd.text: $about-card-desktop.location1
 role: $inherited.types.label-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-desktop.location2
 role: $inherited.types.label-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-desktop.profile
 role: $inherited.types.label-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text:
 role: $inherited.types.label-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 $about-card-desktop.body
@@ -2532,7 +2532,7 @@ spacing.fixed.px: 32
 
 -- ftd.text: $about-card-mobile.title
 role: $inherited.types.heading-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: bold
 
 -- ftd.image:
@@ -2547,22 +2547,22 @@ spacing.fixed.px: 12
 
 -- ftd.text: $about-card-mobile.location1
 role: $inherited.types.copy-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-mobile.location2
 role: $inherited.types.copy-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-mobile.profile
 role: $inherited.types.copy-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $text-strong
+color: $inherited.colors.text-strong
 style: semi-bold
 
 $about-card-mobile.body
@@ -2673,9 +2673,9 @@ colors: $color-values4
 color: #ddd
 x-offset.px: 0
 y-offset.px: 0
-blur.px: 25
+blur.px: 4
 inset-body: false
-spread.px: 5
+spread.px: 2
 
 -- ftd.shadow shadow-light:
 color: #132F4C
@@ -2718,15 +2718,15 @@ string cta-link:
 
 -- ftd.column:
 width: fill-container
-background.solid: $step-2
+background.solid: $inherited.colors.background.overlay
 padding.px: 50
 
 -- ftd.text: $newsletter.tag
-color: $step-1
+color: $inherited.colors.success.text
 role: $inherited.types.heading-small
 
 -- ftd.text: $newsletter.title
-color: $cta-primary
+color: $inherited.colors.cta-tertiary.text
 role: $inherited.types.heading-medium
 margin-top.px: 28
 max-width.fixed.percent: 85
@@ -2735,16 +2735,16 @@ max-width.fixed.percent: 85
 width.fixed.px: 180
 height.fixed.px: 6
 margin-top.px: 28
-background.solid: $step-1
+background.solid: $inherited.colors.success.text
 
 -- ftd.text-input:
 padding-vertical.px: 6
 padding-horizontal.px: 12
 width: fill-container
 border-width.px: 0
-border-color: $text
+border-color: $inherited.colors.text
 border-radius.px: 2
-color: $text
+color: $inherited.colors.text
 height.fixed.px: 40
 margin-vertical.px: 36
 
@@ -2776,8 +2776,8 @@ padding-vertical.px: 12
 
 -- ftd.text: $category.title
 link: $category.link
-color: $text
-color if { category.active }: $cta-text
+color: $inherited.colors.text
+color if { category.active }: $inherited.colors.info.text
 role: $inherited.types.heading-tiny
 
 -- end: ftd.column
@@ -2800,10 +2800,10 @@ $common.procedure list procedures:
 -- ftd.column:
 padding.px: 50
 width: fill-container
-background.solid: #eee
+background.solid: $inherited.colors.shadow
 
 -- ftd.text: $categories.title
-color: $text-strong
+color: $inherited.colors.text-strong
 role: $inherited.types.heading-tiny
 margin-bottom.px: 10
 style: bold
@@ -2899,9 +2899,10 @@ optional ftd.image-src linkedin:
 
 -- ftd.row:
 width: fill-container
-background.solid: $base
+background.solid: $inherited.colors.background.base
 spacing.fixed.px: 8
 padding-horizontal.px: 42
+padding-bottom.px: 64
 z-index: 2
 max-width.fixed.percent: 70
 
@@ -2912,7 +2913,7 @@ padding-horizontal.px: 18
 padding-vertical.px: 18
 background.linear-gradient: $lg3
 z-index: 10
-shadow: $light
+;;shadow: $shadow
 spacing: space-between
 
 -- ftd.column:
@@ -2920,7 +2921,7 @@ spacing.fixed.px: 16
 
 -- ftd.text: Contact Info
 role: $inherited.types.heading-small
-color: $step-2
+color: $inherited.colors.cta-secondary.text
 style: bold
 
 -- ftd.row:
@@ -2935,7 +2936,7 @@ height.fixed.px: 26
 
 -- ftd.text: $contact-form-desktop.address
 role: $inherited.types.fine-print
-color: $step-2
+color: $inherited.colors.cta-secondary.text
 
 -- end: ftd.row
 
@@ -2949,7 +2950,7 @@ width: auto
 
 -- ftd.text: $contact-form-desktop.email
 role: $inherited.types.fine-print
-color: $step-2
+color: $inherited.colors.cta-secondary.text
 link: /
 
 -- end: ftd.row
@@ -2964,7 +2965,7 @@ width.fixed.px: 18
 
 -- ftd.text: $contact-form-desktop.phone
 role: $inherited.types.fine-print
-color: $step-2
+color: $inherited.colors.cta-secondary.text
 
 -- end: ftd.row
 
@@ -3006,7 +3007,7 @@ padding-left.px: 250
 padding-right.px: 36
 padding-vertical.px: 64
 spacing.fixed.px: 24
-background.solid: $inherited.colors.cta-secondary.text
+background.solid: $inherited.colors.background.base
 z-index: 8
 anchor: parent
 left.px: 115
@@ -3015,7 +3016,7 @@ shadow: $shadow
 
 -- ftd.text: $contact-form-desktop.title
 role: $inherited.types.heading-small
-color: $inherited.colors.background.overlay
+color: $inherited.colors.cta-secondary.text
 
 -- ftd.row:
 spacing.fixed.px: 32
@@ -3079,7 +3080,7 @@ margin-top.px: 16
 
 -- ftd.text: Write your message here...
 role: $inherited.types.copy-small
-color: $inherited.colors.background.overlay
+color: $inherited.colors.cta-secondary.text
 margin-bottom.px: 4
 
 -- ftd.text-input:
@@ -3102,7 +3103,7 @@ padding-horizontal.px: 24
 background.linear-gradient: $lg
 $on-mouse-enter$: $ftd.set-bool($a = $contact-form-desktop.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-form-desktop.is-active, v = false)
-color: $cta-primary
+color: $inherited.colors.cta-tertiary.text
 link: $contact-form-desktop.cta-link
 
 -- end: ftd.column
@@ -3135,7 +3136,7 @@ optional ftd.image-src linkedin:
 
 -- ftd.column:
 width: fill-container
-background.solid: $base
+background.solid: $inherited.colors.background.base
 spacing.fixed.px: 8
 padding-horizontal.px: 24
 z-index: 2
@@ -3148,7 +3149,7 @@ padding-top.px: 18
 padding-bottom.px: 32
 background.linear-gradient: $lg3
 z-index: 10
-shadow: $light
+;;shadow: $shadow
 spacing: space-between
 align-self: center
 
@@ -3157,7 +3158,7 @@ spacing.fixed.px: 16
 
 -- ftd.text: Contact Info
 role: $inherited.types.heading-small
-color: $step-2
+color: $inherited.colors.background.step-2
 style: bold
 
 -- ftd.row:
@@ -3172,7 +3173,7 @@ height.fixed.px: 26
 
 -- ftd.text: $contact-form-mobile.address
 role: $inherited.types.fine-print
-color: $step-2
+color: $inherited.colors.background.step-2
 
 -- end: ftd.row
 
@@ -3186,7 +3187,7 @@ width: auto
 
 -- ftd.text: $contact-form-mobile.email
 role: $inherited.types.fine-print
-color: $step-2
+color: $inherited.colors.background.step-2
 link: /
 
 -- end: ftd.row
@@ -3201,7 +3202,7 @@ width.fixed.px: 18
 
 -- ftd.text: $contact-form-mobile.phone
 role: $inherited.types.fine-print
-color: $step-2
+color: $inherited.colors.background.step-2
 
 -- end: ftd.row
 
@@ -3325,7 +3326,7 @@ padding-horizontal.px: 24
 background.linear-gradient: $lg
 $on-mouse-enter$: $ftd.set-bool($a = $contact-form-mobile.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-form-mobile.is-active, v = false)
-color: $cta-primary
+color: $inherited.colors.cta-primary.text
 link: $contact-form-mobile.cta-link
 
 -- end: ftd.column
@@ -3423,63 +3424,6 @@ width.fixed.px: 19
 
 
 
--- ftd.color base:
-light: #ffffff
-dark: #0A1929
-
--- ftd.color step-1:
-light: #09c0e8
-dark: #132F4C
-
--- ftd.color step-2:
-light: #1458bb
-dark: #1F3B58
-
--- ftd.color overlay:
-light: #1e0c9c
-dark: #1e0c9c
-
--- ftd.color cta-text:
-light: #1e0c9c
-dark: #4BA7CE
-
--- ftd.color btn:
-light: #51cae9
-dark: #51cae9
-
--- ftd.color text-strong:
-light: #003242
-dark: #003242
-
--- ftd.color secondary-text:
-light: #003242
-dark: #ffffff
-
--- ftd.color text:
-light: #67747d
-dark: #67747d
-
--- ftd.color primary-text:
-light: #67747d
-dark: #ffffff99
-
--- ftd.color scrim:
-light: #d3daeb
-dark: #d3daeb 
-
--- ftd.color cta-primary:
-light: #ffffff
-dark: #ffffff
-
-
-
-
-
-
-
-
-
-
 -- component features:
 caption title:
 string tag:
@@ -3498,11 +3442,11 @@ align-content: center
 spacing.fixed.px: 40
 
 -- ftd.text: $features.tag
-color: $text
+color: $inherited.colors.cta-primary.text
 role: $inherited.types.heading-tiny
 
 -- ftd.text: $features.title
-color: $text-strong
+color: $inherited.colors.cta-secondary.text
 role: $inherited.types.heading-medium
 text-align: center
 
@@ -3556,14 +3500,13 @@ $on-mouse-leave$: $ftd.set-bool($a = $feature.hover, v = false)
 width: fill-container
 border-radius.px: 10
 height.fixed.px: 220
-background.solid if { feature.hover }: $step-1
 
 -- ftd.image:
 src: $feature.src
 width: fill-container
 height: fill-container
 border-radius.px: 10
-shadow: $light
+;;shadow: $shadow
 
 -- ftd.column:
 if: { feature.hover }
@@ -3574,7 +3517,7 @@ width: fill-container
 height: fill-container
 border-radius.px: 10
 opacity: 0.3
-background.solid: $step-1
+background.solid: $inherited.colors.background.step-1
 
 -- end: ftd.column
 
@@ -3582,28 +3525,29 @@ background.solid: $step-1
 
 -- ftd.column:
 width: fill-container
+background.solid: $inherited.colors.background.step-1
 border-radius.px: 10
 min-height.fixed.px: 200
 min-height.fixed.px if { ftd.device == "mobile" }: 150
 padding.px: 18
-shadow: $light
+shadow: $shadow
 spacing.fixed.px: 18
 align-content: center
 
 -- ftd.text: $feature.title
-color: $overlay
+color: $inherited.colors.custom.one
 role: $inherited.types.label-large
 text-align: center
 
 -- ftd.text: 
-color: $text-strong
+color: $inherited.colors.cta-secondary.text
 role: $inherited.types.label-small
 text-align: center
 
 $feature.body
 
 -- ftd.text: $feature.cta-text
-color: $step-2
+color: $inherited.colors.custom.one
 role: $inherited.types.label-large
 style: bold
 link: $feature.cta-link
@@ -3652,7 +3596,7 @@ width: fill-container
 src: $services-container.src
 
 -- ftd.text:
-color: $text
+color: $inherited.colors.text
 role: $inherited.types.copy-regular
 margin-top.px: 50
 
