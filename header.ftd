@@ -610,13 +610,13 @@ width: fill-container
 
 -- ftd.image: 
 if: { !header-mobile.show-section }
-src: $assets.files.assets.down-arrow-dark.svg
+src: $assets.files.assets.down.svg
 height: hug-content
 width.fixed.px: 12
 
 -- ftd.image: 
 if: { header-mobile.show-section }
-src: $assets.files.assets.up-arrow-dark.svg
+src: $assets.files.assets.drop-up.svg
 width.fixed.px: 12
 
 -- end: ftd.row
