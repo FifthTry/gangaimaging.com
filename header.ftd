@@ -193,7 +193,7 @@ max-width.fixed.px: $common.max-width
 background.linear-gradient: $lib.lg4
 padding-vertical.px: 16
 padding-left.px: 32
-padding-right.px: 40
+padding-right.px: 80
 spacing: space-between
 align-content: center
 
@@ -215,6 +215,9 @@ $loop$: $header-desktop.social-links as $obj
 src: $obj.src
 cursor: pointer
 link: $obj.link
+height.fixed.px: 36
+width.fixed.px: 36
+padding.px: 8
 
 -- end: ftd.row
 

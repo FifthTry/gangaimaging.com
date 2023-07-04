@@ -671,6 +671,8 @@ $loop$: $footer-desktop.social-links as $obj
 src: $obj.src
 cursor: pointer
 link: $obj.link
+width.fixed.px: 22
+height.fixed.px: 22
 
 -- end: ftd.row
 
@@ -1244,7 +1246,8 @@ role: $inherited.types.button-small
 color: $cta-primary
 
 -- ftd.image:
-src: $assets.files.assets.tick.svg
+src: $assets.files.assets.arrow-to-right.png
+width.fixed.px: 16
 
 -- end: ftd.row
 
@@ -1267,15 +1270,13 @@ $common.facility list facilities:
 width: fill-container
 background.solid: $base
 padding-vertical.px: 24
-margin-vertical.px: 64
+margin-vertical.px: 80
 align-content: center
 
 -- ftd.text: $services.title
 role: $inherited.types.heading-medium
 color: $secondary-text
 style: bold
-border-bottom-width.px: 1
-border-bottom-color: $primary-text
 
 -- ftd.row:
 padding-top.px: 74
@@ -1504,8 +1505,6 @@ padding-vertical.px: 64
 role: $inherited.types.heading-medium
 color: $secondary-text
 style: bold
-border-bottom-width.px: 1
-border-bottom-color: $text
 
 -- ftd.row:
 width: fill-container
@@ -3238,7 +3237,7 @@ align-content: center
 
 -- ftd.column:
 width: fill-container
-padding-vertical.px: 60
+padding-vertical.px: 80
 max-width.fixed.px: 1140
 align-content: center
 
@@ -3249,13 +3248,13 @@ role: $inherited.types.heading-tiny
 -- ftd.text: $features.title
 color: $text-strong
 role: $inherited.types.heading-medium
-margin-top.px: 40
+margin-top.px: 32
 text-align: center
 
 -- ftd.row:
 spacing.fixed.px: 30
 width: fill-container
-margin-top.px: 40
+margin-top.px: 60
 wrap: true
 align-content: center
 
