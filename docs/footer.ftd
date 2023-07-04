@@ -1,0 +1,96 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `footer`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fastn-community.github.io/gangaimaging.com
+info: `-- footer` can be used as homepage banner on your fastn projects.
+
+`footer` is a new conversation experience via using FTD lang. To use
+`footer` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `footer-links`
+type: Sections list (`required`)
+
+It's used to show `fastn.sitemap` toc-items.
+
+-- site-doc.component-property: `copyright`
+type: String (`optional`)
+
+It's used show copyright information of your project.
+
+-- site-doc.component-property: `site-url`
+type: String (`optional`)
+
+It's used to add your site homepage url, which will be added to `site-name` and
+`site-logo`. Onclick of `site-name` or `site-logo` page will be redirected to
+`site-url` link you add as a value to this property.
+
+-- site-doc.component-property: `site-logo`
+type: ftd.image-src (`optional`)
+
+It's used to show your [fastn](https://fastn.com/) web site logo.
+
+-- site-doc.component-property: `logo-height`
+type: Integer (`optional`, default: 32 pixels)
+
+If you want to change height of the logo image you using in `site-logo`
+property. Just add a integer value to this property the height of the logo will
+change in that value pixels.
+
+-- site-doc.component-property: `logo-width`
+type: Integer (`optional`, default: 32 pixels)
+
+If you want to change width of the logo image you using in `site-logo`
+property. Just add a integer value to this property the width of the logo will
+change in that value pixels.
+
+-- end: site-doc.doc-home
