@@ -853,7 +853,7 @@ link: $footer-mobile-list.url
 
 -- ftd.image:
 if: { footer-mobile-list.shows-data }
-src: $assets.files.assets.up-arrow.svg
+src: $assets.files.assets.drop-up.svg
 width.fixed.px: 16
 $on-click$: $ftd.toggle($a= $footer-mobile-list.shows-data)
 align-self: center
@@ -1149,17 +1149,14 @@ if: { hero-mobile.src != NULL }
 margin-vertical.px: 24
 align-self: center
 
--- ftd.column:
+-- ftd.image:
+src: $assets.files.assets.back-img1.svg
 anchor: parent
-top.px: -15
-right.px: -20
-background.linear-gradient: $lg
-border-radius.percent: 100
+top.px: 12
+right.px: -18
 height.fixed.px: 350
 width.fixed.px: 350
 z-index: 1
-
--- end: ftd.column
 
 -- ftd.image:
 if: { hero-mobile.src != NULL }
@@ -1447,6 +1444,17 @@ color: $inherited.colors.cta-tertiary.text
 -- button: $our-work-mobile.cta-text
 cta-link: $our-work-mobile.cta-link
 
+-- ftd.column:
+
+-- ftd.image:
+src: $assets.files.assets.rect.svg
+anchor: parent
+top.px: 16
+right.px: -16
+height.fixed.px: 320
+width.fixed.px: 320
+z-index: 1
+
 -- ftd.image:
 src: $our-work-mobile.img
 border-radius.px: 30
@@ -1454,7 +1462,9 @@ width.fixed.px: 320
 height.fixed.px: 320
 shadow: $shadow-dark
 align-self: center
+z-index: 5
 
+-- end: ftd.column
 -- end: ftd.column
 
 -- end: our-work-mobile
