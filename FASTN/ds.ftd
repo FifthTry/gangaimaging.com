@@ -1,6 +1,6 @@
 -- import: fastn
--- import: fifthtry.github.io/gangaimaging.com/
-export: hero,button,services,our-work,facilities,testimonials-card,contact,image,iframe,scope,about,about-card,newaletter,category,categories,contact-form,dark-mode-switcher-float,features,services-container,row-container
+-- import: fifthtry.github.io/gangaimaging.com
+export: hero, button, services, our-work, facilities, testimonials-card, contact, image, iframe, scope, about, about-card, newsletter, category, categories, contact-form, dark-mode-switcher-float, features, services-container, row-container
 
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
 
