@@ -1,22 +1,8 @@
--- import: fifthtry.github.io/gangaimaging.com/lib as lib
--- import: fifthtry.github.io/gangaimaging.com/common
-
--- lib.page:
+-- ds.page:
 full-width: true
 sidebar: false
 
--- lib.page.footer:
-
--- lib.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url 
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-
--- end: lib.page.footer
-
--- lib.hero: Give your hearts the love it deserves
+-- ds.hero: Give your hearts the love it deserves
 cta-text: Learn More
 cta-link: about/
 src: $assets.files.assets.back-img2.svg
@@ -24,27 +10,27 @@ image: $assets.files.assets.bg.svg
 
 Does decoding your health test reports leave you confused?
 
--- lib.services: Our Services
+-- ds.services: Our Services
 facilities: $common.facility-list
 
--- lib.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
 img: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
 cta-link: services/
 
--- lib.features: We always work with patience
+-- ds.features: We always work with patience
 tag: Our Facility/Services
 services: $common.services
 
--- lib.facilities: Achievements
+-- ds.facilities: Achievements
 hallmark-list: $common.hallmarks
 
--- lib.testimonials-card: What people say about us
+-- ds.testimonials-card: What people say about us
 testimonials: $common.list-of-testimonials
 
--- lib.contact: Contact us for help or to know more about us
+-- ds.contact: Contact us for help or to know more about us
 cta-text: CONTACT US
 cta-link: contact/
 
--- end: lib.page
+-- end: ds.page
