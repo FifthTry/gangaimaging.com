@@ -2,17 +2,6 @@
 full-width: true
 sidebar: false
 
--- ds.page.footer:
-
--- ds.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url 
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-
--- end: ds.page.footer
-
 -- ds.hero: Give your hearts the love it deserves
 cta-text: Learn More
 cta-link: about/

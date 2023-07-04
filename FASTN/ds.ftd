@@ -1,8 +1,6 @@
 -- import: fastn
--- import: fifthtry.github.io/gangaimaging.com
+-- import: fifthtry.github.io/gangaimaging.com/lib
 export: hero, button, services, our-work, facilities, testimonials-card, contact, image, iframe, scope, about, about-card, newsletter, category, categories, contact-form, dark-mode-switcher-float, features, services-container, row-container
-
--- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
 
 -- component page:
 children wrapper:
@@ -13,7 +11,7 @@ optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name:
-optional ftd.image-src site-logo: $site-logo
+optional ftd.image-src site-logo: $common.site-logo
 boolean github-icon: false
 optional string github-url: 
 boolean full-width: false
@@ -25,14 +23,12 @@ boolean show-banner: true
 ftd.ui list right-sidebar:
 string site-url: $common.site-url
 
--- ds.page: $page.title
+-- lib.page: $page.title
 site-logo: $page.site-logo
 body: $page.body
-colors: $page.colors
 sidebar: $page.sidebar
 full-width: $page.full-width
 types: $page.types
-show-banner: $page.show-banner
 show-footer: $page.show-footer
 site-name: $page.site-name
 logo-height: $page.logo-height
@@ -45,16 +41,16 @@ document-description: $page.document-description
 document-image: $page.document-image
 site-url: $page.site-url
 
--- ds.page.footer:
+-- lib.page.footer:
 
--- ds.footer:
+-- lib.footer:
 site-logo: $common.site-logo
 site-url: $common.site-url
 logo-width: $common.logo-width
 logo-height: $common.logo-height
 footer-links: $common.footer-links
 
--- end: ds.page.footer
+-- end: lib.page.footer
 
 -- ftd.column:
 spacing.fixed.em: 0.8
@@ -63,6 +59,6 @@ children: $page.wrapper
 
 -- end: ftd.column
 
--- end: ds.page
+-- end: lib.page
 
 -- end: page
