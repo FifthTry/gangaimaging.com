@@ -867,8 +867,8 @@ role: $inherited.types.fine-print
 link: $header-item-mobile-view.link
 white-space: nowrap
 padding-left.px: 10
-color: $inherited.colors.text-strong
-color if { header-item-mobile-view.is-active }: $inherited.colors.cta-primary.base
+color: $inherited.colors.cta-secondary.text-disabled
+color if { header-item-mobile-view.is-active }: $inherited.colors.cta-secondary.text
 margin-left.px: 10
 
 -- end: ftd.column
@@ -904,8 +904,8 @@ width: fill-container
 -- ftd.text: $header-item-mobile.title 
 role: $inherited.types.copy-regular
 link: $header-item-mobile.link
-color: $inherited.colors.text-strong
-color if { header-item-mobile.is-active }: $inherited.colors.cta-primary.base
+color: $inherited.colors.cta-secondary.text-disabled
+color if { header-item-mobile.is-active }: $inherited.colors.success.text
 $on-click$: $ftd.set-bool($a = $header-item-mobile.show-section, v = true)
 padding-top.px: 24
 
