@@ -19,7 +19,7 @@ footer-links: $common.footer-links
 -- lib.hero: Give your hearts the love it deserves
 cta-text: Learn More
 cta-link: about/
-src: $assets.files.assets.hero-image.jpeg
+src: $assets.files.assets.back-img2.svg
 image: $assets.files.assets.bg.svg
 
 Does decoding your health test reports leave you confused?

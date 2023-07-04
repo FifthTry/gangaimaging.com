@@ -4,59 +4,6 @@
 -- import: fifthtry.github.io/gangaimaging.com/lib
 
 
--- ftd.color base:
-light: #ffffff
-dark: #0A1929
-
--- ftd.color step-1:
-light: #09c0e8
-dark: #132F4C
-
--- ftd.color step-2:
-light: #1458bb
-dark: #1F3B58
-
--- ftd.color overlay:
-light: #1e0c9c
-dark: #1e0c9c
-
--- ftd.color cta-text:
-light: #1e0c9c
-dark: #1e0c9c
-
--- ftd.color btn:
-light: #51cae9
-dark: #51cae9
-
--- ftd.color text-strong:
-light: #003242
-dark: #003242
-
--- ftd.color secondary-text:
-light: #003242
-dark: #ffffff
-
--- ftd.color text:
-light: #67747d
-dark: #67747d
-
--- ftd.color primary-text:
-light: #67747d
-dark: #ffffff99
-
--- ftd.color scrim:
-light: #d3daeb
-dark: #d3daeb 
-
--- ftd.color cta-primary-text:
-light: #003242
-dark: #003242
-
--- ftd.color cta-secondary-text:
-light: #67747d
-dark: #67747d
-
-
 
 
 
@@ -181,7 +128,7 @@ common.social-media list social-links:
 
 -- ftd.column:
 width: fill-container
-background.solid: $lib.base
+background.solid: $inherited.colors.background.base
 shadow: $lib.light
 align-content: center
 z-index: 10
@@ -190,7 +137,7 @@ z-index: 10
 width: fill-container
 align-self: end
 max-width.fixed.px: $common.max-width
-background.linear-gradient: $lib.lg4
+background.linear-gradient: $lg
 padding-vertical.px: 16
 padding-left.px: 32
 padding-right.px: 40
@@ -202,7 +149,6 @@ spacing.fixed.px: 18
 
 -- ftd.text: $header-desktop.email
 role: $inherited.types.copy-small
-color: $base
 
 -- end: ftd.row
 
@@ -436,14 +382,14 @@ if: { !header-item.is-active }
 role: $inherited.types.copy-regular
 link if { header-item.link != NULL }: $header-item.link
 white-space: nowrap
-color: $primary-text
+color: $inherited.colors.cta-secondary.text-disabled
 
 -- ftd.text: $header-item.title
 if: { header-item.is-active }
 role: $inherited.types.copy-regular
 white-space: nowrap
 link if { header-item.link != NULL }: $header-item.link
-color: $secondary-text
+color: $inherited.colors.cta-secondary.text
 style: bold
 
 -- end: ftd.row
@@ -519,7 +465,7 @@ common.social-media list social-links:
 
 -- ftd.column: 
 width: fill-container
-background.solid: $base
+background.solid: $inherited.colors.background.base
 $on-click-outside$: $ftd.set-bool($a = $header-mobile.show-section, v = false)
 
 -- ftd.row:
@@ -1017,6 +963,30 @@ link: $github-button.github-url
 -- end: ftd.column
 
 -- end: github-button
+
+
+
+
+
+
+
+
+-- ftd.linear-gradient lg:
+direction: bottom-right
+colors: $color-values
+
+-- ftd.linear-gradient-color list color-values:
+
+-- ftd.linear-gradient-color: #09C0E8
+
+-- ftd.linear-gradient-color: #09c0e854
+
+-- ftd.linear-gradient-color: #1458bba8
+
+-- ftd.linear-gradient-color: #1E0C9C
+
+-- end: color-values
+
 
 
 -- ftd.shadow shadow:

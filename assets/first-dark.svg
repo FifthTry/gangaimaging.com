@@ -48,7 +48,7 @@
     >
     <rect
         id="rect4243"
-        style="fill:#1E0C9C"
+        style="fill:#4BA7CE"
         ry="30"
         height="228.57"
         width="405.71"
@@ -57,7 +57,7 @@
     />
     <rect
         id="rect4753-3"
-        style="fill:#ffffff"
+        style="fill:#153556"
         transform="rotate(-90)"
         height="165.71"
         width="56.9"
@@ -66,7 +66,7 @@
     />
     <rect
         id="rect4753-3-6"
-        style="fill:#ffffff"
+        style="fill:#153556"
         transform="scale(-1)"
         height="165.71"
         width="56.9"
@@ -76,7 +76,7 @@
     <path
         id="path4793"
         sodipodi:nodetypes="czc"
-        style="stroke-linejoin:round;stroke:#1e0c9c;stroke-linecap:square;stroke-width:47.279;fill:none"
+        style="stroke-linejoin:round;stroke:#4BA7CE;stroke-linecap:square;stroke-width:47.279;fill:none"
         inkscape:connector-curvature="0"
         d="m251.97 481.46s19.676-101.71 120.07-101.71c100.4 0 120.07 101.71 120.07 101.71"
     />
