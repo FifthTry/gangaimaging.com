@@ -6,10 +6,10 @@
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
 -- site-doc.doc-home: Component Page
-github-url: https://github.com/fastn-community/pretty-ws
-color-scheme: fastn-community.github.io/winter-cs
-typography: fifthtry.github.io/doc-site-typography
-current-package: fastn-community.github.io/pretty-ws
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
 
 -- site-doc.output:
 types: $typo.types

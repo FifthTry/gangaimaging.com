@@ -2911,6 +2911,7 @@ padding-horizontal.px: 42
 padding-bottom.px: 64
 z-index: 2
 max-width.fixed.percent: 70
+margin-top.px: 64
 
 -- ftd.column:
 width.fixed.px: 280
