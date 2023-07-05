@@ -15,24 +15,20 @@ current-package: fifthtry.github.io/gangaimaging.com
 types: $typo.types
 colors: $cs.main
 
--- lb.hero: Give your hearts the love it deserves
-cta-text: Learn More
-cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
-
-Lorem ipsum dolor sit amet, consectetur adipiscing
+-- lb.contact: Contact us for help or to know more about us
+cta-text: CONTACT US
+cta-link: contact/
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `hero`
+-- site-doc.component-doc: `contact`
 package-link: https://fifthtry.github.io/gangaimaging.com/
 github-link: https://github.com/fastn-community/gangaimaging.com
 package-name: fifthtry.github.io/gangaimaging.com
-info: `-- hero` can be used as homepage banner on your fastn projects.
+info: `-- contact` can be used as homepage banner on your fastn projects.
 
-`hero` is a new conversation experience via using FTD lang. To use
-`hero` on your fastn package, add below into lines FASTN.ftd file:
+`contact` is a new conversation experience via using FTD lang. To use
+`contact` on your fastn package, add below into lines FASTN.ftd file:
 
 -- cb.code:
 lang: ftd
@@ -46,13 +42,9 @@ lang: ftd
 -- cb.code:
 lang: ftd
 
-\-- lb.hero:  Give your hearts the love it deserves
-cta-text: Learn More
-cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
-
-Lorem ipsum dolor sit amet, consectetur adipiscing
+\-- lb.contact: Contact us for help or to know more about us
+cta-text: CONTACT US
+cta-link: contact/
 
 -- site-doc.header: Properties:
 
@@ -60,27 +52,17 @@ Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
 
-This is a default property of the `hero` component. It’s used to add a
-title to `hero` component.
+This is a default property of the `contact` component. It’s used to add a
+title to `contact` component.
 
 -- site-doc.component-property: `cta-text`
 
-This is a default property of the `hero` component. It’s used to add a
+This is a default property of the `contact` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-link`
 
-This is a default property of the `hero` component. It’s used to add a
+This is a default property of the `contact` component. It’s used to add a
 link to click to action button.
-
--- site-doc.component-property: `src`
-
-This is a default property of the `hero` component. Using `src`
-attribute image can be added.
-
--- site-doc.component-property: `image`
-
-This is a default property of the `hero` component. Using `image`
-attribute image can be added.
 
 -- end: site-doc.doc-home
