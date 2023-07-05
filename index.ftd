@@ -11,6 +11,7 @@ image: $assets.files.assets.bg.svg
 Does decoding your health test reports leave you confused?
 
 -- ds.services: Our Services
+sub-title: Our Special Services For You
 facilities: $common.facility-list
 
 -- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
@@ -26,7 +27,8 @@ services: $common.services
 -- ds.facilities: Achievements
 hallmark-list: $common.hallmarks
 
--- ds.testimonials-card: What people say about us
+-- ds.testimonials-card: Testimonial
+sub-title: What people say about us
 testimonials: $common.list-of-testimonials
 
 -- ds.contact: Contact us for help or to know more about us
