@@ -1,6 +1,9 @@
 -- ds.page:
 full-width: true
 sidebar: false
+document-title: Untitled gangaimaging/services
+document-description: Untitled gangaimaging/services
+document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
 
 -- ds.hero: 
 image: $assets.files.assets.bg.svg
