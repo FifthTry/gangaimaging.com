@@ -546,6 +546,7 @@ integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 optional string site-url: $common.site-url
 optional string site-name: 
+optional string copyright: 
 pr.toc-item list footer-links: $common.footer-toc.sections
 pr.toc-item list footer-list: $common.sitemap.sections
 
@@ -561,6 +562,7 @@ logo-width: $footer.logo-width
 logo-height: $footer.logo-height
 site-url: $footer.site-url
 site-name: $footer.site-name
+copyright: $footer.copyright
 footer-links: $footer.footer-links
 
 -- end: ftd.desktop
@@ -574,6 +576,7 @@ logo-width: $footer.logo-width
 logo-height: $footer.logo-height
 site-url: $footer.site-url
 site-name: $footer.site-name
+copyright: $footer.copyright
 footer-links: $footer.footer-links
 
 -- end: ftd.mobile
@@ -598,6 +601,7 @@ integer logo-width:
 integer logo-height: 
 optional string site-url: 
 optional string site-name:
+optional string copyright:
 pr.toc-item list footer-links:
 
 -- ftd.column:
@@ -605,13 +609,13 @@ width: fill-container
 align-content: center
 align-self: center
 background.solid: $inherited.colors.background.base
-padding-bottom.px: 44
 
 -- ftd.row:
 width: fill-container
 align-content: center
 background.solid: $inherited.colors.background.base
 max-width.fixed.px: 1140
+padding-bottom.px: 44
 
 -- ftd.row:
 width: fill-container
@@ -674,6 +678,19 @@ $loop$: $footer-desktop.footer-links as $obj
 -- end: ftd.row
 
 -- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.shadow
+padding-horizontal.px: 24
+padding-vertical.px: 24
+align-content: center
+
+-- ftd.text: $footer-desktop.copyright
+color: $inherited.colors.text-strong
+role: $inherited.types.label-large
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -766,14 +783,13 @@ integer logo-width:
 integer logo-height:
 optional string site-url: 
 optional string site-name: 
+optional string copyright: 
 pr.toc-item list footer-links:
 
 -- ftd.column:
 width: fill-container
 padding-top.px: 48
-padding-bottom.px: 32
 color: $inherited.colors.text
-padding-horizontal.px: 24
 
 -- footer-mobile-list: $obj.title
 url: $obj.url
@@ -782,6 +798,7 @@ children: $obj.children
 $loop$: $footer-mobile.footer-links as $obj
 
 -- ftd.row:
+padding-horizontal.px: 24
 link: $footer-mobile.site-url
 align-content: center
 margin-vertical.px: 24
@@ -806,10 +823,30 @@ site-name: $footer-mobile.site-name
 
 -- end: ftd.row
 
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 24
+padding-bottom.px: 24
+
 -- ftd.text: $footer-mobile.info
 role: $inherited.types.copy-small
 color: $inherited.colors.cta-secondary.text
+
+-- end: ftd.column
+
+-- ftd.column:
 width: fill-container
+background.solid: $inherited.colors.shadow
+padding-horizontal.px: 24
+padding-vertical.px: 16
+align-content: center
+
+-- ftd.text: $footer-mobile.copyright
+color: $inherited.colors.text-strong
+role: $inherited.types.label-large
+text-align: center
+
+-- end: ftd.column
 
 -- end: ftd.column
 
