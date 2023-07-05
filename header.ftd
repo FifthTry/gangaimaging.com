@@ -152,6 +152,7 @@ role: $inherited.types.copy-small
 
 -- ftd.text: $header-desktop.phone
 role: $inherited.types.copy-small
+color: $inherited.colors.cta-tertiary.text
 
 -- end: ftd.row
 
