@@ -17,6 +17,7 @@ types: $typo.types
 colors: $cs.main
 
 -- lb.services: Our Services
+sub-title: Our Special Services For You
 facilities: $common.facility-list
 
 -- end: site-doc.output
@@ -43,6 +44,7 @@ lang: ftd
 lang: ftd
 
 \-- lb.services: Our Services
+sub-title: Our Special Services For You
 facilities: $common.facility-list
 
 -- site-doc.header: Properties:
@@ -53,6 +55,11 @@ Below are details of all properties of this component.
 
 This is a default property of the `services` component. It’s used to add a
 title to `services` component.
+
+-- site-doc.component-property: `sub-title`
+
+This is a default property of the `services` component. It’s used to add a
+sub-title to `services` component.
 
 -- site-doc.component-property: `facilities`
 
