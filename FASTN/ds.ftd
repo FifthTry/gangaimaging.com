@@ -53,7 +53,6 @@ footer-links: $common.footer-links
 -- end: lib.page.footer
 
 -- ftd.column:
-spacing.fixed.em: 0.8
 width: fill-container
 children: $page.wrapper
 
