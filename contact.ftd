@@ -1,35 +1,15 @@
--- import: fifthtry.github.io/gangaimaging.com/lib as lib
--- import: fifthtry.github.io/gangaimaging.com/common
-
-
-
-
-
-
-
--- lib.page:
+-- ds.page:
 full-width: true
 sidebar: false
 
--- lib.page.footer:
-
--- lib.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url 
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-
--- end: lib.page.footer
-
--- lib.hero:
+-- ds.hero:
 image: $assets.files.assets.bg.svg
 
 Need Information? Contact Us
 
--- lib.row-container:
+-- ds.row-container:
 
--- lib.contact-form: Contact Us
+-- ds.contact-form: Contact Us
 address: Adarsh Nagar, New Delhi
 email: gangaimaging@gmail.com
 phone: +91 9833408356
@@ -40,11 +20,11 @@ twitter: $assets.files.assets.twitter.svg
 linkedin: $assets.files.assets.instagram.svg
 instagram: $assets.files.assets.linkedin.svg
 
--- lib.iframe:
+-- ds.iframe:
 src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
 width.fixed.px: 280
 height.fixed.px: 420
 
--- end: lib.row-container
+-- end: ds.row-container
 
--- end: lib.page
+-- end: ds.page

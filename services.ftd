@@ -1,40 +1,25 @@
--- import: fifthtry.github.io/gangaimaging.com/lib as lib
--- import: fifthtry.github.io/gangaimaging.com/common
-
-
--- lib.page:
+-- ds.page:
 full-width: true
 sidebar: false
 
--- lib.page.footer:
-
--- lib.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url 
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-
--- end: lib.page.footer
-
--- lib.hero: 
+-- ds.hero: 
 image: $assets.files.assets.bg.svg
 
 Digital Radiology
 
--- lib.services-container:
+-- ds.services-container:
 src: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
 
--- lib.categories: Categories
+-- ds.categories: Categories
 procedures: $common.procedures
 
--- lib.newsletter: SUBSCRIBE FOR NEWSLETTER
+-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe
 cta-text: SUBSCRIBE
 cta-link: services/
 
--- end: lib.services-container
+-- end: ds.services-container
 
--- end: lib.page
+-- end: ds.page
