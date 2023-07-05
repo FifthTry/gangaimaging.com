@@ -1,0 +1,66 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.features: We always work with patience
+tag: Our Facility/Services
+services: $common.services
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `features`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- features` can be used as homepage banner on your fastn projects.
+
+`features` is a new conversation experience via using FTD lang. To use
+`features` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.features: We always work with patience
+tag: Our Facility/Services
+services: $common.services
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `title`
+
+This is a default property of the `features` component. It’s used to add a
+title to `features` component.
+
+-- site-doc.component-property: `tag`
+
+Using `tag` attribute tag can be added which adds small heading at the top.
+
+-- site-doc.component-property: `services`
+
+This is a list of services that gangaimaging provides.
+
+-- end: site-doc.doc-home

@@ -15,24 +15,22 @@ current-package: fifthtry.github.io/gangaimaging.com
 types: $typo.types
 colors: $cs.main
 
--- lb.hero: Give your hearts the love it deserves
-cta-text: Learn More
-cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
-
-Lorem ipsum dolor sit amet, consectetur adipiscing
+-- lb.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+img: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: services/
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `hero`
+-- site-doc.component-doc: `our-work`
 package-link: https://fifthtry.github.io/gangaimaging.com/
 github-link: https://github.com/fastn-community/gangaimaging.com
 package-name: fifthtry.github.io/gangaimaging.com
-info: `-- hero` can be used as homepage banner on your fastn projects.
+info: `-- our-work` can be used as homepage banner on your fastn projects.
 
-`hero` is a new conversation experience via using FTD lang. To use
-`hero` on your fastn package, add below into lines FASTN.ftd file:
+`our-work` is a new conversation experience via using FTD lang. To use
+`our-work` on your fastn package, add below into lines FASTN.ftd file:
 
 -- cb.code:
 lang: ftd
@@ -46,13 +44,11 @@ lang: ftd
 -- cb.code:
 lang: ftd
 
-\-- lb.hero:  Give your hearts the love it deserves
-cta-text: Learn More
-cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
-
-Lorem ipsum dolor sit amet, consectetur adipiscing
+\-- lb.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+img: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: services/
 
 -- site-doc.header: Properties:
 
@@ -60,27 +56,25 @@ Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
 
-This is a default property of the `hero` component. It’s used to add a
-title to `hero` component.
+This is a default property of the `our-work` component. It’s used to add a
+title to `our-work` component.
 
 -- site-doc.component-property: `cta-text`
 
-This is a default property of the `hero` component. It’s used to add a
+This is a default property of the `our-work` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-link`
 
-This is a default property of the `hero` component. It’s used to add a
+This is a default property of the `our-work` component. It’s used to add a
 link to click to action button.
 
--- site-doc.component-property: `src`
+-- site-doc.component-property: `tag`
 
-This is a default property of the `hero` component. Using `src`
-attribute image can be added.
+Using `tag` attribute tag can be added which adds small heading at the top.
 
 -- site-doc.component-property: `image`
 
-This is a default property of the `hero` component. Using `image`
-attribute image can be added.
+Using `image` attribute image can be added.
 
 -- end: site-doc.doc-home
