@@ -150,6 +150,9 @@ spacing.fixed.px: 18
 -- ftd.text: $header-desktop.email
 role: $inherited.types.copy-small
 
+-- ftd.text: $header-desktop.phone
+role: $inherited.types.copy-small
+
 -- end: ftd.row
 
 -- ftd.row:

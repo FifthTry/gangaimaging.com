@@ -151,7 +151,7 @@ menu-icon: $assets.files.assets.hamburger.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
 email: gangaimaging@gmail.com
-phone: +91983345672
+phone: +91983345672, 98998984543
 
 -- ftd.column:
 children: $doc-page-desktop.hero
@@ -1242,6 +1242,7 @@ color: $inherited.colors.cta-primary.text
 style: semi-bold
 
 -- ftd.text: $services.sub-title
+if: { services.sub-title != NULL }
 role: $inherited.types.heading-medium
 color: $inherited.colors.cta-secondary.text
 style: bold
