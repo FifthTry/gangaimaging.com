@@ -135,17 +135,20 @@ z-index: 10
 
 -- ftd.row:
 width: fill-container
-align-self: end
-max-width.fixed.px: $common.max-width
+align-content: right
+
+-- ftd.row:
+width: fill-container
 background.linear-gradient: $lib.lg3
-padding-vertical.px: 16
-padding-left.px: 32
-padding-right.px: 40
 spacing: space-between
-align-content: center
+padding-vertical.px: 16
+max-width.fixed.px: $common.max-width
+margin-right.px: 0
 
 -- ftd.row:
 spacing.fixed.px: 18
+padding-left.px: 32
+align-self: center
 
 -- ftd.text: $header-desktop.email
 role: $inherited.types.copy-small
@@ -165,6 +168,8 @@ $loop$: $header-desktop.social-links as $obj
 src: $obj.src
 cursor: pointer
 link: $obj.link
+
+-- end: ftd.row
 
 -- end: ftd.row
 
