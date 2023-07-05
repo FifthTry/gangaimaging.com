@@ -49,6 +49,7 @@ site-url: $common.site-url
 logo-width: $common.logo-width
 logo-height: $common.logo-height
 footer-links: $common.footer-links
+copyright: Copyright © 2019. All rights reserved by Ganga Diagnostic
 
 -- end: lib.page.footer
 
