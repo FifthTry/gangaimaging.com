@@ -1482,8 +1482,13 @@ $common.hallmark list hallmark-list:
 
 -- ftd.column:
 width: fill-container
-align-content: center
 padding-vertical.px: 64
+
+-- ftd.column:
+align-content: center
+width: fill-container
+background.image: $assets.files.assets.back.svg
+z-index: 1
 
 -- ftd.text: $facilities.title
 role: $inherited.types.heading-medium
@@ -1504,6 +1509,8 @@ count: $obj.count
 icon: $obj.icon
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
