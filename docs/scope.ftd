@@ -1,0 +1,91 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.scope: We Are Specialize in:
+tag: SCOPE LIST
+image: $assets.files.assets.left-img.png
+
+- CT Scan
+- Ultrasound
+- Color Doppler
+- Digital X-Ray
+- Special X-Ray
+- ECHO
+- TMT
+- ECG
+- USG/CT-GUIDED FNAC
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `scope`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- scope` can be used as homepage banner on your fastn projects.
+
+`scope` is a new conversation experience via using FTD lang. To use
+`scope` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.scope: We Are Specialize in:
+tag: SCOPE LIST
+image: $assets.files.assets.left-img.png
+
+- CT Scan
+- Ultrasound
+- Color Doppler
+- Digital X-Ray
+- Special X-Ray
+- ECHO
+- TMT
+- ECG
+- USG/CT-GUIDED FNAC
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `title`
+
+This is a default property of the `scope` component. It’s used to add a
+title to `scope` component.
+
+-- site-doc.component-property: `tag`
+
+Using `tag` attribute tag can be added which adds small heading at the top.
+
+-- site-doc.component-property: `body`
+
+Using `body` attribute to add information about the section.
+
+-- site-doc.component-property: `image`
+
+This is a default property of the `scope` component. Using `image`
+attribute image can be added.
+
+-- end: site-doc.doc-home
