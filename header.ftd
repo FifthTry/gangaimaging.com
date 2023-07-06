@@ -167,7 +167,7 @@ color: $inherited.colors.cta-tertiary.text
 
 -- ftd.row:
 spacing.fixed.px: 24
-width.fixed.px: 360
+width.fixed.px: 396
 
 -- ftd.image:
 $loop$: $header-desktop.social-links as $obj
