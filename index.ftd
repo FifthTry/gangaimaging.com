@@ -19,7 +19,7 @@ facilities: $common.facility-list
 
 -- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
-img: $assets.files.assets.about-dr-sameer.png
+img: $assets.files.assets.Dr-sameer-Upadhyay.jpeg
 cta-text: What we do
 cta-link: services/
 
