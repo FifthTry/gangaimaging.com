@@ -666,6 +666,7 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 78
+wrap: true
 
 -- footer-list: $obj.title
 url: $obj.url
