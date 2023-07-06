@@ -145,9 +145,7 @@ align-content: right
 
 -- ftd.row:
 width: fill-container
-background.linear-gradient: $lib.lg3
 spacing: space-between
-padding-vertical.px: 16
 max-width.fixed.px: $common.max-width
 margin-right.px: 0
 
@@ -167,7 +165,7 @@ color: $inherited.colors.cta-tertiary.text
 
 -- ftd.row:
 spacing.fixed.px: 24
-width.fixed.px: 396
+width.fixed.px: 280
 
 -- ftd.image:
 $loop$: $header-desktop.social-links as $obj
