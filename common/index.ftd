@@ -12,7 +12,7 @@
 
 -- string site-url: index.html
 
--- integer max-width: 1140
+-- integer max-width: 1320
 
 -- pr.sitemap-data sitemap:
 $processor$: pr.sitemap
@@ -37,7 +37,7 @@ src: $assets.files.assets.facebook.svg
 
 -- social-media: 
 link: /
-src: $assets.files.assets.discord.svg
+src: $assets.files.assets.google-plus.svg
 
 -- social-media:
 link: /

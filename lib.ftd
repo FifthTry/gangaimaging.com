@@ -1060,7 +1060,7 @@ width: fill-container
 z-index: 1
 
 -- ftd.row:
-width.fixed.px: 1250
+;;width.fixed.px: 1250
 spacing: space-between
 align-content: center
 align-self: center
@@ -1070,7 +1070,7 @@ padding-vertical.px: 64
 -- ftd.column:
 spacing.fixed.px: 28
 z-index: 1
-width.fixed.px: 750
+;;width.fixed.px: 750
 width if { hero-desktop.src == NULL }: fill-container
 align-content if { hero-desktop.src == NULL }: center
 
@@ -1330,9 +1330,9 @@ align-content: left
 border-radius.px: 12
 padding-horizontal.px: 24
 spacing.fixed.px: 24
-shadow if { facility-details.mouse-in }: $shadow
-$on-mouse-enter$: $ftd.set-bool($a = $facility-details.mouse-in, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $facility-details.mouse-in, v = false)
+;; shadow if { facility-details.mouse-in }: $shadow
+;; $on-mouse-enter$: $ftd.set-bool($a = $facility-details.mouse-in, v = true)
+;; $on-mouse-leave$: $ftd.set-bool($a = $facility-details.mouse-in, v = false)
 
 -- ftd.image:
 src: $facility-details.icon
@@ -1442,25 +1442,11 @@ cta-link: $our-work-desktop.cta-link
 
 -- end: ftd.column
 
--- ftd.column:
-
--- ftd.image:
-src: $assets.files.assets.rect.svg
-anchor: parent
-top.px: 12
-;;right.px: -12
-height.fixed.px: 380
-width.fixed.px: 380
-z-index: 1
-
 -- ftd.image:
 src: $our-work-desktop.img
 border-radius.px: 30
 width.fixed.px: 380
 height.fixed.px: 380
-z-index: 5
-
--- end: ftd.column
 
 -- end: ftd.row
 
@@ -1546,7 +1532,7 @@ padding-vertical.px: 64
 -- ftd.column:
 align-content: center
 width: fill-container
-background.image: $assets.files.assets.back.svg
+;;background.image: $assets.files.assets.pattern-dark.svg
 z-index: 1
 
 -- ftd.text: $facilities.title
@@ -1809,6 +1795,7 @@ padding-top.px: 72
 padding-bottom.px: 32
 padding-horizontal.px: 32
 spacing.fixed.px: 18
+border-radius.px: 12
 
 -- ftd.text: $testimonials-card-details.title
 role: $inherited.types.heading-tiny
@@ -1904,7 +1891,7 @@ max-width.fixed.px: 1140
 
 -- ftd.text: $contact-desktop.title
 role: $inherited.types.heading-medium
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.cta-primary.text
 
 -- button: $contact-desktop.cta-text
 cta-link: $contact-desktop.cta-link
@@ -1941,7 +1928,7 @@ max-width.fixed.px: 1140
 
 -- ftd.text: $contact-mobile.title
 role: $inherited.types.heading-medium
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.cta-primary.text
 text-align: center
 
 -- button: $contact-mobile.cta-text
@@ -2766,13 +2753,25 @@ colors: $color-values4
 
 
 
--- ftd.shadow shadow:
+/-- ftd.shadow shadow:
 color: #ddd
 x-offset.px: 0
 y-offset.px: 0
 blur.px: 4
 inset-body: false
 spread.px: 2
+
+-- ftd.shadow shadow:
+color: $shadow-color
+x-offset.px: 0
+y-offset.px: 2
+blur.px: 8
+inset-body: false
+
+-- ftd.color shadow-color:
+light: #00000026
+dark: #f6f5f557
+
 
 -- ftd.shadow shadow-light:
 color: #132F4C
@@ -3602,15 +3601,20 @@ $on-mouse-leave$: $ftd.set-bool($a = $feature.hover, v = false)
 
 -- ftd.column:
 width: fill-container
+background.solid: $inherited.colors.background.step-1
 border-radius.px: 10
-height.fixed.px: 220
+min-height.fixed.px: 200
+min-height.fixed.px if { ftd.device == "mobile" }: 150
+padding-bottom.px: 18
+shadow: $shadow
+spacing.fixed.px: 18
+align-content: center
 
 -- ftd.image:
 src: $feature.src
 width: fill-container
-height: fill-container
 border-radius.px: 10
-;;shadow: $shadow
+height.fixed.px: 220
 
 -- ftd.column:
 if: { feature.hover }
@@ -3618,30 +3622,18 @@ anchor: parent
 top.px: 0
 left.px: 0
 width: fill-container
-height: fill-container
+height.fixed.px: 230
 border-radius.px: 10
 opacity: 0.3
 background.solid: $inherited.colors.background.step-1
 
 -- end: ftd.column
 
--- end: ftd.column
-
--- ftd.column:
-width: fill-container
-background.solid: $inherited.colors.background.step-1
-border-radius.px: 10
-min-height.fixed.px: 200
-min-height.fixed.px if { ftd.device == "mobile" }: 150
-padding.px: 18
-shadow: $shadow
-spacing.fixed.px: 18
-align-content: center
-
 -- ftd.text: $feature.title
 color: $inherited.colors.custom.one
 role: $inherited.types.label-large
 text-align: center
+style: bold
 
 -- ftd.text: 
 color: $inherited.colors.cta-secondary.text

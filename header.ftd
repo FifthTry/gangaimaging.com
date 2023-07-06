@@ -137,7 +137,7 @@ z-index: 10
 width: fill-container
 align-self: end
 max-width.fixed.px: $common.max-width
-background.linear-gradient: $lib.lg3
+background.linear-gradient: $lib.lg4
 padding-vertical.px: 16
 padding-left.px: 32
 padding-right.px: 40
