@@ -3630,7 +3630,10 @@ background.solid: $inherited.colors.background.step-1
 -- end: ftd.column
 
 -- ftd.column:
-padding.px: 24
+min-height.fixed.px: 200 
+padding.px: 16
+spacing.fixed.px: 18
+align-content: center
 
 -- ftd.text: $feature.title
 color: $inherited.colors.custom.one

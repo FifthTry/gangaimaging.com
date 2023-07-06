@@ -146,7 +146,7 @@ cta-text: Read More
 cta-link: services/
 
 We perform CT Scans on most advanced multi slice scanner (CT Brivo385 
-by GE Healthcare). It is a 32 slice…
+by GE Healthcare).
 
 -- service: CARDIOLOGY DEPARTMENT
 src: $assets.files.assets.cardiology.png
