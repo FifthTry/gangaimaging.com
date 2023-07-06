@@ -3180,16 +3180,8 @@ color: $inherited.colors.border
 
 -- end: ftd.column
 
--- ftd.text: $contact-form-desktop.cta-button
-role: $inherited.types.label-large
-text-align: center
-padding-vertical.px: 8
-padding-horizontal.px: 24
-background.linear-gradient: $lg
-$on-mouse-enter$: $ftd.set-bool($a = $contact-form-desktop.is-active, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $contact-form-desktop.is-active, v = false)
-color: $inherited.colors.cta-tertiary.text
-link: $contact-form-desktop.cta-link
+-- button: $contact-form-desktop.cta-button
+cta-link: $contact-form-desktop.cta-link
 
 -- end: ftd.column
 
