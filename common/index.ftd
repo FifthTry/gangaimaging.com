@@ -12,6 +12,10 @@
 
 -- string site-url: index.html
 
+-- string email: gangaimaging@gmail.com
+
+-- string phone: +91983345672, 98998984543
+
 -- integer max-width: 1320
 
 -- pr.sitemap-data sitemap:
