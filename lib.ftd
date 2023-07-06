@@ -78,20 +78,22 @@ full-width: $page.full-width
 -- ftd.mobile:
 
 -- doc-page-mobile: $page.title
-wrapper: $page.wrapper
 toc: $page.toc
+wrapper: $page.wrapper
 sections: $page.sections
 body: $page.body
-site-name: $page.site-name
-site-logo: $page.site-logo
 logo-height: $page.logo-height
 logo-width: $page.logo-width
+site-name: $page.site-name
+site-logo: $page.site-logo
 site-url: $page.site-url
 email: $page.email
 phone: $page.phone
+sidebar: $page.sidebar
 right-sidebar: $page.right-sidebar
 github-icon: $page.github-icon
 github-url: $page.github-url
+full-width: $page.full-width
 
 -- end: ftd.mobile
 
@@ -244,25 +246,26 @@ right-sidebar: $doc-page-desktop.right-sidebar
 -- component doc-page-mobile:
 optional caption title:
 optional body body:
+pr.toc-item list toc:
 optional string site-name:
 ftd.image-src site-logo:
 string site-url:
-pr.toc-item list toc: 
-pr.toc-item list sections:
-boolean $open-right-sidebar-info: false
-ftd.ui list right-sidebar:
-children wrapper:
-boolean github-icon: false
-optional string github-url: 
-boolean blog: false
-ftd.ui list hero:
 string email: $common.email
 string phone: $common.phone
+pr.toc-item list sections:
+children wrapper:
+optional integer logo-width: 
+optional integer logo-height:
 optional string login-btn-txt: Login
 optional string login-btn-url: index.html
 boolean login-button: false
-optional integer logo-width: 
-optional integer logo-height:
+boolean sidebar: false
+ftd.ui list right-sidebar:
+boolean github-icon: false
+optional string github-url: 
+boolean full-width:
+boolean blog: false
+ftd.ui list hero:
 
 -- ftd.column:
 width: fill-container
@@ -316,44 +319,6 @@ width: fill-container
 children: $doc-page-mobile.wrapper
 spacing.fixed.px: 32
 width: fill-container
-
--- end: ftd.column
-
--- ftd.column:
-if: { doc-page-mobile.open-right-sidebar-info }
-anchor: parent
-top.px: 0
-bottom.px: 0
-left.px: 0
-right.px: 0
-background.solid: $inherited.colors.background.overlay
-z-index: 1
-width: fill-container
-height: fill-container
-$on-click$: $ftd.set-bool($a = $doc-page-mobile.open-right-sidebar-info, v = false)
-
--- ftd.image:
-src: $assets.files.assets.cross-dark.svg
-height.fixed.px: 16
-width: auto
-margin-top.px: 30
-margin-left.px: 16
-$on-click$: $ftd.toggle($a = $doc-page-mobile.open-right-sidebar-info)
-
--- end: ftd.column
-
--- ftd.column:
-if: { doc-page-mobile.open-right-sidebar-info }
-width.fixed.calc: 100% - 48px
-height.fixed.calc: 100% - 0px
-overflow-y: auto
-align-content: top-right
-anchor: parent
-right.px: 0
-top.px: 0
-background.solid: $inherited.colors.background.step-1
-z-index: 1
-padding-horizontal.px: 24
 
 -- end: ftd.column
 
@@ -688,7 +653,6 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 78
-wrap: true
 
 -- footer-list: $obj.title
 url: $obj.url
@@ -3025,6 +2989,7 @@ padding-bottom.px: 64
 z-index: 2
 max-width.fixed.percent: 70
 margin-top.px: 64
+border-radius.px: 8
 
 -- ftd.column:
 width.fixed.px: 280
@@ -3033,8 +2998,9 @@ padding-horizontal.px: 18
 padding-vertical.px: 18
 background.linear-gradient: $lg3
 z-index: 10
-;;shadow: $shadow
+shadow: $shadow
 spacing: space-between
+border-radius.px: 8
 
 -- ftd.column:
 spacing.fixed.px: 16
@@ -3474,6 +3440,7 @@ src: $iframe.src
 height: $iframe.height
 width: $iframe.width
 margin-bottom.px: 24
+border-radius.px: 8
 
 -- end: iframe
 
@@ -3763,14 +3730,12 @@ children wrapper:
 
 -- ftd.row:
 width: fill-container
-max-width.fixed.px: $common.max-width
 spacing: space-between
 spacing.fixed.px if { ftd.device == "mobile" }: 32
 padding-vertical.px if { ftd.device != "mobile" }: 82
 padding-horizontal.px if { ftd.device != "mobile" }: 82
 align-content: center
-align-self: center
-wrap: true
+wrap if { ftd.device == "mobile" }: true
 children: $row-container.wrapper
 
 -- end: ftd.row
