@@ -51,6 +51,7 @@ og-image: $page.document-image
 
 -- ftd.column:
 width: fill-container
+height: fill-container
 background.solid: $inherited.colors.background.base
 
 -- ftd.desktop:
@@ -596,6 +597,8 @@ width: fill-container
 align-content: center
 align-self: center
 background.solid: $inherited.colors.background.base
+border-top-width.px: 1
+border-color: $inherited.colors.border-strong
 
 -- ftd.row:
 width: fill-container
@@ -643,7 +646,7 @@ site-name: $footer-desktop.site-name
 width.fixed.px: 350
 
 -- ftd.text: $footer-desktop.info
-role: $inherited.types.copy-small
+role: $inherited.types.copy-regular
 width: fill-container
 
 -- end: ftd.column
@@ -699,7 +702,7 @@ boolean is-active:
 pr.toc-item list children:
 
 -- ftd.column:
-spacing.fixed.px: 6
+spacing.fixed.px: 8
 
 -- ftd.text: $footer-list.title
 color: $inherited.colors.cta-secondary.text
@@ -738,7 +741,7 @@ pr.toc-item list children:
 width: fill-container
 
 -- ftd.text: $footer-list-child.title
-role: $inherited.types.label-small
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 link: $footer-list-child.url
 width: fill-container
@@ -1063,7 +1066,7 @@ align-content if { hero-desktop.src == NULL }: center
 
 -- ftd.text: $hero-desktop.title
 if: { hero-desktop.title != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.scrim
 role: $inherited.types.heading-small
 style: bold
 
@@ -1088,7 +1091,6 @@ padding-vertical.px: 24
 src: $assets.files.assets.back-img1.svg
 anchor: parent
 top.px: 45
-;;right.px: -21
 height.fixed.px: 350
 width.fixed.px: 350
 z-index: 1
@@ -1177,7 +1179,6 @@ align-self: center
 src: $assets.files.assets.back-img1.svg
 anchor: parent
 top.px: 12
-;;right.px: -18
 height.fixed.px: 350
 width.fixed.px: 350
 z-index: 1
@@ -1306,7 +1307,6 @@ icon: $obj.icon
 -- component facility-details:
 caption title:
 ftd.image-src icon:
-boolean $mouse-in: false
 
 -- ftd.column:
 width.fixed.px: 240
@@ -1317,9 +1317,6 @@ align-content: left
 border-radius.px: 12
 padding-horizontal.px: 24
 spacing.fixed.px: 24
-;; shadow if { facility-details.mouse-in }: $shadow
-;; $on-mouse-enter$: $ftd.set-bool($a = $facility-details.mouse-in, v = true)
-;; $on-mouse-leave$: $ftd.set-bool($a = $facility-details.mouse-in, v = false)
 
 -- ftd.image:
 src: $facility-details.icon
@@ -1482,7 +1479,6 @@ cta-link: $our-work-mobile.cta-link
 src: $assets.files.assets.rect.svg
 anchor: parent
 top.px: 16
-;;right.px: -16
 height.fixed.px: 320
 width.fixed.px: 320
 z-index: 1
@@ -2859,7 +2855,7 @@ padding-vertical.px: 12
 
 -- ftd.text: $category.title
 link: $category.link
-color: $inherited.colors.text
+color: $inherited.colors.scrim
 color if { category.active }: $inherited.colors.info.text
 role: $inherited.types.heading-tiny
 
@@ -2922,7 +2918,7 @@ optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
 
 -- ftd.column:
-width: fill-container
+width.fixed.px: 810
 
 -- ftd.desktop:
 
@@ -2982,7 +2978,6 @@ optional ftd.image-src linkedin:
 
 -- ftd.row:
 width: fill-container
-background.solid: $inherited.colors.background.base
 spacing.fixed.px: 8
 padding-horizontal.px: 42
 padding-bottom.px: 64
@@ -3007,7 +3002,7 @@ spacing.fixed.px: 16
 
 -- ftd.text: Contact Info
 role: $inherited.types.heading-small
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.text-strong
 style: bold
 
 -- ftd.row:
@@ -3022,7 +3017,7 @@ height.fixed.px: 26
 
 -- ftd.text: $contact-form-desktop.address
 role: $inherited.types.fine-print
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
@@ -3036,7 +3031,7 @@ width: auto
 
 -- ftd.text: $contact-form-desktop.email
 role: $inherited.types.fine-print
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.text-strong
 link: /
 
 -- end: ftd.row
@@ -3051,7 +3046,7 @@ width.fixed.px: 18
 
 -- ftd.text: $contact-form-desktop.phone
 role: $inherited.types.fine-print
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
@@ -3092,12 +3087,13 @@ padding-left.px: 250
 padding-right.px: 36
 padding-vertical.px: 64
 spacing.fixed.px: 24
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-1
 z-index: 8
 anchor: parent
 left.px: 115
 top.px: -30
 shadow: $shadow
+border-radius.px: 8
 
 -- ftd.text: $contact-form-desktop.title
 role: $inherited.types.heading-small
@@ -3114,9 +3110,10 @@ padding-horizontal.px: 8
 width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
+background.solid: $inherited.colors.background.step-1
 type: text
 role: $inherited.types.copy-small
-color: $inherited.colors.border
+color: $inherited.colors.text
 
 -- ftd.text-input:
 placeholder: Last Name
@@ -3127,6 +3124,7 @@ border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.step-1
 color: $inherited.colors.border
 
 -- end: ftd.row
@@ -3141,6 +3139,7 @@ padding-horizontal.px: 8
 width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
+background.solid: $inherited.colors.background.step-1
 type: text
 role: $inherited.types.copy-small
 color: $inherited.colors.border
@@ -3152,6 +3151,7 @@ padding-horizontal.px: 8
 width.fixed.px: 240
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
+background.solid: $inherited.colors.background.step-1
 type: text
 role: $inherited.types.copy-small
 color: $inherited.colors.border
@@ -3173,6 +3173,7 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 width: fill-container
 border-bottom-width.px: 1
+background.solid: $inherited.colors.background.step-1
 type: text
 role: $inherited.types.copy-small
 border-color: $inherited.colors.cta-tertiary.focused
@@ -3722,8 +3723,7 @@ children wrapper:
 
 -- ftd.row:
 width: fill-container
-spacing: space-between
-spacing.fixed.px if { ftd.device == "mobile" }: 32
+spacing.fixed.px: 130
 padding-vertical.px if { ftd.device != "mobile" }: 82
 padding-horizontal.px if { ftd.device != "mobile" }: 82
 align-content: center
