@@ -134,9 +134,8 @@ align-content: center
 z-index: 10
 
 -- ftd.row:
-width: fill-container
+width.fixed.px: 1140
 align-self: end
-max-width.fixed.px: $common.max-width
 background.linear-gradient: $lib.lg4
 padding-vertical.px: 16
 padding-left.px: 32
