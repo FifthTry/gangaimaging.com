@@ -3629,19 +3629,24 @@ background.solid: $inherited.colors.background.step-1
 
 -- end: ftd.column
 
+-- ftd.column:
+min-height.fixed.px: 200 
+padding.px: 16
+spacing.fixed.px: 18
+align-content: center
+
 -- ftd.text: $feature.title
 color: $inherited.colors.custom.one
 role: $inherited.types.label-large
 text-align: center
 style: bold
-padding.px: 24
+
 
 -- ftd.text: 
 color: $inherited.colors.cta-secondary.text
 role: $inherited.types.button-medium
 text-align: center
 style: regular
-padding.px: 24
 
 $feature.body
 
@@ -3650,6 +3655,8 @@ color: $inherited.colors.custom.one
 role: $inherited.types.label-large
 style: bold
 link: $feature.cta-link
+
+-- end: ftd.column
 
 -- end: ftd.column
 
