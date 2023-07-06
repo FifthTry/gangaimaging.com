@@ -777,7 +777,7 @@ $loop$: $footer-list-child.children as $obj
 
 
 -- component footer-mobile:
-string info:  
+string info:
 optional ftd.image-src site-logo: 
 integer logo-width: 
 integer logo-height:
