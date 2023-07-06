@@ -3634,12 +3634,14 @@ color: $inherited.colors.custom.one
 role: $inherited.types.label-large
 text-align: center
 style: bold
+padding.px: 24
 
 -- ftd.text: 
 color: $inherited.colors.cta-secondary.text
 role: $inherited.types.button-medium
 text-align: center
 style: regular
+padding.px: 24
 
 $feature.body
 
