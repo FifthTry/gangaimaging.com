@@ -655,7 +655,7 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 78
+spacing.fixed.px: 68
 
 -- footer-list: $obj.title
 url: $obj.url
@@ -2130,7 +2130,7 @@ style: extra-bold
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 text-align: justify
 
 $scope-mobile.body
@@ -2366,7 +2366,7 @@ text-align: center
 
 -- ftd.text:
 role: $inherited.types.copy-large
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 
 $about-mobile.body
 
@@ -2382,7 +2382,7 @@ style: extra-bold
 
 -- ftd.text: $about-mobile.info1
 role: $inherited.types.copy-large
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 
 -- ftd.text: $about-mobile.sub-title2
 role: $inherited.types.heading-small
@@ -2391,7 +2391,7 @@ style: extra-bold
 
 -- ftd.text: $about-mobile.info2
 role: $inherited.types.copy-large
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 
 -- ftd.text: $about-mobile.sub-title3
 role: $inherited.types.heading-small
@@ -2400,7 +2400,7 @@ style: extra-bold
 
 -- ftd.text: $about-mobile.info3
 role: $inherited.types.copy-large
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 
 -- end: ftd.column
 
@@ -3227,7 +3227,7 @@ spacing.fixed.px: 16
 
 -- ftd.text: Contact Info
 role: $inherited.types.heading-small
-color: $inherited.colors.background.step-2
+color: $inherited.colors.text-strong
 style: bold
 
 -- ftd.row:
@@ -3242,7 +3242,7 @@ height.fixed.px: 26
 
 -- ftd.text: $contact-form-mobile.address
 role: $inherited.types.fine-print
-color: $inherited.colors.background.step-2
+color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
@@ -3256,7 +3256,7 @@ width: auto
 
 -- ftd.text: $contact-form-mobile.email
 role: $inherited.types.fine-print
-color: $inherited.colors.background.step-2
+color: $inherited.colors.text-strong
 link: /
 
 -- end: ftd.row
@@ -3271,7 +3271,7 @@ width.fixed.px: 18
 
 -- ftd.text: $contact-form-mobile.phone
 role: $inherited.types.fine-print
-color: $inherited.colors.background.step-2
+color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
