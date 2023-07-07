@@ -780,6 +780,9 @@ pr.toc-item list footer-links:
 width: fill-container
 padding-top.px: 48
 color: $inherited.colors.text
+border-top-width.px: 1
+border-color: $inherited.colors.border
+background.solid: $inherited.colors.background.base
 
 -- footer-mobile-list: $obj.title
 url: $obj.url
@@ -817,6 +820,7 @@ site-name: $footer-mobile.site-name
 width: fill-container
 padding-horizontal.px: 24
 padding-bottom.px: 24
+background.solid: $inherited.colors.background.base
 
 -- ftd.text: $footer-mobile.info
 role: $inherited.types.copy-small
@@ -1151,7 +1155,7 @@ padding-vertical.px: 32
 
 -- ftd.text: $hero-mobile.title
 if: { hero-mobile.title != NULL }
-color: $inherited.colors.text
+color: $inherited.colors.scrim
 role: $inherited.types.heading-small
 style: bold
 text-align: center
@@ -1473,25 +1477,12 @@ color: $inherited.colors.cta-tertiary.text
 -- button: $our-work-mobile.cta-text
 cta-link: $our-work-mobile.cta-link
 
--- ftd.column:
-
--- ftd.image:
-src: $assets.files.assets.rect.svg
-anchor: parent
-top.px: 16
-height.fixed.px: 320
-width.fixed.px: 320
-z-index: 1
-
 -- ftd.image:
 src: $our-work-mobile.img
 border-radius.px: 30
 width.fixed.px: 320
 height.fixed.px: 320
 align-self: center
-z-index: 5
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -2129,7 +2120,7 @@ spacing.fixed.px: 24
 
 -- ftd.text: $scope-mobile.tag
 role: $inherited.types.copy-large
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.info.text
 style: semi-bold
 
 -- ftd.text: $scope-mobile.title
@@ -2140,6 +2131,7 @@ style: extra-bold
 -- ftd.text:
 role: $inherited.types.copy-large
 color: $inherited.colors.cta-primary.text
+text-align: justify
 
 $scope-mobile.body
 
@@ -2604,8 +2596,8 @@ style: bold
 
 -- ftd.image:
 src: $about-card-mobile.avatar
-width.fixed.px: 380
-height.fixed.px: 380
+width.fixed.px: 320
+height.fixed.px: 320
 border-radius.px: 20
 
 -- ftd.column:
@@ -3213,11 +3205,9 @@ optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
 
 -- ftd.column:
+margin-top.px: 24
 width: fill-container
-background.solid: $inherited.colors.background.base
-spacing.fixed.px: 8
 padding-horizontal.px: 24
-z-index: 2
 
 -- ftd.column:
 width.fixed.px: 280
@@ -3227,9 +3217,10 @@ padding-top.px: 18
 padding-bottom.px: 32
 background.linear-gradient: $lg3
 z-index: 10
-;;shadow: $shadow
+shadow: $shadow
 spacing: space-between
 align-self: center
+border-radius.px: 8
 
 -- ftd.column:
 spacing.fixed.px: 16
@@ -3321,15 +3312,16 @@ padding-horizontal.px: 24
 padding-right.px: 36
 padding-vertical.px: 64
 spacing.fixed.px: 24
-background.solid: $inherited.colors.cta-secondary.text
+background.solid: $inherited.colors.background.step-1
 z-index: 8
 shadow: $shadow
 margin-top.px: -24
 align-content: center
+border-radius.px: 8
 
 -- ftd.text: $contact-form-mobile.title
 role: $inherited.types.heading-small
-color: $inherited.colors.background.overlay
+color: $inherited.colors.cta-secondary.text
 
 -- ftd.column:
 width: fill-container
@@ -3342,6 +3334,7 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 width: fill-container
 border-bottom-width.px: 1
+background.solid: $inherited.colors.background.step-1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
@@ -3353,6 +3346,7 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 width: fill-container
 border-bottom-width.px: 1
+background.solid: $inherited.colors.background.step-1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
@@ -3365,6 +3359,7 @@ padding-horizontal.px: 8
 width: fill-container
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
+background.solid: $inherited.colors.background.step-1
 type: text
 role: $inherited.types.copy-small
 color: $inherited.colors.border
@@ -3376,13 +3371,14 @@ padding-horizontal.px: 8
 width: fill-container
 border-bottom-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
+background.solid: $inherited.colors.background.step-1
 type: text
 role: $inherited.types.copy-small
 color: $inherited.colors.border
 
 -- ftd.text: Write your message here...
 role: $inherited.types.copy-small
-color: $inherited.colors.background.overlay
+color: $inherited.colors.cta-secondary.text
 margin-bottom.px: 4
 margin-top.px: 24
 
@@ -3394,18 +3390,11 @@ border-bottom-width.px: 1
 type: text
 role: $inherited.types.copy-small
 border-color: $inherited.colors.cta-tertiary.focused
+background.solid: $inherited.colors.background.step-1
 color: $inherited.colors.border
 
--- ftd.text: $contact-form-mobile.cta-button
-role: $inherited.types.label-large
-text-align: center
-padding-vertical.px: 8
-padding-horizontal.px: 24
-background.linear-gradient: $lg
-$on-mouse-enter$: $ftd.set-bool($a = $contact-form-mobile.is-active, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $contact-form-mobile.is-active, v = false)
-color: $inherited.colors.cta-primary.text
-link: $contact-form-mobile.cta-link
+-- button: $contact-form-mobile.cta-button
+cta-link: $contact-form-mobile.cta-link
 
 -- end: ftd.column
 
@@ -3721,15 +3710,36 @@ children: $services-container.child
 -- component row-container:
 children wrapper:
 
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 130
-padding-vertical.px if { ftd.device != "mobile" }: 82
-padding-horizontal.px if { ftd.device != "mobile" }: 82
+padding-vertical.px: 82
+padding-horizontal.px: 82
 align-content: center
-wrap if { ftd.device == "mobile" }: true
 children: $row-container.wrapper
 
 -- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 32
+align-content: center
+wrap: true
+children: $row-container.wrapper
+
+-- end: ftd.row
+
+-- end: ftd.mobile
+
+-- end: ftd.column
 
 -- end: row-container
