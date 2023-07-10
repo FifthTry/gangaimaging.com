@@ -14,7 +14,11 @@ colors: $cs.main
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
 
-OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
+OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE
+HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE
+HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY
+SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH
+HIGH-QUALITY IMAGES.
 
 -- end: site-doc.output
 
@@ -53,8 +57,8 @@ Below are details of all properties of this component.
 -- site-doc.component-property: `image`
 type: ftd.image-src (`required`)
 
-This is a default property of the `services-container` component. It’s used to add a
-image to `services-container` component.
+This is a default property of the `services-container` component. It’s used to
+add a image to `services-container` component.
 
 -- site-doc.component-property: `body`
 type: String (`required`)

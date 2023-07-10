@@ -107,9 +107,9 @@ choice. The size of logo is 32 pixels width and 32 pixels height on desktop and
 -- site-doc.component-property: `instagram`
 type: ftd.image-src (`optional`)
 
-It's used show instagram logo. You can change instagram logo with the logo of your
-choice. The size of logo is 32 pixels width and 32 pixels height on desktop and
-24 pixels width and 24px height on mobile devices.
+It's used show instagram logo. You can change instagram logo with the logo of
+your choice. The size of logo is 32 pixels width and 32 pixels height on
+desktop and 24 pixels width and 24px height on mobile devices.
 
 -- site-doc.component-property: `linkedin`
 type: ftd.image-src (`optional`)
