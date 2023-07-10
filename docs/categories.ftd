@@ -4,11 +4,14 @@
 -- import: fastn-community.github.io/site-doc
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: categories
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: Categories
 
 -- site-doc.output:
 types: $typo.types
@@ -48,12 +51,12 @@ procedures: $common.procedures
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: String
+type: Title (`required`)
 
 It's used to show `title` for your categories.
 
 -- site-doc.component-property: `procedures`
-type: Record
+type: Record (`required`)
 
 It's used show record for your categories.
 

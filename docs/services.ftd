@@ -5,11 +5,14 @@
 -- import: fifthtry.github.io/gangaimaging.com/assets
 -- import: fifthtry.github.io/gangaimaging.com/common
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: services
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: services
 
 -- site-doc.output:
 types: $typo.types
@@ -50,16 +53,19 @@ facilities: $common.facility-list
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
+type: Title (`required`)
 
 This is a default property of the `services` component. It’s used to add a
 title to `services` component.
 
 -- site-doc.component-property: `sub-title`
+type: String (`required`)
 
 This is a default property of the `services` component. It’s used to add a
 sub-title to `services` component.
 
 -- site-doc.component-property: `facilities`
+type: Record (`required`)
 
 This is a default property of the `services` component. It's a list of
 facility record that contains

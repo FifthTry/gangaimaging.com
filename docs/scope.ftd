@@ -4,11 +4,14 @@
 -- import: fastn-community.github.io/site-doc
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: scope
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: Scope
 
 -- site-doc.output:
 types: $typo.types
@@ -69,19 +72,23 @@ image: $assets.files.assets.left-img.png
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
+type: Title (`required`)
 
 This is a default property of the `scope` component. It’s used to add a
 title to `scope` component.
 
 -- site-doc.component-property: `tag`
+type: String (`required`)
 
 Using `tag` attribute tag can be added which adds small heading at the top.
 
 -- site-doc.component-property: `body`
+type: String (`required`)
 
 Using `body` attribute to add information about the section.
 
 -- site-doc.component-property: `image`
+type: ftd.image-src (`required`)
 
 This is a default property of the `scope` component. Using `image`
 attribute image can be added.

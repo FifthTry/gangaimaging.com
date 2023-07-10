@@ -4,11 +4,14 @@
 -- import: fastn-community.github.io/site-doc
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: contact-form
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: Contact Form
 
 -- site-doc.output:
 types: $typo.types
@@ -64,58 +67,60 @@ instagram: $assets.files.assets.linkedin.svg
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: String
+type: String (`required`)
 
 It's used to show `title` for your contact-form.
 
 -- site-doc.component-property: `address`
-type: String
+type: String (`optional`)
 
 It's used show address information of your project.
 
 -- site-doc.component-property: `email`
-type: String
+type: String (`optional`)
 
 It's used show email information of your project.
 
 -- site-doc.component-property: `phone`
-type: String
+type: String (`optional`)
 
 It's used show phone information of your project.
 
 -- site-doc.component-property: `cta-button`
+type: String (`optional`)
 
 This is a default property of the `contact-form` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-link`
+type: String (`optional`)
 
 This is a default property of the `contact-form` component. It’s used to add a
 link to click to action button.
 
 -- site-doc.component-property: `facebook`
-type: ftd.image-src
+type: ftd.image-src (`optional`)
 
 It's used show facebook logo. You can change facebook logo with the logo of your
 choice. The size of logo is 32 pixels width and 32 pixels height on desktop and
 24 pixels width and 24px height on mobile devices.
 
 -- site-doc.component-property: `twitter`
-type: ftd.image-src
+type: ftd.image-src (`optional`)
 
 It's used show twitter logo. You can change twitter logo with the logo of your
 choice. The size of logo is 32 pixels width and 32 pixels height on desktop and
 24 pixels width and 24px height on mobile devices.
 
 -- site-doc.component-property: `instagram`
-type: ftd.image-src
+type: ftd.image-src (`optional`)
 
 It's used show instagram logo. You can change instagram logo with the logo of your
 choice. The size of logo is 32 pixels width and 32 pixels height on desktop and
 24 pixels width and 24px height on mobile devices.
 
 -- site-doc.component-property: `linkedin`
-type: ftd.image-src
+type: ftd.image-src (`optional`)
 
 It's used show linkedin logo. You can change linkedin logo with the logo of your
 choice. The size of logo is 32 pixels width and 32 pixels height on desktop and

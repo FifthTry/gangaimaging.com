@@ -1054,7 +1054,7 @@ width: fill-container
 z-index: 1
 
 -- ftd.row:
-;;width.fixed.px: 1250
+padding-horizontal.px: 24
 spacing: space-between
 align-content: center
 align-self: center
@@ -1403,6 +1403,7 @@ align-content: center
 background.linear-gradient: $lg3
 
 -- ftd.row:
+padding-horizontal.px: 24
 spacing.fixed.px: 140
 width: fill-container
 max-width.fixed.px: 1140
@@ -1860,8 +1861,9 @@ margin-top.px: 64
 
 -- ftd.row:
 width: fill-container
+padding-horizontal.px: 24
 spacing: space-between
-max-width.fixed.px: 1140
+max-width.fixed.px: $common.max-width
 
 -- ftd.text: $contact-desktop.title
 role: $inherited.types.heading-medium
@@ -2240,7 +2242,7 @@ spacing.fixed.px: 24
 z-index: 4
 
 -- ftd.column:
-width.fixed.px: 1250
+width.fixed.px: 1140
 spacing.fixed.px: 48
 align-content: center
 align-self: center

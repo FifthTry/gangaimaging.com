@@ -5,11 +5,14 @@
 -- import: fifthtry.github.io/gangaimaging.com/assets
 -- import: fifthtry.github.io/gangaimaging.com/common
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: services-container
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: Services Container
 
 -- site-doc.output:
 types: $typo.types
@@ -56,11 +59,13 @@ HIGH-QUALITY IMAGES.
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `src`
+type: ftd.image-src (`required`)
 
 This is a default property of the `services-container` component. It’s used to add a
 src to `services-container` component.
 
 -- site-doc.component-property: `body`
+type: String (`required`)
 
 Using `body` attribute to add information about the section.
 

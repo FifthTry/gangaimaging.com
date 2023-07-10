@@ -4,11 +4,14 @@
 -- import: fastn-community.github.io/site-doc
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: features
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: Features
 
 -- site-doc.output:
 types: $typo.types
@@ -50,15 +53,18 @@ services: $common.services
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
+type: Title (`required`)
 
 This is a default property of the `features` component. It’s used to add a
 title to `features` component.
 
 -- site-doc.component-property: `tag`
+type: String (`required`)
 
 Using `tag` attribute tag can be added which adds small heading at the top.
 
 -- site-doc.component-property: `services`
+type: Record (`required`)
 
 This is a list of services that gangaimaging provides.
 

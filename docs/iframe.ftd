@@ -5,11 +5,14 @@
 -- import: fifthtry.github.io/gangaimaging.com/assets
 -- import: fifthtry.github.io/gangaimaging.com/common
 
--- site-doc.doc-home: Component Page
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: iframe
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
 typography: fastn-community.github.io/lato-typography
 current-package: fifthtry.github.io/gangaimaging.com
+site-title: Iframe
 
 -- site-doc.output:
 types: $typo.types
@@ -52,16 +55,19 @@ height.fixed.px: 420
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `src`
+type: src (`required`)
 
 This is a default property of the `iframe` component. It’s used to add a
 src to `iframe` component.
 
 -- site-doc.component-property: `width`
+type: ftd.resizing (`optional`)
 
 This is a default property of the `iframe` component. It’s used to add a
 width to `iframe` component.
 
 -- site-doc.component-property: `height`
+type: ftd.resizing (`optional`)
 
 This is a default property of the `iframe` component. It’s used to add a
 height to `iframe` component.

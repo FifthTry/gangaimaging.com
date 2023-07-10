@@ -79,24 +79,34 @@ He has experience of over 12 years in the field of `diagnostic radiology`.
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
+type: Title (`required`)
 
 This is a default property of the `about-card` component. It’s used to add a
 title to `about-card` component.
 
 -- site-doc.component-property: `location1`
+type: String (`required`)
 
 This is a default property of the `about-card` component. It’s used to add a
 title to `about-card` component.
 
 -- site-doc.component-property: `location2`
+type: String (`required`)
 
 It’s used to add a location information to `about-card` component.
 
 -- site-doc.component-property: `profile`
+type: String (`required`)
 
 It’s used to add a profile information to `about-card` component.
 
+-- site-doc.component-property: `avatar`
+type: ftd.image-src (`required`)
+
+It’s used to add a avatar image to `about-card` component.
+
 -- site-doc.component-property: `body`
+type: Body (`required`)
 
 Using `body` attribute to add information about the section.
 
