@@ -1,12 +1,12 @@
 -- ds.page:
 full-width: true
 sidebar: false
-document-title: Ganga Diagnostic \u0026 Imaging Center Pvt. Ltd.
-document-description: Ganga Diagnostic \u0026 Imaging Center Pvt. Ltd.
+document-title: Ganga Diagnostic - Imaging Center Pvt. Ltd.
+document-description: Ganga Diagnostic - Imaging Center Pvt. Ltd.
 document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
 
--- ds.hero: Give your hearts the love it deserves
-cta-text: Learn More
+-- ds.hero: Give your heart the love it deserves
+cta-text: Learn More Now
 cta-link: about/
 src: $assets.files.assets.back-img2.svg
 image: $assets.files.assets.bg.svg
