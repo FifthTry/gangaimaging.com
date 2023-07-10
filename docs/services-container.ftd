@@ -1,0 +1,69 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.services-container:
+src: $assets.files.assets.hero-image.jpeg
+
+OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `services-container`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- services-container` can be used as services-container-us on your fastn projects.
+
+`services-container` is a new conversation experience via using FTD lang. To use
+`services-container` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.services-container:
+src: $assets.files.assets.hero-image.jpeg
+
+OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE
+HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE
+HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY
+SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH
+HIGH-QUALITY IMAGES.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `src`
+
+This is a default property of the `services-container` component. It’s used to add a
+src to `services-container` component.
+
+-- site-doc.component-property: `body`
+
+Using `body` attribute to add information about the section.
+
+-- end: site-doc.doc-home

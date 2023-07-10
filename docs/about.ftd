@@ -1,0 +1,169 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.about: ABOUT US
+img1: $assets.files.assets.about-dr-sameer.png
+img2: $assets.files.assets.dr-samee-about-us-image-3.png
+img3: $assets.files.assets.dr-samee-about-us-image-4.png
+img4: $assets.files.assets.dr-samee-image-2.png
+sub-title1: `Vision`
+sub-title2: `Mission`
+sub-title3: `Speciality`
+info1: To provide diagnostic interventional radiology and pathology at international standards using the latest technologys equipment by committed, professional and caring staff.
+info2: We strive to provide service at an international standard. To achieve this we ensure: 1. Providing an efficient and high-quality service. 2. Using the latest technology equipment. 3. Developing professional and caring staff. 4. Fulfilling the needs of society and country.
+info3: About Dr. Samir
+
+Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd. is a healthcare service
+providing company started with the aim, to provide high-quality imaging and
+diagnostic services to all the members of society at an affordable cost. It was
+established in 2013 in New Delhi by Dr. Samir Upadhyay consultant radiologist
+(MBBS, DMRD, DNB) Dr. Samir’s Ganga Diagnostic & Imaging centre began its
+operations as an ultrasound centre in Adarsh Nagar. In addition to this, we are
+very pleased to inform you that our healthcare diagnostics is an inapproachable
+area and nearby DTC BUS stand and metro station. Within a short duration, we
+have gained an immense reputation. Our accurate and precise have set a
+benchmark among our peer diagnostic centres. Dr Samir’s Ganga Diagnostic &
+Imaging Centre has offered the best services to patients and clients over time,
+it has evolved and imbibed the latest upgrades in diagnostic equipment and
+today it stands with the most advanced armamentarium geared with the
+latest, “State of the Art” diagnostic equipment.
+
+Our core functionalities are streamlined optimally so that every report is
+checked and verified by a qualified doctor.
+
+We have certified by the most prestigious NABH – MIS Accreditation for imaging
+services from Quality Council of India. It is the highest accreditation to
+ensure the quality of a health care provider in imaging sciences.
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `about`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- about` can be used as about-us on your fastn projects.
+
+`about` is a new conversation experience via using FTD lang. To use
+`about` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.about: ABOUT US
+img1: $assets.files.assets.about-dr-sameer.png
+img2: $assets.files.assets.dr-samee-about-us-image-3.png
+img3: $assets.files.assets.dr-samee-about-us-image-4.png
+img4: $assets.files.assets.dr-samee-image-2.png
+sub-title1: `Vision`
+sub-title2: `Mission`
+sub-title3: `Speciality`
+info1: To provide diagnostic interventional radiology and pathology at international standards using the latest technologys equipment by committed, professional and caring staff.
+info2: We strive to provide service at an international standard. To achieve this we ensure: 1. Providing an efficient and high-quality service. 2. Using the latest technology equipment. 3. Developing professional and caring staff. 4. Fulfilling the needs of society and country.
+info3: About Dr. Samir
+
+Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd. is a healthcare service
+providing company started with the aim, to provide high-quality imaging and
+diagnostic services to all the members of society at an affordable cost. It was
+established in 2013 in New Delhi by Dr. Samir Upadhyay consultant radiologist
+(MBBS, DMRD, DNB) Dr. Samir’s Ganga Diagnostic & Imaging centre began its
+operations as an ultrasound centre in Adarsh Nagar. In addition to this, we are
+very pleased to inform you that our healthcare diagnostics is an inapproachable
+area and nearby DTC BUS stand and metro station. Within a short duration, we
+have gained an immense reputation. Our accurate and precise have set a
+benchmark among our peer diagnostic centres. Dr Samir’s Ganga Diagnostic &
+Imaging Centre has offered the best services to patients and clients over time,
+it has evolved and imbibed the latest upgrades in diagnostic equipment and
+today it stands with the most advanced armamentarium geared with the
+latest, “State of the Art” diagnostic equipment.
+
+Our core functionalities are streamlined optimally so that every report is
+checked and verified by a qualified doctor.
+
+We have certified by the most prestigious NABH – MIS Accreditation for imaging
+services from Quality Council of India. It is the highest accreditation to
+ensure the quality of a health care provider in imaging sciences.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `title`
+
+This is a default property of the `about` component. It’s used to add a
+title to `about` component.
+
+-- site-doc.component-property: `sub-title1`
+
+This is a default property of the `about` component. It’s used to add a
+sub-title to `about` component.
+
+-- site-doc.component-property: `sub-title2`
+
+This is a default property of the `about` component. It’s used to add a
+sub-title to `about` component.
+
+-- site-doc.component-property: `sub-title3`
+
+This is a default property of the `about` component. It’s used to add a
+sub-title to `about` component.
+
+-- site-doc.component-property: `info1`
+
+This is a default property of the `about` component. It’s used to add a
+info to `about` component.
+
+-- site-doc.component-property: `info2`
+
+This is a default property of the `about` component. It’s used to add a
+info to `about` component.
+
+-- site-doc.component-property: `info3`
+
+This is a default property of the `about` component. It’s used to add a
+info to `about` component.
+
+-- site-doc.component-property: `img1`
+
+It’s used to add a image to `about` component.
+
+-- site-doc.component-property: `img2`
+
+It’s used to add a image to `about` component.
+
+-- site-doc.component-property: `img3`
+
+It’s used to add a image to `about` component.
+
+-- site-doc.component-property: `img4`
+
+It’s used to add a image to `about` component.
+
+-- site-doc.component-property: `body`
+
+Using `body` attribute to add information about the section.
+
+-- end: site-doc.doc-home

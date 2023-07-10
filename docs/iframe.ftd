@@ -1,0 +1,70 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.iframe:
+src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
+width.fixed.px: 340
+height.fixed.px: 420
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `iframe`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- iframe` can be used as iframe on your fastn projects.
+
+`iframe` is a new conversation experience via using FTD lang. To use
+`iframe` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.iframe:
+src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
+width.fixed.px: 340
+height.fixed.px: 420
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `src`
+
+This is a default property of the `iframe` component. It’s used to add a
+src to `iframe` component.
+
+-- site-doc.component-property: `width`
+
+This is a default property of the `iframe` component. It’s used to add a
+width to `iframe` component.
+
+-- site-doc.component-property: `height`
+
+This is a default property of the `iframe` component. It’s used to add a
+height to `iframe` component.
+
+-- end: site-doc.doc-home

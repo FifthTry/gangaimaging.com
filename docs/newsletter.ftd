@@ -1,0 +1,76 @@
+-- import: fastn
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/site-doc/assets
+-- import: fastn-community.github.io/site-doc
+-- import: fifthtry.github.io/gangaimaging.com/lib as lb
+-- import: fifthtry.github.io/gangaimaging.com/assets
+-- import: fifthtry.github.io/gangaimaging.com/common
+
+-- site-doc.doc-home: Component Page
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: fastn-community.github.io/blue-heal-cs
+typography: fastn-community.github.io/lato-typography
+current-package: fifthtry.github.io/gangaimaging.com
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- lb.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
+
+-- end: site-doc.output
+
+-- site-doc.component-doc: `newsletter`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- newsletter` can be used as newsletter-us on your fastn projects.
+
+`newsletter` is a new conversation experience via using FTD lang. To use
+`newsletter` on your fastn package, add below into lines FASTN.ftd file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
+
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+
+\-- lb.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of this component.
+
+-- site-doc.component-property: `title`
+
+This is a default property of the `newsletter` component. It’s used to add a
+title to `newsletter` component.
+
+-- site-doc.component-property: `tag`
+
+This is a default property of the `newsletter` component. It’s used to add a
+tag to `newsletter` component.
+
+-- site-doc.component-property: `cta-text`
+
+This is a default property of the `newsletter` component. It’s used to add a
+click to action button title.
+
+-- site-doc.component-property: `cta-link`
+
+This is a default property of the `newsletter` component. It’s used to add a
+link to click to action button.
+
+-- end: site-doc.doc-home
