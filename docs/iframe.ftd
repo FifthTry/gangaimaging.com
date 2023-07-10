@@ -31,7 +31,6 @@ info: `-- iframe` can be used as iframe on your fastn projects.
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds as ds
 
 -- site-doc.header: Invocation:
 

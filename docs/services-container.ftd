@@ -31,7 +31,6 @@ info: `-- services-container` can be used as services-container-us on your fastn
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds as ds
 
 -- site-doc.header: Invocation:
 
