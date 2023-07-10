@@ -49,7 +49,7 @@ site-url: $common.site-url
 logo-width: $common.logo-width
 logo-height: $common.logo-height
 footer-links: $common.footer-links
-copyright: Copyright © 2019. All rights reserved by Ganga Diagnostic
+copyright: Copyright © 2023 - [Gangaimaging.com](https://fifthtry.github.io/gangaimaging.com/)
 
 -- end: lib.page.footer
 
