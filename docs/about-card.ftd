@@ -4,6 +4,8 @@
 -- import: fastn-community.github.io/site-doc
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
 -- site-doc.doc-home: Component Page
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: fastn-community.github.io/blue-heal-cs
