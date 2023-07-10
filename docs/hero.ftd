@@ -8,8 +8,8 @@
 
 -- site-doc.doc-home: hero
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
 current-package: fifthtry.github.io/gangaimaging.com
 site-title: Hero
 
@@ -20,8 +20,8 @@ colors: $cs.main
 -- ds.hero: Give your hearts the love it deserves
 cta-text: Learn More
 cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
+image: $assets.files.assets.back-img2.svg
+bg-image: $assets.files.assets.bg.svg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing
 
@@ -50,8 +50,8 @@ lang: ftd
 \-- ds.hero:  Give your hearts the love it deserves
 cta-text: Learn More
 cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
+image: $assets.files.assets.back-img2.svg
+bg-image: $assets.files.assets.bg.svg
 
 Lorem ipsum dolor sit amet, consectetur adipiscing
 
@@ -60,7 +60,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: Title (`required`)
+type: Caption (`required`)
 
 This is a default property of the `hero` component. It’s used to add a
 title to `hero` component.
@@ -77,16 +77,16 @@ type: String (`optional`)
 This is a default property of the `hero` component. It’s used to add a
 link to click to action button.
 
--- site-doc.component-property: `src`
+-- site-doc.component-property: `image`
 type: ftd.image-src (`optional`)
 
-This is a default property of the `hero` component. Using `src`
+This is a default property of the `hero` component. Using `image`
 attribute image can be added.
 
--- site-doc.component-property: `image`
+-- site-doc.component-property: `bg-image`
 type: ftd.background-image (`optional`)
 
-This is a default property of the `hero` component. Using `image`
+This is a default property of the `hero` component. Using `bg-image`
 attribute image can be added.
 
 -- end: site-doc.doc-home

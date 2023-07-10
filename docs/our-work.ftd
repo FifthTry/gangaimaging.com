@@ -8,8 +8,8 @@
 
 -- site-doc.doc-home: our-work
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
 current-package: fifthtry.github.io/gangaimaging.com
 site-title: Our Work
 
@@ -19,7 +19,7 @@ colors: $cs.main
 
 -- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
-img: $assets.files.assets.about-dr-sameer.png
+image: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
 cta-link: services/
 
@@ -47,7 +47,7 @@ lang: ftd
 
 \-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
-img: $assets.files.assets.about-dr-sameer.png
+image: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
 cta-link: services/
 
@@ -56,7 +56,7 @@ cta-link: services/
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: Title (`required`)
+type: Caption (`required`)
 
 This is a default property of the `our-work` component. It’s used to add a
 title to `our-work` component.

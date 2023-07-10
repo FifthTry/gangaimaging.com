@@ -12,9 +12,8 @@ favicon: /-/fifthtry.github.io/gangaimaging.com/favicon.ico
 -- fastn.auto-import: cs
 -- fastn.auto-import: cb
 -- fastn.auto-import: typo
--- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib
+-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds as ds
 -- fastn.auto-import: fifthtry.github.io/gangaimaging.com/common
--- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds
 
 -- fastn.sitemap:
 
@@ -27,6 +26,8 @@ favicon: /-/fifthtry.github.io/gangaimaging.com/favicon.ico
 # Contact: /contact/
 
 # Docs: /docs/about-card/
+skip: true
+
 - About Card: /docs/about-card/
 - About: /docs/about/
 - Categories: /docs/categories/
@@ -43,4 +44,3 @@ favicon: /-/fifthtry.github.io/gangaimaging.com/favicon.ico
 - Services Container: /docs/services-container/
 - Services: /docs/services/
 - Testimonials Card: /docs/testimonials-card/
-

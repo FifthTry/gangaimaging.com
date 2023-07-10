@@ -6,12 +6,12 @@ document-description: Untitled gangaimaging/services
 document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
 
 -- ds.hero: 
-image: $assets.files.assets.bg.svg
+bg-image: $assets.files.assets.bg.svg
 
 Digital Radiology
 
 -- ds.services-container:
-src: $assets.files.assets.hero-image.jpeg
+image: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
 

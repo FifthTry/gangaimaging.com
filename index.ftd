@@ -8,8 +8,8 @@ document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io
 -- ds.hero: Give your hearts the love it deserves
 cta-text: Learn More
 cta-link: about/
-src: $assets.files.assets.back-img2.svg
-image: $assets.files.assets.bg.svg
+image: $assets.files.assets.back-img2.svg
+bg-image: $assets.files.assets.bg.svg
 
 Does decoding your health test reports leave you confused?
 
@@ -19,7 +19,7 @@ facilities: $common.facility-list
 
 -- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
-img: $assets.files.assets.Dr-sameer-Upadhyay.jpeg
+image: $assets.files.assets.Dr-sameer-Upadhyay.jpeg
 cta-text: What we do
 cta-link: services/
 

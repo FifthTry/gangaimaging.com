@@ -8,8 +8,8 @@
 
 -- site-doc.doc-home: categories
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
 current-package: fifthtry.github.io/gangaimaging.com
 site-title: Categories
 
@@ -51,7 +51,7 @@ procedures: $common.procedures
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: Title (`required`)
+type: Caption (`required`)
 
 It's used to show `title` for your categories.
 

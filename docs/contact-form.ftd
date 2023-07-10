@@ -8,8 +8,8 @@
 
 -- site-doc.doc-home: contact-form
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
 current-package: fifthtry.github.io/gangaimaging.com
 site-title: Contact Form
 
@@ -67,7 +67,7 @@ instagram: $assets.files.assets.linkedin.svg
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: String (`required`)
+type: Caption (`required`)
 
 It's used to show `title` for your contact-form.
 

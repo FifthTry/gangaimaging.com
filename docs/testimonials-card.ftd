@@ -3,14 +3,13 @@
 -- import: fastn-community.github.io/site-doc/assets
 -- import: fastn-community.github.io/site-doc
 -- import: fifthtry.github.io/gangaimaging.com/assets
--- import: fifthtry.github.io/gangaimaging.com/common
 
 -- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
 
 -- site-doc.doc-home: testimonials-card
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
 current-package: fifthtry.github.io/gangaimaging.com
 site-title: Testimonials Card
 
@@ -53,7 +52,7 @@ testimonials: $common.list-of-testimonials
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: Title (`required`)
+type: Caption (`required`)
 
 This is a default property of the `testimonials-card` component. It’s used to add a
 title to `testimonials-card` component.

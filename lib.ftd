@@ -994,8 +994,8 @@ optional caption title:
 optional body body:
 optional string cta-text:
 optional string cta-link:
-optional ftd.image-src src:
-optional ftd.background-image image:
+optional ftd.image-src image:
+optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: fill-container
@@ -1006,8 +1006,8 @@ width: fill-container
 body: $hero.body
 cta-text: $hero.cta-text
 cta-link: $hero.cta-link
-src: $hero.src
 image: $hero.image
+bg-image: $hero.bg-image
 
 -- end: ftd.desktop
 
@@ -1017,8 +1017,8 @@ image: $hero.image
 body: $hero.body
 cta-text: $hero.cta-text
 cta-link: $hero.cta-link
-src: $hero.src
 image: $hero.image
+bg-image: $hero.bg-image
 
 -- end: ftd.mobile
 
@@ -1040,8 +1040,8 @@ optional caption title:
 optional body body:
 optional string cta-text:
 optional string cta-link:
-optional ftd.image-src src:
-optional ftd.background-image image:
+optional ftd.image-src image:
+optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: fill-container
@@ -1049,7 +1049,7 @@ align-content: center
 z-index: 4
 
 -- ftd.column:
-background.image: $hero-desktop.image
+background.image: $hero-desktop.bg-image
 width: fill-container
 z-index: 1
 
@@ -1065,8 +1065,8 @@ padding-vertical.px: 64
 spacing.fixed.px: 28
 z-index: 1
 ;;width.fixed.px: 750
-width if { hero-desktop.src == NULL }: fill-container
-align-content if { hero-desktop.src == NULL }: center
+width if { hero-desktop.image == NULL }: fill-container
+align-content if { hero-desktop.image == NULL }: center
 
 -- ftd.text: $hero-desktop.title
 if: { hero-desktop.title != NULL }
@@ -1088,7 +1088,7 @@ cta-link: $hero-desktop.cta-link
 -- end: ftd.column
 
 -- ftd.column:
-if: { hero-desktop.src != NULL }
+if: { hero-desktop.image != NULL }
 padding-vertical.px: 24
 
 -- ftd.image:
@@ -1100,8 +1100,8 @@ width.fixed.px: 350
 z-index: 1
 
 -- ftd.image:
-if: { hero-desktop.src != NULL }
-src: $hero-desktop.src
+if: { hero-desktop.image != NULL }
+src: $hero-desktop.image
 width.fixed.px: 350
 height.fixed.px: 350
 z-index: 5
@@ -1131,8 +1131,8 @@ optional caption title:
 optional body body:
 optional string cta-text:
 optional string cta-link:
-optional ftd.image-src src:
-optional ftd.background-image image:
+optional ftd.image-src image:
+optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: fill-container
@@ -1140,7 +1140,7 @@ align-content: center
 z-index: 4
 
 -- ftd.column:
-background.image: $hero-mobile.image
+background.image: $hero-mobile.bg-image
 width: fill-container
 z-index: 1
 
@@ -1175,7 +1175,7 @@ cta-link: $hero-mobile.cta-link
 -- end: ftd.column
 
 -- ftd.column:
-if: { hero-mobile.src != NULL }
+if: { hero-mobile.image != NULL }
 margin-vertical.px: 24
 align-self: center
 
@@ -1188,8 +1188,8 @@ width.fixed.px: 350
 z-index: 1
 
 -- ftd.image:
-if: { hero-mobile.src != NULL }
-src: $hero-mobile.src
+if: { hero-mobile.image != NULL }
+src: $hero-mobile.image
 width.fixed.px: 350
 height.fixed.px: 350
 z-index: 5
@@ -1351,7 +1351,7 @@ caption title:
 string tag:
 string cta-text:
 string cta-link:
-ftd.image-src img:
+ftd.image-src image:
 
 -- ftd.column:
 width: fill-container
@@ -1362,7 +1362,7 @@ width: fill-container
 tag: $our-work.tag
 cta-text: $our-work.cta-text
 cta-link: $our-work.cta-link
-img: $our-work.img
+image: $our-work.image
 
 -- end: ftd.desktop
 
@@ -1372,7 +1372,7 @@ img: $our-work.img
 tag: $our-work.tag
 cta-text: $our-work.cta-text
 cta-link: $our-work.cta-link
-img: $our-work.img
+image: $our-work.image
 
 -- end: ftd.mobile
 
@@ -1394,7 +1394,7 @@ caption title:
 string tag:
 string cta-text:
 string cta-link:
-ftd.image-src img:
+ftd.image-src image:
 
 -- ftd.row:
 width: fill-container
@@ -1432,7 +1432,7 @@ cta-link: $our-work-desktop.cta-link
 -- end: ftd.column
 
 -- ftd.image:
-src: $our-work-desktop.img
+src: $our-work-desktop.image
 border-radius.px: 30
 width.fixed.px: 380
 height.fixed.px: 380
@@ -1457,7 +1457,7 @@ caption title:
 string tag:
 string cta-text:
 string cta-link:
-ftd.image-src img:
+ftd.image-src image:
 
 -- ftd.column:
 width: fill-container
@@ -1479,7 +1479,7 @@ color: $inherited.colors.cta-tertiary.text
 cta-link: $our-work-mobile.cta-link
 
 -- ftd.image:
-src: $our-work-mobile.img
+src: $our-work-mobile.image
 border-radius.px: 30
 width.fixed.px: 320
 height.fixed.px: 320
@@ -2158,16 +2158,16 @@ cta-link: $scope-mobile.cta-link
 -- component about:
 caption title:
 body body:
-string sub-title1:
-string sub-title2:
-string sub-title3:
+string sub-title-1:
+string sub-title-2:
+string sub-title-3:
 string info1:
 string info2:
 string info3:
-ftd.image-src img1:
-ftd.image-src img2:
-ftd.image-src img3:
-ftd.image-src img4:
+ftd.image-src ref-image-1:
+ftd.image-src ref-image-2:
+ftd.image-src ref-image-3:
+ftd.image-src ref-image-4:
 
 -- ftd.column:
 width: fill-container
@@ -2175,34 +2175,34 @@ width: fill-container
 -- ftd.desktop: 
 
 -- about-desktop: $about.title
-sub-title1: $about.sub-title1
-sub-title2: $about.sub-title2
-sub-title3: $about.sub-title3
+sub-title-1: $about.sub-title-1
+sub-title-2: $about.sub-title-2
+sub-title-3: $about.sub-title-3
 body: $about.body
 info1: $about.info1
 info2: $about.info2
 info3: $about.info3
-img1: $about.img1
-img2: $about.img2
-img3: $about.img3
-img4: $about.img4
+ref-image-1: $about.ref-image-1
+ref-image-2: $about.ref-image-2
+ref-image-3: $about.ref-image-3
+ref-image-4: $about.ref-image-4
 
 -- end: ftd.desktop
 
 -- ftd.mobile: 
 
 -- about-mobile: $about.title
-sub-title1: $about.sub-title1
-sub-title2: $about.sub-title2
-sub-title3: $about.sub-title3
+sub-title-1: $about.sub-title-1
+sub-title-2: $about.sub-title-2
+sub-title-3: $about.sub-title-3
 body: $about.body
 info1: $about.info1
 info2: $about.info2
 info3: $about.info3
-img1: $about.img1
-img2: $about.img2
-img3: $about.img3
-img4: $about.img4
+ref-image-1: $about.ref-image-1
+ref-image-2: $about.ref-image-2
+ref-image-3: $about.ref-image-3
+ref-image-4: $about.ref-image-4
 
 -- end: ftd.mobile
 
@@ -2222,16 +2222,16 @@ img4: $about.img4
 -- component about-desktop:
 caption title:
 body body:
-string sub-title1:
-string sub-title2:
-string sub-title3:
+string sub-title-1:
+string sub-title-2:
+string sub-title-3:
 string info1:
 string info2:
 string info3:
-ftd.image-src img1:
-ftd.image-src img2:
-ftd.image-src img3:
-ftd.image-src img4:
+ftd.image-src ref-image-1:
+ftd.image-src ref-image-2:
+ftd.image-src ref-image-3:
+ftd.image-src ref-image-4:
 
 -- ftd.column:
 width: fill-container
@@ -2265,7 +2265,7 @@ width: fill-container
 align-content: left
 spacing.fixed.px: 32
 
--- ftd.text: $about-desktop.sub-title1
+-- ftd.text: $about-desktop.sub-title-1
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
@@ -2274,7 +2274,7 @@ style: extra-bold
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
--- ftd.text: $about-desktop.sub-title2
+-- ftd.text: $about-desktop.sub-title-2
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
@@ -2283,7 +2283,7 @@ style: extra-bold
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
--- ftd.text: $about-desktop.sub-title3
+-- ftd.text: $about-desktop.sub-title-3
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
@@ -2301,22 +2301,22 @@ wrap: true
 align-content: center
 
 -- ftd.image:
-src: $about-desktop.img1
+src: $about-desktop.ref-image-1
 width.fixed.px: 480
 height.fixed.px: 480
 
 -- ftd.image:
-src: $about-desktop.img2
+src: $about-desktop.ref-image-2
 width.fixed.px: 480
 height.fixed.px: 480
 
 -- ftd.image:
-src: $about-desktop.img3
+src: $about-desktop.ref-image-3
 width.fixed.px: 480
 height.fixed.px: 480
 
 -- ftd.image:
-src: $about-desktop.img4
+src: $about-desktop.ref-image-4
 width.fixed.px: 480
 height.fixed.px: 480
 
@@ -2340,16 +2340,16 @@ height.fixed.px: 480
 -- component about-mobile:
 caption title:
 body body:
-string sub-title1:
-string sub-title2:
-string sub-title3:
+string sub-title-1:
+string sub-title-2:
+string sub-title-3:
 string info1:
 string info2:
 string info3:
-ftd.image-src img1:
-ftd.image-src img2:
-ftd.image-src img3:
-ftd.image-src img4:
+ftd.image-src ref-image-1:
+ftd.image-src ref-image-2:
+ftd.image-src ref-image-3:
+ftd.image-src ref-image-4:
 
 -- ftd.column:
 width: fill-container
@@ -2377,7 +2377,7 @@ width: fill-container
 align-content: left
 spacing.fixed.px: 32
 
--- ftd.text: $about-mobile.sub-title1
+-- ftd.text: $about-mobile.sub-title-1
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
@@ -2386,7 +2386,7 @@ style: extra-bold
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
--- ftd.text: $about-mobile.sub-title2
+-- ftd.text: $about-mobile.sub-title-2
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
@@ -2395,7 +2395,7 @@ style: extra-bold
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
--- ftd.text: $about-mobile.sub-title3
+-- ftd.text: $about-mobile.sub-title-3
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
@@ -2413,22 +2413,22 @@ wrap: true
 align-content: center
 
 -- ftd.image:
-src: $about-mobile.img1
+src: $about-mobile.ref-image-1
 width.fixed.px: 250
 height.fixed.px: 250
 
 -- ftd.image:
-src: $about-mobile.img2
+src: $about-mobile.ref-image-2
 width.fixed.px: 250
 height.fixed.px: 250
 
 -- ftd.image:
-src: $about-mobile.img3
+src: $about-mobile.ref-image-3
 width.fixed.px: 250
 height.fixed.px: 250
 
 -- ftd.image:
-src: $about-mobile.img4
+src: $about-mobile.ref-image-4
 width.fixed.px: 250
 height.fixed.px: 250
 
@@ -3648,7 +3648,7 @@ link: $feature.cta-link
 
 
 -- component services-container:
-ftd.image-src src:
+ftd.image-src image:
 body body:
 children child:
 
@@ -3673,7 +3673,7 @@ width.fixed.percent if { ftd.device == "desktop" }: 50
 
 -- ftd.image:
 width: fill-container
-src: $services-container.src
+src: $services-container.image
 
 -- ftd.text:
 color: $inherited.colors.text

@@ -8,8 +8,8 @@
 
 -- site-doc.doc-home: features
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
 current-package: fifthtry.github.io/gangaimaging.com
 site-title: Features
 
@@ -53,7 +53,7 @@ services: $common.services
 Below are details of all properties of this component.
 
 -- site-doc.component-property: `title`
-type: Title (`required`)
+type: Caption (`required`)
 
 This is a default property of the `features` component. It’s used to add a
 title to `features` component.

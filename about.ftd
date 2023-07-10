@@ -6,7 +6,7 @@ document-description: Untitled gangaimaging/about
 document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
 
 -- ds.hero: Company Overview
-image: $assets.files.assets.bg.svg
+bg-image: $assets.files.assets.bg.svg
 
 We are 100% Trusted Diagnostic Centre
 
@@ -25,13 +25,13 @@ image: $assets.files.assets.left-img.png
 - USG/CT-GUIDED FNAC
 
 -- ds.about: ABOUT US
-img1: $assets.files.assets.about-dr-sameer.png
-img2: $assets.files.assets.dr-samee-about-us-image-3.png
-img3: $assets.files.assets.dr-samee-about-us-image-4.png
-img4: $assets.files.assets.dr-samee-image-2.png
-sub-title1: `Vision`
-sub-title2: `Mission`
-sub-title3: `Speciality`
+ref-image-1: $assets.files.assets.about-dr-sameer.png
+ref-image-2: $assets.files.assets.dr-samee-about-us-image-3.png
+ref-image-3: $assets.files.assets.dr-samee-about-us-image-4.png
+ref-image-4: $assets.files.assets.dr-samee-image-2.png
+sub-title-1: `Vision`
+sub-title-2: `Mission`
+sub-title-3: `Speciality`
 info1: To provide diagnostic interventional radiology and pathology at international standards using the latest technologys equipment by committed, professional and caring staff.
 info2: We strive to provide service at an international standard. To achieve this we ensure: 1. Providing an efficient and high-quality service. 2. Using the latest technology equipment. 3. Developing professional and caring staff. 4. Fulfilling the needs of society and country.
 info3: About Dr. Samir
