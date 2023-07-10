@@ -2,7 +2,6 @@
 -- import: fastn/processors as pr
 -- import: fastn-community.github.io/site-doc/assets
 -- import: fastn-community.github.io/site-doc
--- import: fifthtry.github.io/gangaimaging.com/lib as lb
 -- import: fifthtry.github.io/gangaimaging.com/assets
 -- import: fifthtry.github.io/gangaimaging.com/common
 
@@ -16,7 +15,7 @@ current-package: fifthtry.github.io/gangaimaging.com
 types: $typo.types
 colors: $cs.main
 
--- lb.services-container:
+-- ds.services-container:
 src: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
@@ -36,15 +35,14 @@ info: `-- services-container` can be used as services-container-us on your fastn
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
-
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds as ds
 
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
 
-\-- lb.services-container:
+\-- ds.services-container:
 src: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE

@@ -2,7 +2,6 @@
 -- import: fastn/processors as pr
 -- import: fastn-community.github.io/site-doc/assets
 -- import: fastn-community.github.io/site-doc
--- import: fifthtry.github.io/gangaimaging.com/lib as lb
 -- import: fifthtry.github.io/gangaimaging.com/assets
 
 -- site-doc.doc-home: Component Page
@@ -15,7 +14,7 @@ current-package: fifthtry.github.io/gangaimaging.com
 types: $typo.types
 colors: $cs.main
 
--- lb.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
 img: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
@@ -36,15 +35,14 @@ info: `-- our-work` can be used as homepage banner on your fastn projects.
 lang: ftd
 
 \-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
-
+\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/FASTN/ds as ds
 
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
 
-\-- lb.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+\-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
 img: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do

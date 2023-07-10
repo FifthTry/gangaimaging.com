@@ -1,6 +1,6 @@
 -- import: fastn
 -- import: fifthtry.github.io/gangaimaging.com/lib
-export: hero, button, services, our-work, facilities, testimonials-card, contact, image, iframe, scope, about, about-card, newsletter, category, categories, contact-form, dark-mode-switcher-float, features, services-container, row-container
+export: hero, button, services, our-work, facilities, testimonials-card, contact, image, iframe, scope, about, about-card, newsletter, category, categories, contact-form, dark-mode-switcher-float, features, services-container, row-container, footer
 
 -- component page:
 children wrapper:
