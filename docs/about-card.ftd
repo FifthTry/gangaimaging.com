@@ -4,8 +4,42 @@
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-current-package: fifthtry.github.io/gangaimaging.com
 site-title: About Card
+
+-- site-doc.component-doc: `about-card`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.about-card` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.about-card` contains, a image to the left side and information to the
+right side of it. If you wan to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.about-card: Dr. Samir Upadhyay
+location1: MBBS- TNMC & Nair Hospital, Mumbai,
+location2: DMRD-GMC & JJ Hospital, Mumbai
+profile: DNB - (Radiodiagnosis) - St. Stephen’s Hospital Tis Hazari, Delhi
+avatar: $assets.files.assets.Dr-sameer-Upadhyay.jpeg
+
+He has a special interest & expertise in `Fetal Medicine and Reproductive
+Medicine`.
+
+He is a certified radiologist by `FETAL MEDICINE Foundation (London UK)` for -
+`NT Scan (11-13 wks Scan)`, `PREECLAMPSIA SCREENING & Cervical Assessment`.
+
+Member of Society of Fetal Medicine, Internation Society of Ultrasound in
+obstetrics and Gynecology.
+
+He has experience of over 12 years in the field of `diagnostic radiology`.
+
+-- site-doc.header: Demo:
 
 -- site-doc.output:
 types: $typo.types
@@ -30,45 +64,10 @@ He has experience of over 12 years in the field of `diagnostic radiology`.
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `about-card`
-package-link: https://fifthtry.github.io/gangaimaging.com/
-github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fifthtry.github.io/gangaimaging.com
-info: `-- about-card` can be used as homepage banner on your fastn projects.
-
-`about-card` is a new conversation experience via using FTD lang. To use
-`about-card` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-
-\-- ds.about-card: Dr. Samir Upadhyay
-location1: MBBS- TNMC & Nair Hospital, Mumbai,
-location2: DMRD-GMC & JJ Hospital, Mumbai
-profile: DNB - (Radiodiagnosis) - St. Stephen’s Hospital Tis Hazari, Delhi
-avatar: $assets.files.assets.Dr-sameer-Upadhyay.jpeg
-
-He has a special interest & expertise in `Fetal Medicine and Reproductive
-Medicine`.
-
-He is a certified radiologist by `FETAL MEDICINE Foundation (London UK)` for -
-`NT Scan (11-13 wks Scan)`, `PREECLAMPSIA SCREENING & Cervical Assessment`.
-
-Member of Society of Fetal Medicine, Internation Society of Ultrasound in
-obstetrics and Gynecology.
-
-He has experience of over 12 years in the field of `diagnostic radiology`.
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.about-card` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)
