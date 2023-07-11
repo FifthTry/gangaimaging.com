@@ -4,8 +4,31 @@
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-current-package: fifthtry.github.io/gangaimaging.com
 site-title: Our Work
+
+-- site-doc.component-doc: `our-work`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.our-work` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.our-work` contains, a image to the right side and information to the
+left side of it. If you want to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+image: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: services/
+
+-- site-doc.header: Demo:
 
 -- site-doc.output:
 types: $typo.types
@@ -19,34 +42,9 @@ cta-link: services/
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `our-work`
-package-link: https://fifthtry.github.io/gangaimaging.com/
-github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fifthtry.github.io/gangaimaging.com
-info: `-- our-work` can be used as homepage banner on your fastn projects.
-
-`our-work` is a new conversation experience via using FTD lang. To use
-`our-work` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-
-\-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
-tag: Diagnostic & Imaging
-image: $assets.files.assets.about-dr-sameer.png
-cta-text: What we do
-cta-link: services/
-
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.our-work` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)

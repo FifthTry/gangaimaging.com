@@ -4,8 +4,39 @@
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-current-package: fifthtry.github.io/gangaimaging.com
 site-title: Scope
+
+-- site-doc.component-doc: `scope`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.scope` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.scope` contains, a image to the left side and information to the
+right side of it. If you want to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.scope: We Are Specialize in:
+tag: SCOPE LIST
+image: $assets.files.assets.left-img.png
+
+- CT Scan
+- Ultrasound
+- Color Doppler
+- Digital X-Ray
+- Special X-Ray
+- ECHO
+- TMT
+- ECG
+- USG/CT-GUIDED FNAC
+
+-- site-doc.header: Demo:
 
 -- site-doc.output:
 types: $typo.types
@@ -27,42 +58,9 @@ image: $assets.files.assets.left-img.png
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `scope`
-package-link: https://fifthtry.github.io/gangaimaging.com/
-github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fifthtry.github.io/gangaimaging.com
-info: `-- scope` can be used as homepage banner on your fastn projects.
-
-`scope` is a new conversation experience via using FTD lang. To use
-`scope` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-
-\-- ds.scope: We Are Specialize in:
-tag: SCOPE LIST
-image: $assets.files.assets.left-img.png
-
-- CT Scan
-- Ultrasound
-- Color Doppler
-- Digital X-Ray
-- Special X-Ray
-- ECHO
-- TMT
-- ECG
-- USG/CT-GUIDED FNAC
-
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.scope` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)

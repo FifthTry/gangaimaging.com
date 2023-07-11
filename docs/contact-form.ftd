@@ -4,8 +4,36 @@
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-current-package: fifthtry.github.io/gangaimaging.com
 site-title: Contact Form
+
+-- site-doc.component-doc: `contact-form`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.contact-form` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.contact-form` contains, your contact information and form. If you want to
+use it on you gangaimaging.com pages then use below given example code and add
+it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.contact-form: Contact Us
+address: Adarsh Nagar, New Delhi
+email: gunjan@gmail.com
+phone: +91 9833408356
+cta-button: Contact Us
+cta-link: contact/
+facebook: $assets.files.assets.facebook.svg
+twitter: $assets.files.assets.twitter.svg
+linkedin: $assets.files.assets.instagram.svg
+instagram: $assets.files.assets.linkedin.svg
+
+-- site-doc.header: Demo:
 
 -- site-doc.output:
 types: $typo.types
@@ -24,39 +52,9 @@ instagram: $assets.files.assets.linkedin.svg
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `contact-form`
-package-link: https://fifthtry.github.io/gangaimaging.com/
-github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fastn-community.github.io/gangaimaging.com
-info: `-- contact-form` can be used as homepage banner on your fastn projects.
-
-`contact-form` is a new conversation experience via using FTD lang. To use
-`contact-form` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-
-\-- ds.contact-form: Contact Us
-address: Adarsh Nagar, New Delhi
-email: gunjan@gmail.com
-phone: +91 9833408356
-cta-button: Contact Us
-cta-link: contact/
-facebook: $assets.files.assets.facebook.svg
-twitter: $assets.files.assets.twitter.svg
-linkedin: $assets.files.assets.instagram.svg
-instagram: $assets.files.assets.linkedin.svg
-
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.contact-form` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)

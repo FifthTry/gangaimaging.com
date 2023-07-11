@@ -13,7 +13,7 @@ package-name: fifthtry.github.io/gangaimaging.com
 info: `-- ds.about-card` can be used as a banner on gangaimaging.com pages.
 
 `-- ds.about-card` contains, a image to the left side and information to the
-right side of it. If you wan to use it on you gangaimaging.com pages then use
+right side of it. If you want to use it on you gangaimaging.com pages then use
 below given example code and add it inside a `.ftd` file.
 
 -- site-doc.header: Invocation:

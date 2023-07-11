@@ -4,8 +4,31 @@
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-current-package: fifthtry.github.io/gangaimaging.com
 site-title: Iframe
+
+-- site-doc.component-doc: `iframe`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.iframe` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.iframe` contains, location infomation. If you want to use it on you
+gangaimaging.com pages then use below given example code and add it inside a
+`.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+max-width.fixed.px: 1140
+
+\-- ds.iframe:
+src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
+width.fixed.px: 340
+height.fixed.px: 420
+
+-- site-doc.header: Demo:
 
 -- site-doc.output:
 types: $typo.types
@@ -18,33 +41,9 @@ height.fixed.px: 420
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `iframe`
-package-link: https://fifthtry.github.io/gangaimaging.com/
-github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fifthtry.github.io/gangaimaging.com
-info: `-- iframe` can be used as iframe on your fastn projects.
-
-`iframe` is a new conversation experience via using FTD lang. To use
-`iframe` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-
-\-- ds.iframe:
-src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
-width.fixed.px: 340
-height.fixed.px: 420
-
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.iframe` component.
 
 -- site-doc.component-property: `src`
 type: src (`required`)

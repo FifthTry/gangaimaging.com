@@ -4,8 +4,29 @@
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-current-package: fifthtry.github.io/gangaimaging.com
 site-title: Testimonials Card
+
+-- site-doc.component-doc: `testimonials-card`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.testimonials-card` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.testimonials-card` contains, a title, sub-title and lists. If you want to
+use it on you gangaimaging.com pages then use below given example code and add
+it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.testimonials-card: Testimonial
+sub-title: What people say about us
+testimonials: $common.list-of-testimonials
+
+-- site-doc.header: Demo:
 
 -- site-doc.output:
 types: $typo.types
@@ -17,32 +38,9 @@ testimonials: $common.list-of-testimonials
 
 -- end: site-doc.output
 
--- site-doc.component-doc: `testimonials-card`
-package-link: https://fifthtry.github.io/gangaimaging.com/
-github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fifthtry.github.io/gangaimaging.com
-info: `-- testimonials-card` can be used as homepage banner on your fastn projects.
-
-`testimonials-card` is a new conversation experience via using FTD lang. To use
-`testimonials-card` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-
-\-- ds.testimonials-card: Testimonial
-sub-title: What people say about us
-testimonials: $common.list-of-testimonials
-
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.testimonials-card` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)
