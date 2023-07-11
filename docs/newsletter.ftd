@@ -51,7 +51,7 @@ This is a default property of the `newsletter` component. It’s used to add a
 title to `newsletter` component.
 
 -- site-doc.component-property: `tag`
-type: String (`required`)
+type: String (`optional`)
 
 This is a default property of the `newsletter` component. It’s used to add a
 tag to `newsletter` component.

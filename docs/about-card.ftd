@@ -76,28 +76,28 @@ This is a default property of the `about-card` component. It’s used to add a
 title to `about-card` component.
 
 -- site-doc.component-property: `location1`
-type: String (`required`)
+type: String (`optional`)
 
 This is a default property of the `about-card` component. It’s used to add a
 title to `about-card` component.
 
 -- site-doc.component-property: `location2`
-type: String (`required`)
+type: String (`optional`)
 
 It’s used to add a location information to `about-card` component.
 
 -- site-doc.component-property: `profile`
-type: String (`required`)
+type: String (`optional`)
 
 It’s used to add a profile information to `about-card` component.
 
 -- site-doc.component-property: `avatar`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It’s used to add a avatar image to `about-card` component.
 
 -- site-doc.component-property: `body`
-type: Body (`required`)
+type: Body (`optional`)
 
 Using `body` attribute to add information about the section.
 

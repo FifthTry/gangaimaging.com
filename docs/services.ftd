@@ -49,7 +49,7 @@ This is a default property of the `services` component. It’s used to add a
 title to `services` component.
 
 -- site-doc.component-property: `sub-title`
-type: String (`required`)
+type: String (`optional`)
 
 This is a default property of the `services` component. It’s used to add a
 sub-title to `services` component.

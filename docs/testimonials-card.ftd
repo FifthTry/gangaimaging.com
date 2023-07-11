@@ -49,7 +49,7 @@ This is a default property of the `testimonials-card` component. It’s used to 
 title to `testimonials-card` component.
 
 -- site-doc.component-property: `sub-title`
-type: String (`required`)
+type: String (`optional`)
 
 This is a default property of the `testimonials-card` component. It’s used to
 add a sub-title to `testimonials-card` component.

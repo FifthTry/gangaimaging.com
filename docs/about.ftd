@@ -120,63 +120,63 @@ This is a default property of the `about` component. It’s used to add a
 title to `about` component.
 
 -- site-doc.component-property: `sub-title-1`
-type: String title (`required`)
+type: String title (`optional`)
 
 This is a default property of the `about` component. It’s used to add a
 sub-title to `about` component.
 
 -- site-doc.component-property: `sub-title-2`
-type: String title (`required`)
+type: String title (`optional`)
 
 This is a default property of the `about` component. It’s used to add a
 sub-title to `about` component.
 
 -- site-doc.component-property: `sub-title-3`
-type: String title (`required`)
+type: String title (`optional`)
 
 This is a default property of the `about` component. It’s used to add a
 sub-title to `about` component.
 
 -- site-doc.component-property: `info1`
-type: String info (`required`)
+type: String info (`optional`)
 
 This is a default property of the `about` component. It’s used to add a
 info to `about` component.
 
 -- site-doc.component-property: `info2`
-type: String info (`required`)
+type: String info (`optional`)
 
 This is a default property of the `about` component. It’s used to add a
 info to `about` component.
 
 -- site-doc.component-property: `info3`
-type: String info (`required`)
+type: String info (`optional`)
 
 This is a default property of the `about` component. It’s used to add a
 info to `about` component.
 
 -- site-doc.component-property: `ref-image-1`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It’s used to add a image to `about` component.
 
 -- site-doc.component-property: `ref-image-2`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It’s used to add a image to `about` component.
 
 -- site-doc.component-property: `ref-image-3`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It’s used to add a image to `about` component.
 
 -- site-doc.component-property: `ref-image-4`
-type: ftd.image-src (`required`)
+type: ftd.image-src (`optional`)
 
 It’s used to add a image to `about` component.
 
 -- site-doc.component-property: `body`
-type: Body (`required`)
+type: Body (`optional`)
 
 Using `body` attribute to add information about the section.
 

@@ -21,7 +21,7 @@ gangaimaging.com pages then use below given example code and add it inside a
 -- cb.code:
 lang: ftd
 max-height.fixed.px: 350
-max-width.fixed.px: 1140
+max-width.fixed.px: 1098
 
 \-- ds.iframe:
 src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
@@ -34,10 +34,21 @@ height.fixed.px: 420
 types: $typo.types
 colors: $cs.main
 
+-- ftd.column:
+width.fixed.px: 1036
+overflow-x: auto
+
+-- ftd.column:
+padding-horizontal.px: 60
+
 -- ds.iframe:
 src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
 width.fixed.px: 340
 height.fixed.px: 420
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: site-doc.output
 

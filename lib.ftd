@@ -1251,7 +1251,7 @@ src: $assets.files.assets.arrow-to-right.svg
 
 -- component services:
 caption title:
-string sub-title:
+optional string sub-title:
 $common.facility list facilities:
 
 -- ftd.column:
@@ -1348,10 +1348,10 @@ style: medium
 
 -- component our-work:
 caption title:
-string tag:
+optional string tag:
 string cta-text:
 string cta-link:
-ftd.image-src image:
+optional ftd.image-src image:
 
 -- ftd.column:
 width: fill-container
@@ -1391,10 +1391,10 @@ image: $our-work.image
 
 -- component our-work-desktop:
 caption title:
-string tag:
+optional string tag:
 string cta-text:
 string cta-link:
-ftd.image-src image:
+optional ftd.image-src image:
 
 -- ftd.row:
 width: fill-container
@@ -1414,6 +1414,7 @@ align-self: center
 width.fixed.px: 760
 
 -- ftd.text: $our-work-desktop.tag
+if: { our-work-desktop.tag != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.info.text
 
@@ -1432,6 +1433,7 @@ cta-link: $our-work-desktop.cta-link
 -- end: ftd.column
 
 -- ftd.image:
+if: { our-work-desktop.image != NULL }
 src: $our-work-desktop.image
 border-radius.px: 30
 width.fixed.px: 380
@@ -1454,10 +1456,10 @@ height.fixed.px: 380
 
 -- component our-work-mobile:
 caption title:
-string tag:
+optional string tag:
 string cta-text:
 string cta-link:
-ftd.image-src image:
+optional ftd.image-src image:
 
 -- ftd.column:
 width: fill-container
@@ -1468,6 +1470,7 @@ background.linear-gradient: $lg3
 spacing.fixed.px: 32
 
 -- ftd.text: $our-work-mobile.tag
+if: { our-work-mobile.tag != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.info.text
 
@@ -1479,6 +1482,7 @@ color: $inherited.colors.cta-tertiary.text
 cta-link: $our-work-mobile.cta-link
 
 -- ftd.image:
+if: { our-work-mobile.image != NULL }
 src: $our-work-mobile.image
 border-radius.px: 30
 width.fixed.px: 320
@@ -1589,7 +1593,7 @@ style: semi-bold
 
 -- component testimonials-card:
 optional caption title:
-string sub-title:
+optional string sub-title:
 $common.testimonial list testimonials:
 
 -- ftd.column:
@@ -2157,17 +2161,17 @@ cta-link: $scope-mobile.cta-link
 
 -- component about:
 caption title:
-body body:
-string sub-title-1:
-string sub-title-2:
-string sub-title-3:
-string info1:
-string info2:
-string info3:
-ftd.image-src ref-image-1:
-ftd.image-src ref-image-2:
-ftd.image-src ref-image-3:
-ftd.image-src ref-image-4:
+optional body body:
+optional string sub-title-1:
+optional string sub-title-2:
+optional string sub-title-3:
+optional string info1:
+optional string info2:
+optional string info3:
+optional ftd.image-src ref-image-1:
+optional ftd.image-src ref-image-2:
+optional ftd.image-src ref-image-3:
+optional ftd.image-src ref-image-4:
 
 -- ftd.column:
 width: fill-container
@@ -2221,17 +2225,17 @@ ref-image-4: $about.ref-image-4
 
 -- component about-desktop:
 caption title:
-body body:
-string sub-title-1:
-string sub-title-2:
-string sub-title-3:
-string info1:
-string info2:
-string info3:
-ftd.image-src ref-image-1:
-ftd.image-src ref-image-2:
-ftd.image-src ref-image-3:
-ftd.image-src ref-image-4:
+optional body body:
+optional string sub-title-1:
+optional string sub-title-2:
+optional string sub-title-3:
+optional string info1:
+optional string info2:
+optional string info3:
+optional ftd.image-src ref-image-1:
+optional ftd.image-src ref-image-2:
+optional ftd.image-src ref-image-3:
+optional ftd.image-src ref-image-4:
 
 -- ftd.column:
 width: fill-container
@@ -2255,6 +2259,7 @@ color: $inherited.colors.cta-secondary.text
 text-align: center
 
 -- ftd.text:
+if: { about-desktop.body != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
@@ -2266,29 +2271,35 @@ align-content: left
 spacing.fixed.px: 32
 
 -- ftd.text: $about-desktop.sub-title-1
+if: { about-desktop.sub-title-1 != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-desktop.info1
+if: { about-desktop.info1 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
 -- ftd.text: $about-desktop.sub-title-2
+if: { about-desktop.sub-title-2 != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-desktop.info2
+if: { about-desktop.info2 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
 -- ftd.text: $about-desktop.sub-title-3
+if: { about-desktop.sub-title-3 != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-desktop.info3
+if: { about-desktop.info3 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
@@ -2301,21 +2312,25 @@ wrap: true
 align-content: center
 
 -- ftd.image:
+if: { about-desktop.ref-image-1 != NULL }
 src: $about-desktop.ref-image-1
 width.fixed.px: 480
 height.fixed.px: 480
 
 -- ftd.image:
+if: { about-desktop.ref-image-2 != NULL }
 src: $about-desktop.ref-image-2
 width.fixed.px: 480
 height.fixed.px: 480
 
 -- ftd.image:
+if: { about-desktop.ref-image-3 != NULL }
 src: $about-desktop.ref-image-3
 width.fixed.px: 480
 height.fixed.px: 480
 
 -- ftd.image:
+if: { about-desktop.ref-image-4 != NULL }
 src: $about-desktop.ref-image-4
 width.fixed.px: 480
 height.fixed.px: 480
@@ -2339,17 +2354,17 @@ height.fixed.px: 480
 
 -- component about-mobile:
 caption title:
-body body:
-string sub-title-1:
-string sub-title-2:
-string sub-title-3:
-string info1:
-string info2:
-string info3:
-ftd.image-src ref-image-1:
-ftd.image-src ref-image-2:
-ftd.image-src ref-image-3:
-ftd.image-src ref-image-4:
+optional body body:
+optional string sub-title-1:
+optional string sub-title-2:
+optional string sub-title-3:
+optional string info1:
+optional string info2:
+optional string info3:
+optional ftd.image-src ref-image-1:
+optional ftd.image-src ref-image-2:
+optional ftd.image-src ref-image-3:
+optional ftd.image-src ref-image-4:
 
 -- ftd.column:
 width: fill-container
@@ -2367,6 +2382,7 @@ color: $inherited.colors.cta-secondary.text
 text-align: center
 
 -- ftd.text:
+if: { about-mobile.body != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
@@ -2378,29 +2394,35 @@ align-content: left
 spacing.fixed.px: 32
 
 -- ftd.text: $about-mobile.sub-title-1
+if: { about-mobile.sub-title-1 != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-mobile.info1
+if: { about-mobile.info1 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
 -- ftd.text: $about-mobile.sub-title-2
+if: { about-mobile.sub-title-2 != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-mobile.info2
+if: { about-mobile.info2 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
 -- ftd.text: $about-mobile.sub-title-3
+if: { about-mobile.sub-title-3 != NULL }
 role: $inherited.types.heading-small
 color: $inherited.colors.cta-secondary.text
 style: extra-bold
 
 -- ftd.text: $about-mobile.info3
+if: { about-mobile.info3 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
@@ -2413,21 +2435,25 @@ wrap: true
 align-content: center
 
 -- ftd.image:
+if: { about-mobile.ref-image-1 != NULL }
 src: $about-mobile.ref-image-1
 width.fixed.px: 250
 height.fixed.px: 250
 
 -- ftd.image:
+if: { about-mobile.ref-image-2 != NULL }
 src: $about-mobile.ref-image-2
 width.fixed.px: 250
 height.fixed.px: 250
 
 -- ftd.image:
+if: { about-mobile.ref-image-3 != NULL }
 src: $about-mobile.ref-image-3
 width.fixed.px: 250
 height.fixed.px: 250
 
 -- ftd.image:
+if: { about-mobile.ref-image-4 != NULL }
 src: $about-mobile.ref-image-4
 width.fixed.px: 250
 height.fixed.px: 250
@@ -2448,11 +2474,11 @@ height.fixed.px: 250
 
 -- component about-card:
 caption title:
-string location1:
-string location2:
-string profile:
-body body:
-ftd.image-src avatar:
+optional string location1:
+optional string location2:
+optional string profile:
+optional body body:
+optional ftd.image-src avatar:
 
 -- ftd.column:
 width: fill-container
@@ -2494,11 +2520,11 @@ avatar: $about-card.avatar
 
 -- component about-card-desktop:
 caption title:
-string location1:
-string location2:
-string profile:
-body body:
-ftd.image-src avatar:
+optional string location1:
+optional string location2:
+optional string profile:
+optional body body:
+optional ftd.image-src avatar:
 
 -- ftd.row:
 width: fill-container
@@ -2515,6 +2541,7 @@ align-content: center
 spacing.fixed.px: 88
 
 -- ftd.image:
+if: { about-card-desktop.avatar != NULL }
 src: $about-card-desktop.avatar
 width.fixed.px: 380
 height.fixed.px: 380
@@ -2533,21 +2560,25 @@ margin-left.px: 16
 spacing.fixed.px: 12
 
 -- ftd.text: $about-card-desktop.location1
+if: { about-card-desktop.location1 != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-desktop.location2
+if: { about-card-desktop.location2 != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-desktop.profile
+if: { about-card-desktop.profile != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text:
+if: { about-card-desktop.body != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text-strong
 style: semi-bold
@@ -2575,11 +2606,11 @@ $about-card-desktop.body
 
 -- component about-card-mobile:
 caption title:
-string location1:
-string location2:
-string profile:
-body body:
-ftd.image-src avatar:
+optional string location1:
+optional string location2:
+optional string profile:
+optional body body:
+optional ftd.image-src avatar:
 
 -- ftd.column:
 width: fill-container
@@ -2597,6 +2628,7 @@ color: $inherited.colors.text-strong
 style: bold
 
 -- ftd.image:
+if: { about-card-mobile.avatar != NULL }
 src: $about-card-mobile.avatar
 width.fixed.px: 320
 height.fixed.px: 320
@@ -2607,21 +2639,25 @@ margin-left.px: 16
 spacing.fixed.px: 12
 
 -- ftd.text: $about-card-mobile.location1
+if: { about-card-mobile.location1 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-mobile.location2
+if: { about-card-mobile.location2 != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text: $about-card-mobile.profile
+if: { about-card-mobile.profile != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text-strong
 style: semi-bold
 
 -- ftd.text:
+if: { about-card-mobile.body != NULL }
 role: $inherited.types.copy-large
 color: $inherited.colors.text-strong
 style: semi-bold
@@ -2785,7 +2821,7 @@ spread.px: 4
 
 -- component newsletter:
 caption title:
-string tag:
+optional string tag:
 string cta-text:
 string cta-link:
 
@@ -2795,6 +2831,7 @@ background.solid: $inherited.colors.background.overlay
 padding.px: 50
 
 -- ftd.text: $newsletter.tag
+if: { newsletter.tag != NULL }
 color: $inherited.colors.success.text
 role: $inherited.types.heading-small
 
