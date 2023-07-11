@@ -63,6 +63,7 @@ types: $typo.types
 colors: $cs.main
 
 -- ftd.column:
+if: { !$site-doc.full-screen }
 width.fixed.px: 1036
 overflow-x: auto
 
@@ -104,6 +105,46 @@ services from Quality Council of India. It is the highest accreditation to
 ensure the quality of a health care provider in imaging sciences.
 
 -- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { $site-doc.full-screen }
+width: fill-container
+
+-- ds.about: ABOUT US
+ref-image-1: $assets.files.assets.about-dr-sameer.png
+ref-image-2: $assets.files.assets.dr-samee-about-us-image-3.png
+ref-image-3: $assets.files.assets.dr-samee-about-us-image-4.png
+ref-image-4: $assets.files.assets.dr-samee-image-2.png
+sub-title-1: `Vision`
+sub-title-2: `Mission`
+sub-title-3: `Speciality`
+info1: To provide diagnostic interventional radiology and pathology at international standards using the latest technologys equipment by committed, professional and caring staff.
+info2: We strive to provide service at an international standard. To achieve this we ensure: 1. Providing an efficient and high-quality service. 2. Using the latest technology equipment. 3. Developing professional and caring staff. 4. Fulfilling the needs of society and country.
+info3: About Dr. Samir
+
+Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd. is a healthcare service
+providing company started with the aim, to provide high-quality imaging and
+diagnostic services to all the members of society at an affordable cost. It was
+established in 2013 in New Delhi by Dr. Samir Upadhyay consultant radiologist
+(MBBS, DMRD, DNB) Dr. Samir’s Ganga Diagnostic & Imaging centre began its
+operations as an ultrasound centre in Adarsh Nagar. In addition to this, we are
+very pleased to inform you that our healthcare diagnostics is an inapproachable
+area and nearby DTC BUS stand and metro station. Within a short duration, we
+have gained an immense reputation. Our accurate and precise have set a
+benchmark among our peer diagnostic centres. Dr Samir’s Ganga Diagnostic &
+Imaging Centre has offered the best services to patients and clients over time,
+it has evolved and imbibed the latest upgrades in diagnostic equipment and
+today it stands with the most advanced armamentarium geared with the
+latest, “State of the Art” diagnostic equipment.
+
+Our core functionalities are streamlined optimally so that every report is
+checked and verified by a qualified doctor.
+
+We have certified by the most prestigious NABH – MIS Accreditation for imaging
+services from Quality Council of India. It is the highest accreditation to
+ensure the quality of a health care provider in imaging sciences.
 
 -- end: ftd.column
 

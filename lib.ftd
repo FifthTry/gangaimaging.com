@@ -1507,6 +1507,7 @@ $common.hallmark list hallmark-list:
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 64
+background.solid: $inherited.colors.cta-secondary.base
 
 -- ftd.column:
 align-content: center

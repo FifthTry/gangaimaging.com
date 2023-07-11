@@ -35,6 +35,7 @@ types: $typo.types
 colors: $cs.main
 
 -- ftd.column:
+if: { !$site-doc.full-screen }
 width.fixed.px: 1036
 overflow-x: auto
 
@@ -48,6 +49,18 @@ cta-text: What we do
 cta-link: services/
 
 -- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { $site-doc.full-screen }
+width: fill-container
+
+-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+image: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: services/
 
 -- end: ftd.column
 
