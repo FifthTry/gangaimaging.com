@@ -43,6 +43,7 @@ types: $typo.types
 colors: $cs.main
 
 -- ftd.column:
+if: { !$site-doc.full-screen }
 width.fixed.px: 1036
 overflow-x: auto
 
@@ -64,6 +65,26 @@ image: $assets.files.assets.left-img.png
 - USG/CT-GUIDED FNAC
 
 -- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { $site-doc.full-screen }
+width: fill-container
+
+-- ds.scope: We Are Specialize in:
+tag: SCOPE LIST
+image: $assets.files.assets.left-img.png
+
+- CT Scan
+- Ultrasound
+- Color Doppler
+- Digital X-Ray
+- Special X-Ray
+- ECHO
+- TMT
+- ECG
+- USG/CT-GUIDED FNAC
 
 -- end: ftd.column
 
