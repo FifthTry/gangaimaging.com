@@ -42,6 +42,13 @@ image: $assets.files.assets.left-img.png
 types: $typo.types
 colors: $cs.main
 
+-- ftd.column:
+width.fixed.px: 1036
+overflow-x: auto
+
+-- ftd.column:
+padding-horizontal.px: 60
+
 -- ds.scope: We Are Specialize in:
 tag: SCOPE LIST
 image: $assets.files.assets.left-img.png
@@ -55,6 +62,10 @@ image: $assets.files.assets.left-img.png
 - TMT
 - ECG
 - USG/CT-GUIDED FNAC
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: site-doc.output
 
