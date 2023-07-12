@@ -1,53 +1,28 @@
--- import: fastn
--- import: fastn/processors as pr
--- import: fastn-community.github.io/site-doc/assets
--- import: fastn-community.github.io/site-doc
--- import: fifthtry.github.io/gangaimaging.com/lib as lb
--- import: fifthtry.github.io/gangaimaging.com/assets
--- import: fifthtry.github.io/gangaimaging.com/common
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
 
--- site-doc.doc-home: Component Page
+-- site-doc.doc-home: footer
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
-current-package: fifthtry.github.io/gangaimaging.com
-
--- site-doc.output:
-types: $typo.types
-colors: $cs.main
-
--- lb.footer:
-site-logo: $common.site-logo
-site-url: $common.site-url
-logo-width: $common.logo-width
-logo-height: $common.logo-height
-footer-links: $common.footer-links
-copyright: Copyright © 2019. All rights reserved by Ganga Diagnostic
-
--- end: site-doc.output
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
+site-title: Footer
 
 -- site-doc.component-doc: `footer`
 package-link: https://fifthtry.github.io/gangaimaging.com/
 github-link: https://github.com/fastn-community/gangaimaging.com
-package-name: fastn-community.github.io/gangaimaging.com
-info: `-- footer` can be used as homepage banner on your fastn projects.
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.footer` can be used as a banner on gangaimaging.com pages.
 
-`footer` is a new conversation experience via using FTD lang. To use
-`footer` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
-
+`-- ds.footer` contains, a logo, small information, useful links, newsletter and
+contact information. If you want to use it on you gangaimaging.com pages then
+use below given example code and add it inside a `.ftd` file.
 
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
+max-height.fixed.px: 350
 
-\-- lb.footer:
+\-- ds.footer:
 site-logo: $common.site-logo
 site-url: $common.site-url
 logo-width: $common.logo-width
@@ -55,9 +30,25 @@ logo-height: $common.logo-height
 footer-links: $common.footer-links
 copyright: Copyright © 2019. All rights reserved by Ganga Diagnostic
 
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- ds.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+footer-links: $common.footer-links
+copyright: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- end: site-doc.output
+
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.footer` component.
 
 -- site-doc.component-property: `footer-links`
 type: Sections list (`required`)

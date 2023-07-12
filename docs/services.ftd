@@ -1,67 +1,61 @@
--- import: fastn
--- import: fastn/processors as pr
--- import: fastn-community.github.io/site-doc/assets
--- import: fastn-community.github.io/site-doc
--- import: fifthtry.github.io/gangaimaging.com/lib as lb
--- import: fifthtry.github.io/gangaimaging.com/assets
--- import: fifthtry.github.io/gangaimaging.com/common
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
 
--- site-doc.doc-home: Component Page
+-- site-doc.doc-home: services
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
-current-package: fifthtry.github.io/gangaimaging.com
-
--- site-doc.output:
-types: $typo.types
-colors: $cs.main
-
--- lb.services: Our Services
-sub-title: Our Special Services For You
-facilities: $common.facility-list
-
--- end: site-doc.output
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
+site-title: Services
 
 -- site-doc.component-doc: `services`
 package-link: https://fifthtry.github.io/gangaimaging.com/
 github-link: https://github.com/fastn-community/gangaimaging.com
 package-name: fifthtry.github.io/gangaimaging.com
-info: `-- services` can be used as homepage banner on your fastn projects.
+info: `-- ds.services` can be used as a banner on gangaimaging.com pages.
 
-`services` is a new conversation experience via using FTD lang. To use
-`services` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
-
+`-- ds.services` contains, a title, sub-title and lists. If you want to use it
+on you gangaimaging.com pages then use below given example code and add it
+inside a `.ftd` file.
 
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
+max-height.fixed.px: 350
 
-\-- lb.services: Our Services
+\-- ds.services: Our Services
 sub-title: Our Special Services For You
 facilities: $common.facility-list
 
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- ds.services: Our Services
+sub-title: Our Special Services For You
+facilities: $common.facility-list
+
+-- end: site-doc.output
+
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.services` component.
 
 -- site-doc.component-property: `title`
+type: Caption (`required`)
 
 This is a default property of the `services` component. It’s used to add a
 title to `services` component.
 
 -- site-doc.component-property: `sub-title`
+type: String (`optional`)
 
 This is a default property of the `services` component. It’s used to add a
 sub-title to `services` component.
 
 -- site-doc.component-property: `facilities`
+type: Record (`required`)
 
 This is a default property of the `services` component. It's a list of
 facility record that contains

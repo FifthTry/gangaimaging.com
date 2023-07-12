@@ -1,0 +1,89 @@
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
+
+-- site-doc.doc-home: iframe
+github-url: https://github.com/fastn-community/gangaimaging.com
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
+site-title: Iframe
+
+-- site-doc.component-doc: `iframe`
+package-link: https://fifthtry.github.io/gangaimaging.com/
+github-link: https://github.com/fastn-community/gangaimaging.com
+package-name: fifthtry.github.io/gangaimaging.com
+info: `-- ds.iframe` can be used as a banner on gangaimaging.com pages.
+
+`-- ds.iframe` contains, location infomation. If you want to use it on you
+gangaimaging.com pages then use below given example code and add it inside a
+`.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+max-width.fixed.px: 1098
+
+\-- ds.iframe:
+src: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.9920814671348!2d77.17304127032665!3d28.719331711346697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01f2fe86ce53%3A0x2d72398279fd0517!2sDr.%20Samir%E2%80%99s%20Ganga!5e0!3m2!1sen!2sin!4v1689065333275!5m2!1sen!2sin
+width.fixed.px: 340
+height.fixed.px: 420
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- ftd.column:
+if: { !$site-doc.full-screen }
+width.fixed.px: 1036
+overflow-x: auto
+
+-- ftd.column:
+padding-horizontal.px: 60
+
+-- ds.iframe:
+src: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.9920814671348!2d77.17304127032665!3d28.719331711346697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01f2fe86ce53%3A0x2d72398279fd0517!2sDr.%20Samir%E2%80%99s%20Ganga!5e0!3m2!1sen!2sin!4v1689065333275!5m2!1sen!2sin
+width.fixed.px: 340
+height.fixed.px: 420
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { $site-doc.full-screen }
+width: fill-container
+
+-- ds.iframe:
+src: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.9920814671348!2d77.17304127032665!3d28.719331711346697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01f2fe86ce53%3A0x2d72398279fd0517!2sDr.%20Samir%E2%80%99s%20Ganga!5e0!3m2!1sen!2sin!4v1689065333275!5m2!1sen!2sin
+width.fixed.px: 340
+height.fixed.px: 420
+
+-- end: ftd.column
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.iframe` component.
+
+-- site-doc.component-property: `src`
+type: src (`required`)
+
+This is a default property of the `iframe` component. It’s used to add a
+src to `iframe` component.
+
+-- site-doc.component-property: `width`
+type: ftd.resizing (`optional`)
+
+This is a default property of the `iframe` component. It’s used to add a
+width to `iframe` component.
+
+-- site-doc.component-property: `height`
+type: ftd.resizing (`optional`)
+
+This is a default property of the `iframe` component. It’s used to add a
+height to `iframe` component.
+
+-- end: site-doc.doc-home
