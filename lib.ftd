@@ -3484,28 +3484,28 @@ border-radius.px: 100
 z-index: 99999999999999
 
 -- ftd.image:
-if: { !ftd.dark-mode }
+if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
 src: $assets.files.assets.light-icon.svg
 width.fixed.px: 28
 height.fixed.px: 28
-background.solid if { dark-mode-switcher-float.mouse-in }: $inherited.colors.cta-secondary.base
+background.solid if { dark-mode-switcher-float.mouse-in }: $inherited.colors.cta-primary.base
 border-radius.px: 100
 padding.px: 2
-$on-click$: $ftd.enable-dark-mode()
+$on-click$: $ftd.enable-light-mode()
 $on-mouse-enter$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = false)
 
 -- ftd.image:
-if: { ftd.dark-mode }
+if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
 src: $assets.files.assets.dark-icon.svg
 width.fixed.px: 28
 height.fixed.px: 28
-background.solid if { dark-mode-switcher-float.mouse-in }: $inherited.colors.cta-secondary.base
+background.solid if { dark-mode-switcher-float.mouse-in }: $inherited.colors.cta-tertiary.base
 border-radius.px: 100
 padding.px: 2
 $on-mouse-enter$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = false)
-$on-click$: $ftd.enable-light-mode()
+$on-click$: $ftd.enable-dark-mode()
 
 -- end: ftd.row
 
