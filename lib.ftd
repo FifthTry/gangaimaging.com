@@ -3483,19 +3483,7 @@ border-radius.px: 100
 z-index: 99999999999999
 
 -- ftd.row:
-if: { ftd.follow-system-dark-mode }
-$on-click$: $ftd.enable-light-mode()
-
--- ftd.image:
-src: $assets.files.assets.system-mode-active.png
-height.fixed.px: 19
-align-self: center
-width.fixed.px: 19
-
--- end: ftd.row
-
--- ftd.row:
-if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
+if: { !ftd.dark-mode }
 $on-click$: $ftd.enable-dark-mode()
 
 -- ftd.image:
@@ -3507,7 +3495,7 @@ width.fixed.px: 19
 -- end: ftd.row
 
 -- ftd.row:
-if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
+if: { ftd.dark-mode }
 $on-click$: $ftd.enable-system-mode()
 
 -- ftd.image:
