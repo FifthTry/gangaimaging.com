@@ -672,8 +672,7 @@ $loop$: $footer-desktop.footer-links as $obj
 -- ftd.column:
 width: fill-container
 background.solid: $inherited.colors.shadow
-padding-horizontal.px: 24
-padding-vertical.px: 24
+padding.px: 12
 align-content: center
 
 -- ftd.text: $footer-desktop.copyright
