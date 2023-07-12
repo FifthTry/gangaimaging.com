@@ -1,79 +1,100 @@
--- import: fastn
--- import: fastn/processors as pr
--- import: fastn-community.github.io/site-doc/assets
--- import: fastn-community.github.io/site-doc
--- import: fifthtry.github.io/gangaimaging.com/lib as lb
--- import: fifthtry.github.io/gangaimaging.com/assets
+-- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
 
--- site-doc.doc-home: Component Page
+-- site-doc.doc-home: our-work
 github-url: https://github.com/fastn-community/gangaimaging.com
-color-scheme: fastn-community.github.io/blue-heal-cs
-typography: fastn-community.github.io/lato-typography
-current-package: fifthtry.github.io/gangaimaging.com
-
--- site-doc.output:
-types: $typo.types
-colors: $cs.main
-
--- lb.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
-tag: Diagnostic & Imaging
-img: $assets.files.assets.about-dr-sameer.png
-cta-text: What we do
-cta-link: services/
-
--- end: site-doc.output
+color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
+typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
+site-title: Our Work
 
 -- site-doc.component-doc: `our-work`
 package-link: https://fifthtry.github.io/gangaimaging.com/
 github-link: https://github.com/fastn-community/gangaimaging.com
 package-name: fifthtry.github.io/gangaimaging.com
-info: `-- our-work` can be used as homepage banner on your fastn projects.
+info: `-- ds.our-work` can be used as a banner on gangaimaging.com pages.
 
-`our-work` is a new conversation experience via using FTD lang. To use
-`our-work` on your fastn package, add below into lines FASTN.ftd file:
-
--- cb.code:
-lang: ftd
-
-\-- fastn.dependency: fifthtry.github.io/gangaimaging.com
-\-- fastn.auto-import: fifthtry.github.io/gangaimaging.com/lib as lb
-
+`-- ds.our-work` contains, a image to the right side and information to the
+left side of it. If you want to use it on you gangaimaging.com pages then use
+below given example code and add it inside a `.ftd` file.
 
 -- site-doc.header: Invocation:
 
 -- cb.code:
 lang: ftd
+max-height.fixed.px: 350
 
-\-- lb.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+\-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
-img: $assets.files.assets.about-dr-sameer.png
+image: $assets.files.assets.about-dr-sameer.png
 cta-text: What we do
 cta-link: services/
 
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+types: $typo.types
+colors: $cs.main
+
+-- ftd.column:
+if: { !$site-doc.full-screen }
+width.fixed.px: 1036
+overflow-x: auto
+
+-- ftd.column:
+padding-horizontal.px: 60
+
+-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+image: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: services/
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { $site-doc.full-screen }
+width: fill-container
+
+-- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
+tag: Diagnostic & Imaging
+image: $assets.files.assets.about-dr-sameer.png
+cta-text: What we do
+cta-link: services/
+
+-- end: ftd.column
+
+-- end: site-doc.output
+
 -- site-doc.header: Properties:
 
-Below are details of all properties of this component.
+Below are details of all properties of `-- ds.our-work` component.
 
 -- site-doc.component-property: `title`
+type: Caption (`required`)
 
 This is a default property of the `our-work` component. It’s used to add a
 title to `our-work` component.
 
 -- site-doc.component-property: `cta-text`
+type: String (`required`)
 
 This is a default property of the `our-work` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-link`
+type: String (`required`)
 
 This is a default property of the `our-work` component. It’s used to add a
 link to click to action button.
 
 -- site-doc.component-property: `tag`
+type: String (`optional`)
 
 Using `tag` attribute tag can be added which adds small heading at the top.
 
 -- site-doc.component-property: `image`
+type: ftd.image-src (`optional`)
 
 Using `image` attribute image can be added.
 

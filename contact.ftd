@@ -6,7 +6,7 @@ document-description: Untitled gangaimaging/contact
 document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
 
 -- ds.hero:
-image: $assets.files.assets.bg.svg
+bg-image: $assets.files.assets.bg.svg
 
 Need Information? Contact Us
 
@@ -24,7 +24,7 @@ linkedin: $assets.files.assets.instagram.svg
 instagram: $assets.files.assets.linkedin.svg
 
 -- ds.iframe:
-src: https://www.google.com/maps/embed/v1/place?q=https://www.google.com/maps/place/Ghati+Hospital/@19.8767495,75.2679189,13z/data=!4m10!1m2!2m1!1sghati+hospital+aurangabad!3m6!1s0x3bdba29db9f2ac5d:0x201226cf793c3e61!8m2!3d19.8767495!4d75.3441366!15sChlnaGF0aSBob3NwaXRhbCBhdXJhbmdhYmFkkgEIaG9zcGl0YWzgAQA!16s%2Fg%2F11gbx925dr?entry=ttu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
+src: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.9920814671348!2d77.17304127032665!3d28.719331711346697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01f2fe86ce53%3A0x2d72398279fd0517!2sDr.%20Samir%E2%80%99s%20Ganga!5e0!3m2!1sen!2sin!4v1689065333275!5m2!1sen!2sin
 width.fixed.px: 340
 height.fixed.px: 420
 

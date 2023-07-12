@@ -1,20 +1,20 @@
 -- $site-doc.copyright-info: Copyright © 2023 - [Gangaimaging.com](https://www.gangaimaging.com/)
 
--- site-doc.doc-home: contact
+-- site-doc.doc-home: newsletter
 github-url: https://github.com/fastn-community/gangaimaging.com
 color-scheme: [fastn-community.github.io/blue-heal-cs](https://fastn-community.github.io/blue-heal-cs)
 typography: [fastn-community.github.io/lato-typography](https://fastn-community.github.io/lato-typography)
-site-title: Contact
+site-title: Newsletter
 
--- site-doc.component-doc: `contact`
+-- site-doc.component-doc: `newsletter`
 package-link: https://fifthtry.github.io/gangaimaging.com/
 github-link: https://github.com/fastn-community/gangaimaging.com
 package-name: fifthtry.github.io/gangaimaging.com
-info: `-- ds.contact` can be used as a banner on gangaimaging.com pages.
+info: `-- ds.newsletter` can be used as a banner on gangaimaging.com pages.
 
-`-- ds.contact` contains, just a title and contact us button. If you want to
-use it on you gangaimaging.com pages then use below given example code and add
-it inside a `.ftd` file.
+`-- ds.newsletter` contains, a title, tag and button to Subscribe. If you want
+to use it on you gangaimaging.com pages then use below given example code and
+add it inside a `.ftd` file.
 
 -- site-doc.header: Invocation:
 
@@ -22,9 +22,10 @@ it inside a `.ftd` file.
 lang: ftd
 max-height.fixed.px: 350
 
-\-- ds.contact: Contact us for help or to know more about us
-cta-text: CONTACT US
-cta-link: contact/
+\-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
 
 -- site-doc.header: Demo:
 
@@ -32,32 +33,39 @@ cta-link: contact/
 types: $typo.types
 colors: $cs.main
 
--- ds.contact: Contact us for help or to know more about us
-cta-text: CONTACT US
-cta-link: contact/
+-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
 
 -- end: site-doc.output
 
 -- site-doc.header: Properties:
 
-Below are details of all properties of `-- ds.contact` component.
+Below are details of all properties of `-- ds.newsletter` component.
 
 -- site-doc.component-property: `title`
 type: Caption (`required`)
 
-This is a default property of the `contact` component. It’s used to add a
-title to `contact` component.
+This is a default property of the `newsletter` component. It’s used to add a
+title to `newsletter` component.
+
+-- site-doc.component-property: `tag`
+type: String (`optional`)
+
+This is a default property of the `newsletter` component. It’s used to add a
+tag to `newsletter` component.
 
 -- site-doc.component-property: `cta-text`
 type: String (`required`)
 
-This is a default property of the `contact` component. It’s used to add a
+This is a default property of the `newsletter` component. It’s used to add a
 click to action button title.
 
 -- site-doc.component-property: `cta-link`
 type: String (`required`)
 
-This is a default property of the `contact` component. It’s used to add a
+This is a default property of the `newsletter` component. It’s used to add a
 link to click to action button.
 
 -- end: site-doc.doc-home

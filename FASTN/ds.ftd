@@ -1,6 +1,6 @@
 -- import: fastn
 -- import: fifthtry.github.io/gangaimaging.com/lib
-export: hero, button, services, our-work, facilities, testimonials-card, contact, image, iframe, scope, about, about-card, newsletter, category, categories, contact-form, dark-mode-switcher-float, features, services-container, row-container
+export: hero, button, services, our-work, facilities, testimonials-card, contact, image, iframe, scope, about, about-card, newsletter, category, categories, contact-form, dark-mode-switcher-float, features, services-container, row-container, footer
 
 -- component page:
 children wrapper:
@@ -49,7 +49,7 @@ site-url: $common.site-url
 logo-width: $common.logo-width
 logo-height: $common.logo-height
 footer-links: $common.footer-links
-copyright: Copyright © 2019. All rights reserved by Ganga Diagnostic
+copyright: Copyright © 2023 - [Gangaimaging.com](https://fifthtry.github.io/gangaimaging.com/)
 
 -- end: lib.page.footer
 
