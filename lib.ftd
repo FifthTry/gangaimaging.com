@@ -3475,6 +3475,7 @@ border-radius.px: 8
 
 
 -- component dark-mode-switcher-float:
+boolean $mouse-in: false
 
 -- ftd.row:
 padding.px: 10
@@ -3482,29 +3483,29 @@ background.solid: $inherited.colors.background.base
 border-radius.px: 100
 z-index: 99999999999999
 
--- ftd.row:
+-- ftd.image:
 if: { !ftd.dark-mode }
+src: $assets.files.assets.light-icon.svg
+width.fixed.px: 28
+height.fixed.px: 28
+background.solid if { dark-mode-switcher-float.mouse-in }: $inherited.colors.cta-secondary.base
+border-radius.px: 100
+padding.px: 2
 $on-click$: $ftd.enable-dark-mode()
+$on-mouse-enter$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = false)
 
 -- ftd.image:
-src: $assets.files.assets.light-mode-active.png
-height.fixed.px: 19
-align-self: center
-width.fixed.px: 19
-
--- end: ftd.row
-
--- ftd.row:
 if: { ftd.dark-mode }
-$on-click$: $ftd.enable-system-mode()
-
--- ftd.image:
-src: $assets.files.assets.dark-mode-active-dark.png
-height.fixed.px: 19
-align-self: center
-width.fixed.px: 19
-
--- end: ftd.row
+src: $assets.files.assets.dark-icon.svg
+width.fixed.px: 28
+height.fixed.px: 28
+background.solid if { dark-mode-switcher-float.mouse-in }: $inherited.colors.cta-secondary.base
+border-radius.px: 100
+padding.px: 2
+$on-mouse-enter$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $dark-mode-switcher-float.mouse-in, v = false)
+$on-click$: $ftd.enable-light-mode()
 
 -- end: ftd.row
 
