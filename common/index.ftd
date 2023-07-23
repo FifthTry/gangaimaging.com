@@ -14,7 +14,7 @@
 
 -- string email: gangaimaging@gmail.com
 
--- string phone: +91983345672, 98998984543
+-- string phone: +91 9999427620, 9999911609
 
 -- integer max-width: 1320
 
@@ -72,7 +72,7 @@ $processor$: pr.toc
   - Subscribe to gate Latest News, Offer and connect With Us.
 - Contact Us: /
   - C 31, Ground Floor, Rajan Babu Road, Adarsh Nagar, New Delhi, Delhi 110033
-  - +91 9833408356
+  - +91 9999427620
   - gangaimaging@gmail.com
 
 
@@ -205,6 +205,7 @@ icon: $assets.files.assets.first.svg
 
 -- facility: Laboratory Services
 icon: $assets.files.assets.first.svg
+
 
 -- end: facility-list
 
