@@ -25,6 +25,7 @@ max-height.fixed.px: 350
 \-- ds.services: Our Services
 sub-title: Our Special Services For You
 facilities: $common.facility-list
+link: services/
 
 -- site-doc.header: Demo:
 

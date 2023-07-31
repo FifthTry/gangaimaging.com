@@ -23,7 +23,7 @@ lang: ftd
 max-height.fixed.px: 350
 
 \-- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.digital-radiology
 
 -- site-doc.header: Demo:
 
