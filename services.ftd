@@ -18,11 +18,6 @@ OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEAL
 -- ds.categories: Categories
 procedures: $common.procedures
 
--- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
-tag: Subscribe
-cta-text: SUBSCRIBE
-cta-link: services/
-
 -- end: ds.services-container
 
 -- end: ds.page

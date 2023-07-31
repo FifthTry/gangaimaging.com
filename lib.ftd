@@ -2819,7 +2819,7 @@ spread.px: 4
 
 
 
--- component newsletter:
+/-- component newsletter:
 caption title:
 optional string tag:
 string cta-text:
@@ -2949,7 +2949,6 @@ optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
 
 -- ftd.column:
-width.fixed.px: 810
 
 -- ftd.desktop:
 
@@ -3009,21 +3008,14 @@ optional ftd.image-src linkedin:
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 8
-padding-horizontal.px: 42
-padding-bottom.px: 64
-z-index: 2
-max-width.fixed.percent: 70
-margin-top.px: 64
 border-radius.px: 8
 
 -- ftd.column:
-width.fixed.px: 280
+width.fixed.px: 380
 height.fixed.px: 400
 padding-horizontal.px: 18
 padding-vertical.px: 18
 background.linear-gradient: $lg3
-z-index: 10
 shadow: $shadow
 spacing: space-between
 border-radius.px: 8
@@ -3108,112 +3100,6 @@ width.fixed.px: 18
 height.fixed.px: 18
 
 -- end: ftd.row
-
--- end: ftd.column
-
--- ftd.column:
-width: hug-content
-height: hug-content
-padding-left.px: 250
-padding-right.px: 36
-padding-vertical.px: 64
-spacing.fixed.px: 24
-background.solid: $inherited.colors.background.step-1
-z-index: 8
-anchor: parent
-left.px: 115
-top.px: -30
-shadow: $shadow
-border-radius.px: 8
-
--- ftd.text: $contact-form-desktop.title
-role: $inherited.types.heading-small
-color: $inherited.colors.cta-secondary.text
-
--- ftd.row:
-spacing.fixed.px: 32
-wrap: true
-
--- ftd.text-input:
-placeholder: First Name
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-
--- ftd.text-input:
-placeholder: Last Name
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.step-1
-color: $inherited.colors.border
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 32
-
--- ftd.text-input:
-placeholder: Email Address
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text-input:
-placeholder: Mobile Number
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- end: ftd.row
-
--- ftd.column:
-spacing.fixed.px: 32
-width: fill-container
-margin-top.px: 16
-
--- ftd.text: Write your message here...
-role: $inherited.types.copy-small
-color: $inherited.colors.cta-secondary.text
-margin-bottom.px: 4
-
--- ftd.text-input:
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-border-color: $inherited.colors.cta-tertiary.focused
-color: $inherited.colors.border
-
--- end: ftd.column
-
--- button: $contact-form-desktop.cta-button
-cta-link: $contact-form-desktop.cta-link
 
 -- end: ftd.column
 
@@ -3745,7 +3631,7 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 130
+spacing.fixed.px: 30
 padding-vertical.px: 82
 padding-horizontal.px: 82
 align-content: center
