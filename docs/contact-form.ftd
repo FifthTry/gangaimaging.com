@@ -24,9 +24,9 @@ max-height.fixed.px: 350
 
 \-- ds.contact-form: Contact Us
 company: Ganga Diagnostic & Imaging Centre Pvt. Ltd.
-address: Adarsh Nagar, New Delhi
-email: gunjan@gmail.com
-phone: +91 9833408356
+address: C 31, Rajan Babu Rd, Block F, Adarsh Nagar, New Delhi, Delhi, 110033
+email: $assets.files.assets.connect-with.png
+phone: +91 9999427620, +91 9999911609
 cta-button: Contact Us
 cta-link: contact/
 facebook: $assets.files.assets.facebook.svg
@@ -42,9 +42,9 @@ colors: $cs.main
 
 -- ds.contact-form: Contact Us
 company: Ganga Diagnostic & Imaging Centre Pvt. Ltd.
-address: Adarsh Nagar, New Delhi
-email: gunjan@gmail.com
-phone: +91 9833408356
+address: C 31, Rajan Babu Rd, Block F, Adarsh Nagar, New Delhi, Delhi, 110033
+email: $assets.files.assets.connect-with.png
+phone: +91 9999427620, +91 9999911609
 cta-button: Contact Us
 cta-link: contact/
 facebook: $assets.files.assets.facebook.svg

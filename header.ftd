@@ -221,7 +221,7 @@ $loop$: $header-desktop.sections as $obj
 link: $obj.url
 is-active: $obj.is-active
 
--- lib.dark-mode-switcher-float:
+-- ds.dark-mode-switcher-float:
 
 -- end: ftd.row
 
@@ -523,7 +523,7 @@ site-name: $header-mobile.site-name
 
 -- end: ftd.row
 
--- lib.dark-mode-switcher-float:
+-- ds.dark-mode-switcher-float:
 
 -- end: ftd.row
 
