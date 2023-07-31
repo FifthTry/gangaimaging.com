@@ -35,6 +35,7 @@ colors: $cs.main
 -- ds.services: Our Services
 sub-title: Our Special Services For You
 facilities: $common.facility-list
+link: services/
 
 -- end: site-doc.output
 

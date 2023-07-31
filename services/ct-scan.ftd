@@ -27,7 +27,7 @@ exposure, and contrast agents may be used to improve the radiologist's ability t
 abnormalities.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.ct-scan
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe

@@ -8,7 +8,7 @@ document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io
 -- ds.hero: 
 bg-image: $assets.files.assets.bg.svg
 
-Cardiology Department:
+Cardiology Department
 
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
@@ -20,7 +20,7 @@ who are specialized doctors in heart health, use these tests to evaluate the str
 function of the heart, identify any abnormalities, and determine appropriate treatment plans.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.cardiology
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe

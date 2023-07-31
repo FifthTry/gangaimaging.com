@@ -13,13 +13,13 @@ Other Services
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
 
-medical tests and analyses performed on patient samples (such as blood, urine, tissue, or other
-bodily fluids) to aid in the diagnosis, monitoring, and treatment of diseases and health
-conditions. These tests are conducted in specialized laboratories equipped with advanced
-instruments and trained personnel to ensure accurate and reliable results.
+Our testing laboratory services refer to the range of medical testing and
+diagnostic services offered by us. We are equipped with advanced equipment and
+staffed by trained professionals, including medical technologists,
+pathologists, and other laboratory specialists.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.other-services
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe
