@@ -458,7 +458,7 @@ style: bold
 ftd.image-src menu-icon:
 boolean $sidebar-open: false
 optional ftd.image-src site-logo:
-string site-url: 
+optional string site-url: 
 boolean $show-section: false
 optional string site-name:
 pr.toc-item list sections:
@@ -507,6 +507,7 @@ height.fixed.px: 44
 src: $header-mobile.site-logo
 width.fixed.px: 54
 height.fixed.px: 44
+link: $header-mobile.site-url
 
 -- end: ftd.column
 
