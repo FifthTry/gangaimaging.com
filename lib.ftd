@@ -3055,7 +3055,7 @@ width: auto
 -- ftd.image:
 src: $contact-form-desktop.email
 width: auto
-link: /
+link: mailto: gangaimaging@gmail.com 
 
 -- end: ftd.row
 
@@ -3182,7 +3182,7 @@ width: auto
 -- ftd.image:
 src: $contact-form-mobile.email
 width: auto
-link: /
+link: mailto:gangaimaging@gmail.com
 
 -- end: ftd.row
 
