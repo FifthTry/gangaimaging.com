@@ -26,10 +26,10 @@ favicon: /-/fifthtry.github.io/gangaimaging.com/favicon.ico
 
 # Contact: /contact/
 
-# Docs: /docs/index.html
+# Docs: /docs/
 skip: true
 
-- About Card: /docs/index.html
+- About Card: /docs/
 - About: /docs/about/
 - Categories: /docs/categories/
 - Contact Form: /docs/contact-form/
