@@ -60,17 +60,17 @@ src: $assets.files.assets.twitter.svg
 -- pr.toc-item list footer-links:
 $processor$: pr.toc
 
-- Useful Links: /
-  - Digital radiography: /
-  - Ultrasonography: /
-  - Laboratory: /
-  - Services: /
-  - Facility available: /
-  - About us: /
-  - Contact us: /
+- Useful Links: index.html
+  - Digital radiography: services/
+  - Ultrasonography: services/
+  - Laboratory: services/
+  - Services: services/
+  - Facility available: services/
+  - About us: about/
+  - Contact us: contact/
 - Newsletter:
   - Subscribe to gate Latest News, Offer and connect With Us.
-- Contact Us: /
+- Contact Us: contact/
   - C 31, Ground Floor, Rajan Babu Road, Adarsh Nagar, New Delhi, Delhi 110033
   - +91 9999427620
   - gangaimaging@gmail.com
