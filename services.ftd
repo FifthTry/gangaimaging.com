@@ -12,11 +12,17 @@ Digital Radiology
 
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
+image-2: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
 
 -- ds.categories: Categories
 procedures: $common.procedures
+
+/-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
 
 -- end: ds.services-container
 

@@ -24,7 +24,7 @@ ftd.image-src site-logo: $common.site-logo
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 string site-url: $common.site-url
-string email: $common.email
+ftd.image-src email: $common.email
 string phone: $common.phone
 optional string site-name:
 pr.toc-item list toc: $common.sitemap.toc
@@ -128,7 +128,7 @@ pr.toc-item list toc:
 optional string site-name:
 ftd.image-src site-logo:
 string site-url:
-string email: $common.email
+ftd.image-src email: $common.email
 string phone: $common.phone
 pr.toc-item list sections:
 children wrapper:
@@ -251,7 +251,7 @@ pr.toc-item list toc:
 optional string site-name:
 ftd.image-src site-logo:
 string site-url:
-string email: $common.email
+ftd.image-src email: $common.email
 string phone: $common.phone
 pr.toc-item list sections:
 children wrapper:
@@ -2938,7 +2938,7 @@ active: $obj.active
 -- component contact-form:
 caption title:
 optional string address:
-optional string email:
+ftd.image-src email:
 optional string phone:
 optional string cta-button:
 optional string cta-link:
@@ -2996,7 +2996,7 @@ linkedin: $contact-form.linkedin
 -- component contact-form-desktop:
 caption title:
 optional string address:
-optional string email:
+ftd.image-src email:
 optional string phone:
 optional string cta-button:
 optional string cta-link:
@@ -3012,7 +3012,7 @@ border-radius.px: 8
 
 -- ftd.column:
 width.fixed.px: 380
-height.fixed.px: 400
+height.fixed.px: 420
 padding-horizontal.px: 18
 padding-vertical.px: 18
 background.linear-gradient: $lg3
@@ -3045,16 +3045,16 @@ color: $inherited.colors.text-strong
 -- end: ftd.row
 
 -- ftd.row:
-spacing.fixed.px: 8
+spacing.fixed.px: 12
 align-content: center
 
 -- ftd.image:
 src: $assets.files.assets.email.svg
 width: auto
 
--- ftd.text: $contact-form-desktop.email
-role: $inherited.types.fine-print
-color: $inherited.colors.text-strong
+-- ftd.image:
+src: $contact-form-desktop.email
+width: auto
 link: /
 
 -- end: ftd.row
@@ -3119,7 +3119,7 @@ height.fixed.px: 18
 -- component contact-form-mobile:
 caption title:
 optional string address:
-optional string email:
+ftd.image-src email:
 optional string phone:
 optional string cta-button:
 optional string cta-link:
@@ -3179,9 +3179,9 @@ align-content: center
 src: $assets.files.assets.email.svg
 width: auto
 
--- ftd.text: $contact-form-mobile.email
-role: $inherited.types.fine-print
-color: $inherited.colors.text-strong
+-- ftd.image:
+src: $contact-form-mobile.email
+width: auto
 link: /
 
 -- end: ftd.row
@@ -3561,6 +3561,7 @@ link: $feature.cta-link
 
 -- component services-container:
 ftd.image-src image:
+ftd.image-src image-2:
 body body:
 children child:
 
@@ -3593,6 +3594,11 @@ role: $inherited.types.copy-regular
 margin-top.px: 50
 
 $services-container.body
+
+-- ftd.image:
+width: fill-container
+src: $services-container.image-2
+padding-top.px: 24
 
 -- end: ftd.column
 
@@ -3634,7 +3640,6 @@ width: fill-container
 spacing.fixed.px: 30
 padding-vertical.px: 82
 padding-horizontal.px: 82
-align-content: center
 children: $row-container.wrapper
 
 -- end: ftd.row
