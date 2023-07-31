@@ -16,6 +16,7 @@ Does decoding your health test reports leave you confused?
 -- ds.services: Our Services
 sub-title: Our Special Services For You
 facilities: $common.facility-list
+link: Services/
 
 -- ds.our-work: Dr. Samir’s Ganga Diagnostic & Imaging Centre Pvt. Ltd
 tag: Diagnostic & Imaging
@@ -30,7 +31,7 @@ services: $common.services
 -- ds.facilities: Achievements
 hallmark-list: $common.hallmarks
 
--- ds.testimonials-card: Testimonial
+-- ds.testimonials-card: Testimonials
 sub-title: What people say about us
 testimonials: $common.list-of-testimonials
 

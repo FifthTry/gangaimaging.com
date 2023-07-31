@@ -56,11 +56,12 @@ src: $assets.files.assets.twitter.svg
 $processor$: pr.toc
 
 - Useful Links: index.html
-  - Digital radiography: services/
-  - Ultrasonography: services/
-  - Laboratory: services/
-  - Services: services/
-  - Facility available: services/
+  - Digital Radiology: services/
+  - Ultrasonography-USG: services/usg
+  - CT SCAN: services/ct-scan
+  - Cardiology: services/cardiology
+  - Laboratory: services/laboratory
+  - Other: services/other-services
   - About us: about/
   - Contact us: contact/
 - Contact Us: contact/
@@ -132,7 +133,7 @@ by GE Healthcare. Digital high frequency…
 -- service: ULTRASONOGRAPHY (USG)
 src: $assets.files.assets.ultrasonography-usg.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/usg/
 
 We provide state of the art professional versatile ultrasound scanning 
 services with real time and complete…
@@ -140,7 +141,7 @@ services with real time and complete…
 -- service: COMPUTERIZED TOMOGRAPHY (CT) SCAN
 src: $assets.files.assets.computerised-themeography.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/ct-scan/
 
 We perform CT Scans on most advanced multi slice scanner (CT Brivo385 
 by GE Healthcare).
@@ -148,14 +149,14 @@ by GE Healthcare).
 -- service: CARDIOLOGY DEPARTMENT
 src: $assets.files.assets.cardiology.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/cardiology/
 
 Headed by Dr. Anunai Srivastava (MD, DM Cardiology), Our cardiology 
 department is equipped with laser…
 
 -- service: LABORATORY SERVICES
 cta-text: Read More
-cta-link: services/
+cta-link: services/laboratory/
 src: $assets.files.assets.laboratory-services.png
 
 Our laboratory services are supervised by Senior Experienced Doctor (Dr. 
@@ -164,7 +165,7 @@ SK Gupta MD. Pathology)…
 -- service: OTHER SERVICES
 src: $assets.files.assets.other-services.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/other-services/
 
 We have CT Scan, Ultrasound, Color Doppler, Digital X-Ray, Special X-Ray, 
 Echo, TMT, ECG, USG/CT-Guided Fnac
@@ -184,20 +185,25 @@ Echo, TMT, ECG, USG/CT-Guided Fnac
 -- record facility:
 caption title:
 ftd.image-src icon:
+string link:
 
 -- facility list facility-list:
 
 -- facility: Digital Radiography
 icon: $assets.files.assets.first.svg
+link: services/
 
 -- facility: Ultrasonopgraphy (USG)
 icon: $assets.files.assets.first.svg
+link: services/usg/
 
 -- facility: Cardiology Department
 icon: $assets.files.assets.first.svg
+link: services/cardiology/
 
 -- facility: Laboratory Services
 icon: $assets.files.assets.first.svg
+link: services/laboratory/
 
 
 -- end: facility-list
@@ -308,28 +314,159 @@ string link:
 boolean active: false
 
 
--- procedure list procedures:
+-- procedure list digital-radiology:
 
--- procedure: Digital Category
+-- procedure: Digital Radiology
 link: services/
 active: true
 
 -- procedure: Ultrasonography (USG)
-link: services/
+link: services/usg
 
 -- procedure: Computerized Tomography (CT SCAN)
-link: services/
+link: services/ct-scan
 
 -- procedure: Cardiology Department
-link: services/
+link: services/cardiology
 
 -- procedure: Laboratory Services
-link: services/
+link: services/laboratory
 
 -- procedure: Other Services
+link: services/other-services
+
+-- end: digital-radiology
+
+
+
+
+-- procedure list usg:
+
+-- procedure: Digital Radiology
 link: services/
 
--- end: procedures
+-- procedure: Ultrasonography (USG)
+link: services/usg
+active: true
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: services/ct-scan
+
+-- procedure: Cardiology Department
+link: services/cardiology
+
+-- procedure: Laboratory Services
+link: services/laboratory
+
+-- procedure: Other Services
+link: services/other-services
+
+-- end: usg
+
+
+
+
+
+-- procedure list ct-scan:
+
+-- procedure: Digital Radiology
+link: services/
+
+-- procedure: Ultrasonography (USG)
+link: services/usg
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: services/ct-scan
+active: true
+
+-- procedure: Cardiology Department
+link: services/cardiology
+
+-- procedure: Laboratory Services
+link: services/laboratory
+
+-- procedure: Other Services
+link: services/other-services
+
+-- end: ct-scan
+
+
+
+
+-- procedure list cardiology:
+
+-- procedure: Digital Radiology
+link: services/
+
+-- procedure: Ultrasonography (USG)
+link: services/usg
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: services/ct-scan
+
+-- procedure: Cardiology Department
+link: services/cardiology
+active: true
+
+-- procedure: Laboratory Services
+link: services/laboratory
+
+-- procedure: Other Services
+link: services/other-services
+
+-- end: cardiology
+
+
+
+
+-- procedure list laboratory:
+
+-- procedure: Digital Radiology
+link: services/
+
+-- procedure: Ultrasonography (USG)
+link: services/usg
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: services/ct-scan
+
+-- procedure: Cardiology Department
+link: services/cardiology
+
+-- procedure: Laboratory Services
+link: services/laboratory
+active: true
+
+-- procedure: Other Services
+link: services/other-services
+
+-- end: laboratory
+
+
+
+
+-- procedure list other-services:
+
+-- procedure: Digital Radiology
+link: services/
+
+-- procedure: Ultrasonography (USG)
+link: services/usg
+
+-- procedure: Computerized Tomography (CT SCAN)
+link: services/ct-scan
+
+-- procedure: Cardiology Department
+link: services/cardiology
+
+-- procedure: Laboratory Services
+link: services/laboratory
+
+-- procedure: Other Services
+link: services/other-services
+active: true
+
+-- end: other-services
 
 
 

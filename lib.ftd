@@ -1136,21 +1136,21 @@ optional ftd.background-image bg-image:
 -- ftd.column:
 width: fill-container
 align-content: center
+background.image: $hero-mobile.bg-image
 z-index: 4
 
 -- ftd.column:
-background.image: $hero-mobile.bg-image
 width: fill-container
 z-index: 1
 
 -- ftd.column:
-padding-horizontal.px: 24
 width: fill-container
 spacing.fixed.px: 24
 align-content: center
 align-self: center
 max-width.fixed.px: $common.max-width
 padding-vertical.px: 32
+padding-horizontal.px: 24
 
 -- ftd.text: $hero-mobile.title
 if: { hero-mobile.title != NULL }
@@ -1162,7 +1162,7 @@ text-align: center
 -- ftd.text:
 if: { hero-mobile.body != NULL } 
 color: $inherited.colors.text-strong
-role: $inherited.types.heading-hero
+role: $inherited.types.heading-large
 text-align: center
 
 $hero-mobile.body
@@ -1252,6 +1252,7 @@ src: $assets.files.assets.arrow-to-right.svg
 caption title:
 optional string sub-title:
 $common.facility list facilities:
+string link:
 
 -- ftd.column:
 width: fill-container
@@ -1268,6 +1269,7 @@ align-content: center
 role: $inherited.types.label-large
 color: $inherited.colors.cta-primary.text
 style: semi-bold
+link: $services.link
 
 -- ftd.text: $services.sub-title
 if: { services.sub-title != NULL }
@@ -1291,6 +1293,7 @@ width: fill-container
 $loop$: $services.facilities as $obj
 title: $obj.title
 icon: $obj.icon
+link: $obj.link
 
 -- end: ftd.row
 
@@ -1310,6 +1313,7 @@ icon: $obj.icon
 -- component facility-details:
 caption title:
 ftd.image-src icon:
+string link:
 
 -- ftd.column:
 width.fixed.px: 240
@@ -1320,6 +1324,7 @@ align-content: left
 border-radius.px: 12
 padding-horizontal.px: 24
 spacing.fixed.px: 24
+link: $facility-details.link
 
 -- ftd.image:
 src: $facility-details.icon
@@ -1661,7 +1666,6 @@ width: fill-container
 wrap: true
 align-content: center
 padding-top.px: 80
-;;padding-horizontal.px: 86
 
 -- testimonials-card-details:
 $loop$: $testimonials-card-desktop.testimonials as $obj
@@ -1751,6 +1755,7 @@ string user:
 string location:
 ftd.image-src icon:
 string link:
+boolean $open-in-new-tab: false
 
 -- ftd.column:
 width.fixed.px: 480
@@ -2830,7 +2835,7 @@ spread.px: 4
 caption title:
 optional string tag:
 string cta-text:
-string cta-link:
+string cta-link: 
 
 -- ftd.column:
 width: fill-container
@@ -3473,7 +3478,6 @@ link: $feature.cta-link
 
 -- component services-container:
 ftd.image-src image:
-ftd.image-src image-2:
 body body:
 children child:
 
@@ -3506,11 +3510,6 @@ role: $inherited.types.copy-regular
 margin-top.px: 50
 
 $services-container.body
-
--- ftd.image:
-width: fill-container
-src: $services-container.image-2
-padding-top.px: 24
 
 -- end: ftd.column
 

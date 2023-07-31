@@ -32,7 +32,7 @@ types: $typo.types
 colors: $cs.main
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.digital-radiology
 
 -- end: site-doc.output
 

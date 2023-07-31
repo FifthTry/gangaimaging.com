@@ -8,16 +8,19 @@ document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io
 -- ds.hero: 
 bg-image: $assets.files.assets.bg.svg
 
-Digital Radiology
+Cardiology Department
 
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
-image-2: $assets.files.assets.hero-image.jpeg
 
-OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
+Cardiology testing refers to the various medical procedures and diagnostic tests performed to
+assess the health and function of the heart and blood vessels. These tests are essential in
+diagnosing and managing a wide range of cardiovascular conditions and diseases. Cardiologists,
+who are specialized doctors in heart health, use these tests to evaluate the structure and
+function of the heart, identify any abnormalities, and determine appropriate treatment plans.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.cardiology
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe
