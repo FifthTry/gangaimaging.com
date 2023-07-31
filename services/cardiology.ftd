@@ -13,11 +13,16 @@ Cardiology Department
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
 
-Cardiology testing refers to the various medical procedures and diagnostic tests performed to
-assess the health and function of the heart and blood vessels. These tests are essential in
-diagnosing and managing a wide range of cardiovascular conditions and diseases. Cardiologists,
-who are specialized doctors in heart health, use these tests to evaluate the structure and
-function of the heart, identify any abnormalities, and determine appropriate treatment plans.
+Headed by Dr. Anunai Srivastava (MD, DM Cardiology), Our cardiology department
+is equipped with laser system.
+
+Cardiology testing refers to the various medical procedures and diagnostic tests
+performed to assess the health and function of the heart and blood vessels.
+These tests are essential in diagnosing and managing a wide range of
+cardiovascular conditions and diseases. Cardiologists, who are specialized
+doctors in heart health, use these tests to evaluate the structure and function
+of the heart, identify any abnormalities, and determine appropriate treatment
+plans.
 
 -- ds.categories: Categories
 procedures: $common.cardiology
