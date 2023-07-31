@@ -1750,6 +1750,7 @@ string user:
 string location:
 ftd.image-src icon:
 string link:
+boolean $open-in-new-tab: false
 
 -- ftd.column:
 width.fixed.px: 480
