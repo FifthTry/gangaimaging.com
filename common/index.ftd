@@ -12,7 +12,7 @@
 
 -- string site-url: index.html
 
--- string email: gangaimaging@gmail.com
+-- ftd.image-src email: $assets.files.assets.connect-with.png
 
 -- string phone: +91 9999427620, 9999911609
 
@@ -68,12 +68,10 @@ $processor$: pr.toc
   - Facility available: services/
   - About us: about/
   - Contact us: contact/
-- Newsletter:
-  - Subscribe to gate Latest News, Offer and connect With Us.
 - Contact Us: contact/
   - C 31, Ground Floor, Rajan Babu Road, Adarsh Nagar, New Delhi, Delhi 110033
   - +91 9999427620
-  - gangaimaging@gmail.com
+  - +91 9999911609
 
 
 
