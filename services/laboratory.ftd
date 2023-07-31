@@ -8,13 +8,15 @@ document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io
 -- ds.hero: 
 bg-image: $assets.files.assets.bg.svg
 
-Digital Radiology
+Laboratory Services
 
 -- ds.services-container:
-image: $assets.files.assets.hero-image.jpeg
-image-2: $assets.files.assets.hero-image.jpeg
+image: $assets.files.assets.dr-samee-about-us-image-4.png
 
-OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE HIGHEST QUALITY. OUR DUK SYSTEM IS CAPABLE OF PERFORMING WHOLE BODY SCANOGRAMS & ALL KINDS OF ROUTINE X-RAYS AS WELL AS SPECIAL PROCEDURES WITH HIGH-QUALITY IMAGES.
+medical tests and analyses performed on patient samples (such as blood, urine, tissue, or other
+bodily fluids) to aid in the diagnosis, monitoring, and treatment of diseases and health
+conditions. These tests are conducted in specialized laboratories equipped with advanced
+instruments and trained personnel to ensure accurate and reliable results.
 
 -- ds.categories: Categories
 procedures: $common.procedures

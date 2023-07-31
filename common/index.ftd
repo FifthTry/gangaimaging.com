@@ -315,19 +315,19 @@ link: services/
 active: true
 
 -- procedure: Ultrasonography (USG)
-link: services/
+link: services/usg
 
 -- procedure: Computerized Tomography (CT SCAN)
-link: services/
+link: services/ct-scan
 
 -- procedure: Cardiology Department
-link: services/
+link: services/cardiology
 
 -- procedure: Laboratory Services
-link: services/
+link: services/laboratory
 
 -- procedure: Other Services
-link: services/
+link: services/other-services
 
 -- end: procedures
 

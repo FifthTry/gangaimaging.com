@@ -63,4 +63,7 @@ type: String (`required`)
 
 Using `body` attribute to add information about the section.
 
+This is a default property of the `services-container` component. It’s used to
+add a image to `services-container` component.
+
 -- end: site-doc.doc-home
