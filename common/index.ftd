@@ -288,23 +288,23 @@ boolean active: false
 -- procedure list procedures:
 
 -- procedure: Digital Category
-link: /
+link: services/
 active: true
 
 -- procedure: Ultrasonography (USG)
-link: /
+link: services/
 
 -- procedure: Computerized Tomography (CT SCAN)
-link: /
+link: services/
 
 -- procedure: Cardiology Department
-link: /
+link: services/
 
 -- procedure: Laboratory Services
-link: /
+link: services/
 
 -- procedure: Other Services
-link: /
+link: services/
 
 -- end: procedures
 
