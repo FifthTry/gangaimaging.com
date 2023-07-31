@@ -649,6 +649,10 @@ width.fixed.px: 350
 role: $inherited.types.copy-regular
 width: fill-container
 
+-- ftd.image:
+src: $assets.files.assets.fastn-badge.svg
+margin-top.px: 80
+
 -- end: ftd.column
 
 -- end: ftd.column
@@ -826,6 +830,11 @@ role: $inherited.types.copy-small
 color: $inherited.colors.cta-secondary.text
 
 -- end: ftd.column
+
+-- ftd.image:
+src: $assets.files.assets.fastn-badge.svg
+margin-bottom.px: 20
+margin-left.px: 20
 
 -- ftd.column:
 width: fill-container
