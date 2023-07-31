@@ -13,18 +13,23 @@ Computerized Tomography (CT SCAN)
 -- ds.services-container:
 image: $assets.files.assets.ct-scan.jpeg
 
-A computed tomography (CT) scan is a medical imaging technique that uses X-rays and computer
-technology to create detailed internal images of the body. CT scans can be used to identify
-disease or injury within various regions of the body, including bones, muscles, organs, and
-blood vessels. The procedure involves taking dozens to hundreds of images of the body, which are
-then stacked together by a computer to create a detailed image. CT scans are more detailed than
-regular X-rays and can show internal injuries and bleeding, locate tumors, blood clots, excess
-fluid, or infection, and help guide treatment plans and procedures such as biopsies, surgeries,
-and radiation therapy. CT scans can also be used to detect and monitor diseases and conditions
-such as cancer, heart disease, lung nodules, and liver masses. CT scans are painless and
-noninvasive, and the procedure doesn't take very long. However, there is a risk of radiation
-exposure, and contrast agents may be used to improve the radiologist's ability to find any
-abnormalities.
+We perform CT Scans on most advanced multi slice scanner (CT Brivo385 by GE
+Healthcare).
+
+A computed tomography (CT) scan is a medical imaging technique that uses X-rays
+and computer technology to create detailed internal images of the body. CT
+scans can be used to identify disease or injury within various regions of the
+body, including bones, muscles, organs, and blood vessels. The procedure
+involves taking dozens to hundreds of images of the body, which are then
+stacked together by a computer to create a detailed image. CT scans are more
+detailed than regular X-rays and can show internal injuries and bleeding,
+locate tumors, blood clots, excess fluid, or infection, and help guide
+treatment plans and procedures such as biopsies, surgeries, and radiation
+therapy. CT scans can also be used to detect and monitor diseases and
+conditions such as cancer, heart disease, lung nodules, and liver masses. CT
+scans are painless and noninvasive, and the procedure doesn't take very long.
+However, there is a risk of radiation exposure, and contrast agents may be used
+to improve the radiologist's ability to find any abnormalities.
 
 -- ds.categories: Categories
 procedures: $common.ct-scan
