@@ -1669,7 +1669,6 @@ user: $obj.user
 location: $obj.location
 icon: $obj.icon
 link: $obj.link
-open-in-new-tab: true
 
 -- end: ftd.row
 
@@ -1729,7 +1728,6 @@ user: $obj.user
 location: $obj.location
 icon: $obj.icon
 link: $obj.link
-open-in-new-tab: true
 
 -- end: ftd.row
 
