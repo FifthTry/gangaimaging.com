@@ -3561,7 +3561,6 @@ link: $feature.cta-link
 
 -- component services-container:
 ftd.image-src image:
-ftd.image-src image-2:
 body body:
 children child:
 
@@ -3594,11 +3593,6 @@ role: $inherited.types.copy-regular
 margin-top.px: 50
 
 $services-container.body
-
--- ftd.image:
-width: fill-container
-src: $services-container.image-2
-padding-top.px: 24
 
 -- end: ftd.column
 
