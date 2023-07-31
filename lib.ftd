@@ -3142,7 +3142,7 @@ width: fill-container
 padding-horizontal.px: 24
 
 -- ftd.column:
-width.fixed.px: 280
+width.fixed.px: 340
 height.fixed.px: 280
 padding-horizontal.px: 18
 padding-top.px: 18
@@ -3234,101 +3234,6 @@ width.fixed.px: 18
 height.fixed.px: 18
 
 -- end: ftd.row
-
--- end: ftd.column
-
--- ftd.column:
-width: fill-container
-height: hug-content
-padding-horizontal.px: 24
-padding-right.px: 36
-padding-vertical.px: 64
-spacing.fixed.px: 24
-background.solid: $inherited.colors.background.step-1
-z-index: 8
-shadow: $shadow
-margin-top.px: -24
-align-content: center
-border-radius.px: 8
-
--- ftd.text: $contact-form-mobile.title
-role: $inherited.types.heading-small
-color: $inherited.colors.cta-secondary.text
-
--- ftd.column:
-width: fill-container
-spacing.fixed.px: 32
-align-content: center
-
--- ftd.text-input:
-placeholder: First Name
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-background.solid: $inherited.colors.background.step-1
-border-color: $inherited.colors.cta-tertiary.focused
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text-input:
-placeholder: Last Name
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-background.solid: $inherited.colors.background.step-1
-border-color: $inherited.colors.cta-tertiary.focused
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text-input:
-placeholder: Email Address
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text-input:
-placeholder: Mobile Number
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text: Write your message here...
-role: $inherited.types.copy-small
-color: $inherited.colors.cta-secondary.text
-margin-bottom.px: 4
-margin-top.px: 24
-
--- ftd.text-input:
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-type: text
-role: $inherited.types.copy-small
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-color: $inherited.colors.border
-
--- button: $contact-form-mobile.cta-button
-cta-link: $contact-form-mobile.cta-link
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -3659,6 +3564,7 @@ children: $row-container.wrapper
 width: fill-container
 spacing.fixed.px: 32
 align-content: center
+padding-horizontal.px: 24
 wrap: true
 children: $row-container.wrapper
 
