@@ -1656,18 +1656,20 @@ color: $inherited.colors.cta-secondary.text
 -- end: ftd.column
 
 -- ftd.row:
-spacing.fixed.px: 72
+spacing.fixed.px: 64
 width: fill-container
 wrap: true
 align-content: center
 padding-top.px: 80
+;;padding-horizontal.px: 86
 
 -- testimonials-card-details:
 $loop$: $testimonials-card-desktop.testimonials as $obj
-title: $obj.title
+body: $obj.body
 user: $obj.user
 location: $obj.location
 icon: $obj.icon
+link: $obj.link
 
 -- end: ftd.row
 
@@ -1715,17 +1717,18 @@ text-align: center
 -- end: ftd.column
 
 -- ftd.row:
-spacing.fixed.px: 120
+spacing.fixed.px: 24
 width: fill-container
 wrap: true
 padding-vertical.px: 32
 
 -- testimonials-card-details:
 $loop$: $testimonials-card-mobile.testimonials as $obj
-title: $obj.title
+body: $obj.body
 user: $obj.user
 location: $obj.location
 icon: $obj.icon
+link: $obj.link
 
 -- end: ftd.row
 
@@ -1743,17 +1746,19 @@ icon: $obj.icon
 
 
 -- component testimonials-card-details:
-caption title:
+body body:
 string user: 
 string location:
 ftd.image-src icon:
+string link:
 
 -- ftd.column:
-width.fixed.px: 450
+width.fixed.px: 480
 width if { ftd.device == "mobile" }: fill-container
-spacing.fixed.px: 32
 align-content: center
 padding-bottom.px: 88
+link: $testimonials-card-details.link
+open-in-new-tab: true
 
 -- ftd.image:
 src: $testimonials-card-details.icon
@@ -1764,21 +1769,23 @@ border-radius.percent: 50
 width.fixed.px: 112
 height.fixed.px: 112
 z-index: 1
+anchor: parent
+top.px: -60
 
 -- ftd.column:
 background.solid: $inherited.colors.background.step-1
 shadow: $shadow
-anchor: parent
-top.px: 64
 padding-top.px: 72
 padding-bottom.px: 32
 padding-horizontal.px: 32
 spacing.fixed.px: 18
 border-radius.px: 12
 
--- ftd.text: $testimonials-card-details.title
+-- ftd.text: 
 role: $inherited.types.heading-tiny
 color: $inherited.colors.cta-secondary.text
+
+$testimonials-card-details.body
 
 -- ftd.row:
 spacing.fixed.px: 12
