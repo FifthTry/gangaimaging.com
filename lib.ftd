@@ -2826,7 +2826,7 @@ spread.px: 4
 
 
 
-/-- component newsletter:
+-- component newsletter:
 caption title:
 optional string tag:
 string cta-text:
