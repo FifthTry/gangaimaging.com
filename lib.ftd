@@ -652,6 +652,8 @@ width: fill-container
 -- ftd.image:
 src: $assets.files.assets.fastn-badge.svg
 margin-top.px: 80
+link: https://fastn.com/
+open-in-new-tab: true
 
 -- end: ftd.column
 
@@ -833,8 +835,11 @@ color: $inherited.colors.cta-secondary.text
 
 -- ftd.image:
 src: $assets.files.assets.fastn-badge.svg
-margin-bottom.px: 20
-margin-left.px: 20
+margin-top.px: 14
+margin-bottom.px: 24
+link: https://fastn.com/
+open-in-new-tab: true
+align-self: center
 
 -- ftd.column:
 width: fill-container
