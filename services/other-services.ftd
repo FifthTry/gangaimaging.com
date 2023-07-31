@@ -13,6 +13,9 @@ Other Services
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
 
+We have CT Scan, Ultrasound, Color Doppler, Digital X-Ray, Special X-Ray, 
+Echo, TMT, ECG, USG/CT-Guided Fnac.
+
 Our testing laboratory services refer to the range of medical testing and
 diagnostic services offered by us. We are equipped with advanced equipment and
 staffed by trained professionals, including medical technologists,
