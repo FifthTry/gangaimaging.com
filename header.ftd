@@ -26,7 +26,7 @@ boolean $sidebar-open: false
 boolean github-icon: false
 optional string github-url:
 boolean blog: false
-optional string email:
+optional ftd.image-src email:
 optional string phone:
 common.social-media list social-links: $common.social-links
 
@@ -117,7 +117,7 @@ optional string site-name:
 pr.toc-item list sections:
 optional string login-btn-txt:
 optional string login-btn-url:
-optional string email:
+optional ftd.image-src email:
 optional string phone:
 boolean login-button: false
 integer logo-width: 120
@@ -153,8 +153,11 @@ spacing.fixed.px: 18
 padding-left.px: 32
 align-self: center
 
--- ftd.text: $header-desktop.email
-role: $inherited.types.copy-small
+-- ftd.image:
+src: $header-desktop.email
+width: auto
+link: /
+padding-top.px: 2
 
 -- ftd.text: $header-desktop.phone
 role: $inherited.types.copy-small
@@ -472,7 +475,7 @@ boolean github-icon: false
 optional string github-url:
 boolean blog: false
 optional string phone:
-optional string email:
+optional ftd.image-src email:
 common.social-media list social-links:
 
 -- ftd.column: 

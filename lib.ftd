@@ -24,7 +24,7 @@ ftd.image-src site-logo: $common.site-logo
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 string site-url: $common.site-url
-string email: $common.email
+ftd.image-src email: $common.email
 string phone: $common.phone
 optional string site-name:
 pr.toc-item list toc: $common.sitemap.toc
@@ -128,7 +128,7 @@ pr.toc-item list toc:
 optional string site-name:
 ftd.image-src site-logo:
 string site-url:
-string email: $common.email
+ftd.image-src email: $common.email
 string phone: $common.phone
 pr.toc-item list sections:
 children wrapper:
@@ -251,7 +251,7 @@ pr.toc-item list toc:
 optional string site-name:
 ftd.image-src site-logo:
 string site-url:
-string email: $common.email
+ftd.image-src email: $common.email
 string phone: $common.phone
 pr.toc-item list sections:
 children wrapper:
@@ -2819,7 +2819,7 @@ spread.px: 4
 
 
 
--- component newsletter:
+/-- component newsletter:
 caption title:
 optional string tag:
 string cta-text:
@@ -2938,7 +2938,7 @@ active: $obj.active
 -- component contact-form:
 caption title:
 optional string address:
-optional string email:
+ftd.image-src email:
 optional string phone:
 optional string cta-button:
 optional string cta-link:
@@ -2949,7 +2949,6 @@ optional ftd.image-src instagram:
 optional ftd.image-src linkedin:
 
 -- ftd.column:
-width.fixed.px: 810
 
 -- ftd.desktop:
 
@@ -2997,7 +2996,7 @@ linkedin: $contact-form.linkedin
 -- component contact-form-desktop:
 caption title:
 optional string address:
-optional string email:
+ftd.image-src email:
 optional string phone:
 optional string cta-button:
 optional string cta-link:
@@ -3009,21 +3008,14 @@ optional ftd.image-src linkedin:
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 8
-padding-horizontal.px: 42
-padding-bottom.px: 64
-z-index: 2
-max-width.fixed.percent: 70
-margin-top.px: 64
 border-radius.px: 8
 
 -- ftd.column:
-width.fixed.px: 280
-height.fixed.px: 400
+width.fixed.px: 380
+height.fixed.px: 420
 padding-horizontal.px: 18
 padding-vertical.px: 18
 background.linear-gradient: $lg3
-z-index: 10
 shadow: $shadow
 spacing: space-between
 border-radius.px: 8
@@ -3053,16 +3045,16 @@ color: $inherited.colors.text-strong
 -- end: ftd.row
 
 -- ftd.row:
-spacing.fixed.px: 8
+spacing.fixed.px: 12
 align-content: center
 
 -- ftd.image:
 src: $assets.files.assets.email.svg
 width: auto
 
--- ftd.text: $contact-form-desktop.email
-role: $inherited.types.fine-print
-color: $inherited.colors.text-strong
+-- ftd.image:
+src: $contact-form-desktop.email
+width: auto
 link: /
 
 -- end: ftd.row
@@ -3111,112 +3103,6 @@ height.fixed.px: 18
 
 -- end: ftd.column
 
--- ftd.column:
-width: hug-content
-height: hug-content
-padding-left.px: 250
-padding-right.px: 36
-padding-vertical.px: 64
-spacing.fixed.px: 24
-background.solid: $inherited.colors.background.step-1
-z-index: 8
-anchor: parent
-left.px: 115
-top.px: -30
-shadow: $shadow
-border-radius.px: 8
-
--- ftd.text: $contact-form-desktop.title
-role: $inherited.types.heading-small
-color: $inherited.colors.cta-secondary.text
-
--- ftd.row:
-spacing.fixed.px: 32
-wrap: true
-
--- ftd.text-input:
-placeholder: First Name
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-
--- ftd.text-input:
-placeholder: Last Name
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.step-1
-color: $inherited.colors.border
-
--- end: ftd.row
-
--- ftd.row:
-spacing.fixed.px: 32
-
--- ftd.text-input:
-placeholder: Email Address
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text-input:
-placeholder: Mobile Number
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width.fixed.px: 240
-border-bottom-width.px: 1
-border-color: $inherited.colors.cta-tertiary.focused
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- end: ftd.row
-
--- ftd.column:
-spacing.fixed.px: 32
-width: fill-container
-margin-top.px: 16
-
--- ftd.text: Write your message here...
-role: $inherited.types.copy-small
-color: $inherited.colors.cta-secondary.text
-margin-bottom.px: 4
-
--- ftd.text-input:
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-bottom-width.px: 1
-background.solid: $inherited.colors.background.step-1
-type: text
-role: $inherited.types.copy-small
-border-color: $inherited.colors.cta-tertiary.focused
-color: $inherited.colors.border
-
--- end: ftd.column
-
--- button: $contact-form-desktop.cta-button
-cta-link: $contact-form-desktop.cta-link
-
--- end: ftd.column
-
 -- end: ftd.row
 
 -- end: contact-form-desktop
@@ -3233,7 +3119,7 @@ cta-link: $contact-form-desktop.cta-link
 -- component contact-form-mobile:
 caption title:
 optional string address:
-optional string email:
+ftd.image-src email:
 optional string phone:
 optional string cta-button:
 optional string cta-link:
@@ -3293,9 +3179,9 @@ align-content: center
 src: $assets.files.assets.email.svg
 width: auto
 
--- ftd.text: $contact-form-mobile.email
-role: $inherited.types.fine-print
-color: $inherited.colors.text-strong
+-- ftd.image:
+src: $contact-form-mobile.email
+width: auto
 link: /
 
 -- end: ftd.row
@@ -3675,6 +3561,7 @@ link: $feature.cta-link
 
 -- component services-container:
 ftd.image-src image:
+ftd.image-src image-2:
 body body:
 children child:
 
@@ -3707,6 +3594,11 @@ role: $inherited.types.copy-regular
 margin-top.px: 50
 
 $services-container.body
+
+-- ftd.image:
+width: fill-container
+src: $services-container.image-2
+padding-top.px: 24
 
 -- end: ftd.column
 
@@ -3745,10 +3637,9 @@ width: fill-container
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 130
+spacing.fixed.px: 30
 padding-vertical.px: 82
 padding-horizontal.px: 82
-align-content: center
 children: $row-container.wrapper
 
 -- end: ftd.row
