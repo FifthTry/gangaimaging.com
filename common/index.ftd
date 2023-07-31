@@ -133,7 +133,7 @@ by GE Healthcare. Digital high frequency…
 -- service: ULTRASONOGRAPHY (USG)
 src: $assets.files.assets.ultrasonography-usg.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/usg/
 
 We provide state of the art professional versatile ultrasound scanning 
 services with real time and complete…
@@ -141,7 +141,7 @@ services with real time and complete…
 -- service: COMPUTERIZED TOMOGRAPHY (CT) SCAN
 src: $assets.files.assets.computerised-themeography.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/ct-scan/
 
 We perform CT Scans on most advanced multi slice scanner (CT Brivo385 
 by GE Healthcare).
@@ -149,14 +149,14 @@ by GE Healthcare).
 -- service: CARDIOLOGY DEPARTMENT
 src: $assets.files.assets.cardiology.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/cardiology/
 
 Headed by Dr. Anunai Srivastava (MD, DM Cardiology), Our cardiology 
 department is equipped with laser…
 
 -- service: LABORATORY SERVICES
 cta-text: Read More
-cta-link: services/
+cta-link: services/laboratory/
 src: $assets.files.assets.laboratory-services.png
 
 Our laboratory services are supervised by Senior Experienced Doctor (Dr. 
@@ -165,7 +165,7 @@ SK Gupta MD. Pathology)…
 -- service: OTHER SERVICES
 src: $assets.files.assets.other-services.png
 cta-text: Read More
-cta-link: services/
+cta-link: services/other-services/
 
 We have CT Scan, Ultrasound, Color Doppler, Digital X-Ray, Special X-Ray, 
 Echo, TMT, ECG, USG/CT-Guided Fnac
@@ -185,20 +185,25 @@ Echo, TMT, ECG, USG/CT-Guided Fnac
 -- record facility:
 caption title:
 ftd.image-src icon:
+string link:
 
 -- facility list facility-list:
 
 -- facility: Digital Radiography
 icon: $assets.files.assets.first.svg
+link: services/
 
 -- facility: Ultrasonopgraphy (USG)
 icon: $assets.files.assets.first.svg
+link: services/usg/
 
 -- facility: Cardiology Department
 icon: $assets.files.assets.first.svg
+link: services/cardiology/
 
 -- facility: Laboratory Services
 icon: $assets.files.assets.first.svg
+link: services/laboratory/
 
 
 -- end: facility-list

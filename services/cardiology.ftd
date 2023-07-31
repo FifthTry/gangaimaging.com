@@ -8,7 +8,7 @@ document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io
 -- ds.hero: 
 bg-image: $assets.files.assets.bg.svg
 
-Cardiology Department:
+Cardiology Department
 
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
