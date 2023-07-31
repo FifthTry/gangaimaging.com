@@ -29,30 +29,25 @@ $processor$: pr.fastn-apps
 
 -- record social-media:
 ftd.image-src src:
-string link: /
+optional string link: /
 
 -- social-media list share:
 
 -- social-media list social-links:
 
 -- social-media:
-link: /
 src: $assets.files.assets.facebook.svg
 
 -- social-media: 
-link: /
 src: $assets.files.assets.google-plus.svg
 
 -- social-media:
-link: /
 src: $assets.files.assets.linkedin.svg
 
 -- social-media: 
-link: /
 src: $assets.files.assets.instagram.svg
 
 -- social-media: 
-link: /
 src: $assets.files.assets.twitter.svg
 
 -- end: social-links

@@ -156,7 +156,7 @@ align-self: center
 -- ftd.image:
 src: $header-desktop.email
 width: auto
-link: /
+link: mailto: gangaimaging@gmail.com 
 padding-top.px: 2
 
 -- ftd.text: $header-desktop.phone
@@ -172,8 +172,6 @@ width.fixed.px: 280
 -- ftd.image:
 $loop$: $header-desktop.social-links as $obj
 src: $obj.src
-cursor: pointer
-link: $obj.link
 
 -- end: ftd.row
 
