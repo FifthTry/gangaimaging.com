@@ -235,31 +235,61 @@ icon: $assets.files.assets.like-icon.png
 
 
 -- record testimonial:
-caption title:
+body body:
 string user: 
 string location:
+string link:
 ftd.image-src icon:
 
 -- testimonial list list-of-testimonials:
 
--- testimonial: I really think that this is the best lab in North Delhi
-user: Preeti Ahuja
+-- testimonial:
+user: Tapas Sarangi
 location: New Delhi
 icon: $assets.files.assets.privacy.svg
+link: https://goo.gl/maps/PtTJ678rX1ZjY2JY6
 
-A design approach is a general philosophy that may or may not include a guide
-for specific methods that work.It is a long established fact that a reader will
-be distracted by the readable content of a page when looking at its layout.
+I have been visiting this Diagnostic center regularly. The staffs behavior are I
+have been visiting this Diagnostic center regularly. The staffs behavior are
+good. The waiting time is very less and one can get the reports on time. The
+accuracy of the reports are very high. Very net and clean space to seat. This
+center is also wel connected with Yellow line metro.
 
--- testimonial: I really think that this is the best lab in North Delhi
-user: Preeti Ahuja
+-- testimonial:
+user: Santosh Sharma
 location: New Delhi
 icon: $assets.files.assets.privacy.svg
+link: https://goo.gl/maps/Y7z6zAazKak9aVJY7
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
-in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
-ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
-aliquet faucibus.
+Have visited the centre for ultrasound test, very good treatment provided by
+center staff and Dr. Samir, also staff behaviour was very good and centre
+setting programs and client servicing programs was very easy and fruitfully,
+real value for patients and there time and health. Really feeling happy to get
+treatment from Samir Ganga Diagnostic..
+
+-- testimonial:
+user: Shyam Gupta
+location: New Delhi
+icon: $assets.files.assets.privacy.svg
+link: https://goo.gl/maps/GnpQSJqFmTz1SK7U9
+
+Visited today for ultrasound of my wife, excellent service facility, staff and
+employees were all decent and well educated. Was referred from government
+hospital, no discrimination whereas in some other center, I will not take name,
+there was big discrimination. Treated very well. Report immediately Dr.Samir's
+way of talking and telling the patients the Ultrasound Reports is very Good
+
+-- testimonial:
+user: Mohit Rathore
+location: New Delhi
+icon: $assets.files.assets.privacy.svg
+link: https://goo.gl/maps/jafYrBXciRpBbYgL8
+
+I have visited for USG-2 which was referred by govt. So I was very cofucesd
+whether they gonna treat us in same manner or not, but they busted out all my
+mythes. All staff was very good nd totally professional in their work and
+helped us through out the whole scans process and clarify everything about
+report. I have got best experience in healthcare services till now .
 
 -- end: list-of-testimonials
 
