@@ -2823,7 +2823,7 @@ spread.px: 4
 caption title:
 optional string tag:
 string cta-text:
-string cta-link:
+string cta-link: 
 
 -- ftd.column:
 width: fill-container
