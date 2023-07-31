@@ -1,0 +1,34 @@
+-- ds.page:
+full-width: true
+sidebar: false
+document-title: Our Services: Ganga Diagnostic - Imaging Center Pvt. Ltd.
+document-description: Our Services: Ganga Diagnostic - Imaging Center Pvt. Ltd.
+document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
+
+-- ds.hero: 
+bg-image: $assets.files.assets.bg.svg
+
+Ultrasonography (USG)
+
+-- ds.services-container:
+image: $assets.files.assets.usg.jpg
+
+Ultrasound is a technique of using high-frequency sound waves to capture live images from the
+interior of the body. Sonography is another name for it. You must have heard of sonar or radar
+technology, where sound waves are reflected by obstacles, which gives information about the
+objects. The same happens during Ultrasound Sonography (USG) Scan Lab test. The ultrasound
+allows the doctors to see the organs, tissues and vessels and check if there are problems with
+them. The best part is that no incision is required for this process. Since there are no
+radiations involved, this technique is widely preferred.
+
+-- ds.categories: Categories
+procedures: $common.procedures
+
+/-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
+
+-- end: ds.services-container
+
+-- end: ds.page
