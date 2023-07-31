@@ -1661,7 +1661,6 @@ width: fill-container
 wrap: true
 align-content: center
 padding-top.px: 80
-;;padding-horizontal.px: 86
 
 -- testimonials-card-details:
 $loop$: $testimonials-card-desktop.testimonials as $obj
