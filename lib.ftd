@@ -2949,6 +2949,7 @@ active: $obj.active
 
 -- component contact-form:
 caption title:
+optional string company:
 optional string address:
 ftd.image-src email:
 optional string phone:
@@ -2974,6 +2975,7 @@ facebook: $contact-form.facebook
 twitter: $contact-form.twitter
 instagram: $contact-form.instagram
 linkedin: $contact-form.linkedin
+company: $contact-form.company
 
 -- end: ftd.desktop
 
@@ -2989,6 +2991,7 @@ facebook: $contact-form.facebook
 twitter: $contact-form.twitter
 instagram: $contact-form.instagram
 linkedin: $contact-form.linkedin
+company: $contact-form.company
 
 -- end: ftd.mobile
 
@@ -3007,6 +3010,7 @@ linkedin: $contact-form.linkedin
 
 -- component contact-form-desktop:
 caption title:
+optional string company:
 optional string address:
 ftd.image-src email:
 optional string phone:
@@ -3023,7 +3027,7 @@ width: fill-container
 border-radius.px: 8
 
 -- ftd.column:
-width.fixed.px: 380
+width.fixed.px: 400
 height.fixed.px: 420
 padding-horizontal.px: 18
 padding-vertical.px: 18
@@ -3043,16 +3047,28 @@ style: bold
 -- ftd.row:
 margin-top.px: 24
 spacing.fixed.px: 8
-align-content: center
 
 -- ftd.image:
 src: $assets.files.assets.location.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
--- ftd.text: $contact-form-desktop.address
+-- ftd.column:
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+style: bold
+
+$contact-form-desktop.company
+
+-- ftd.text: 
 role: $inherited.types.fine-print
 color: $inherited.colors.text-strong
+
+$contact-form-desktop.address
+
+-- end: ftd.column
 
 -- end: ftd.row
 
@@ -3130,6 +3146,7 @@ height.fixed.px: 18
 
 -- component contact-form-mobile:
 caption title:
+optional string company:
 optional string address:
 ftd.image-src email:
 optional string phone:
@@ -3147,8 +3164,7 @@ width: fill-container
 padding-horizontal.px: 24
 
 -- ftd.column:
-width.fixed.px: 280
-height.fixed.px: 280
+width: fill-container
 padding-horizontal.px: 18
 padding-top.px: 18
 padding-bottom.px: 32
@@ -3170,16 +3186,28 @@ style: bold
 -- ftd.row:
 margin-top.px: 24
 spacing.fixed.px: 8
-align-content: center
 
 -- ftd.image:
 src: $assets.files.assets.location.svg
 width.fixed.px: 26
 height.fixed.px: 26
 
--- ftd.text: $contact-form-mobile.address
+-- ftd.column:
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+style: bold
+
+$contact-form-mobile.company
+
+-- ftd.text: 
 role: $inherited.types.fine-print
 color: $inherited.colors.text-strong
+
+$contact-form-mobile.address
+
+-- end: ftd.column 
 
 -- end: ftd.row
 
@@ -3217,6 +3245,7 @@ color: $inherited.colors.text-strong
 -- ftd.row:
 spacing.fixed.px: 16
 align-content: center
+margin-top.px: 32
 
 -- ftd.image:
 src: $contact-form-mobile.facebook
