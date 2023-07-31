@@ -19,7 +19,7 @@ conditions. These tests are conducted in specialized laboratories equipped with 
 instruments and trained personnel to ensure accurate and reliable results.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.other-services
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe

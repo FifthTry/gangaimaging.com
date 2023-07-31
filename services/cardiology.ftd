@@ -20,7 +20,7 @@ who are specialized doctors in heart health, use these tests to evaluate the str
 function of the heart, identify any abnormalities, and determine appropriate treatment plans.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.cardiology
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe

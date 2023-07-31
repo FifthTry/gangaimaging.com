@@ -13,13 +13,13 @@ Laboratory Services
 -- ds.services-container:
 image: $assets.files.assets.dr-samee-about-us-image-4.png
 
-medical tests and analyses performed on patient samples (such as blood, urine, tissue, or other
+Medical tests and analyses performed on patient samples (such as blood, urine, tissue, or other
 bodily fluids) to aid in the diagnosis, monitoring, and treatment of diseases and health
 conditions. These tests are conducted in specialized laboratories equipped with advanced
 instruments and trained personnel to ensure accurate and reliable results.
 
 -- ds.categories: Categories
-procedures: $common.procedures
+procedures: $common.laboratory
 
 /-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
 tag: Subscribe
