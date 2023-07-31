@@ -1,0 +1,31 @@
+-- ds.page:
+full-width: true
+sidebar: false
+document-title: Our Services: Ganga Diagnostic - Imaging Center Pvt. Ltd.
+document-description: Our Services: Ganga Diagnostic - Imaging Center Pvt. Ltd.
+document-image: https://fifthtry.github.io/gangaimaging.com/-/fifthtry.github.io/gangaimaging.com/assets/gangaimaging.com-og-image.jpg
+
+-- ds.hero: 
+bg-image: $assets.files.assets.bg.svg
+
+Other Services
+
+-- ds.services-container:
+image: $assets.files.assets.hero-image.jpeg
+
+medical tests and analyses performed on patient samples (such as blood, urine, tissue, or other
+bodily fluids) to aid in the diagnosis, monitoring, and treatment of diseases and health
+conditions. These tests are conducted in specialized laboratories equipped with advanced
+instruments and trained personnel to ensure accurate and reliable results.
+
+-- ds.categories: Categories
+procedures: $common.procedures
+
+/-- ds.newsletter: SUBSCRIBE FOR NEWSLETTER
+tag: Subscribe
+cta-text: SUBSCRIBE
+cta-link: services/
+
+-- end: ds.services-container
+
+-- end: ds.page
