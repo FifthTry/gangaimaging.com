@@ -24,7 +24,6 @@ max-height.fixed.px: 350
 
 \-- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
-image-2: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE
 HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE
@@ -40,7 +39,6 @@ colors: $cs.main
 
 -- ds.services-container:
 image: $assets.files.assets.hero-image.jpeg
-image-2: $assets.files.assets.hero-image.jpeg
 
 OUR RADIOGRAPHY (X-RAY) DEPARTMENT IS EQUIPED WITH LATEST D.R. SYSTEM BY GE
 HEALTHCARE. DIGITAL HIGH-FREQUENCY RADIOGRAPHY SYSTEM PROVIDES X-RAYS OF THE
@@ -64,9 +62,6 @@ add a image to `services-container` component.
 type: String (`required`)
 
 Using `body` attribute to add information about the section.
-
--- site-doc.component-property: `image-2`
-type: ftd.image-src (`required`)
 
 This is a default property of the `services-container` component. It’s used to
 add a image to `services-container` component.
